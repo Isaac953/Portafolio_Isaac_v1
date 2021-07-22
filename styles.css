@@ -1,0 +1,22 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Mulish", sans-serif;
+  background-color: #00adb5;
+}
+
+header {
+  background-color: #03506f;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  height: 70px;
+}
+
+.logo {
+  padding: 5px;
+  line-height: 50px;
+  font-size: 30px;
+  color: white;
+  /* border: 5px solid red; */
+}
