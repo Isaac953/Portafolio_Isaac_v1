@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="portfolio.png" />
 
     <!-- Incluyendo las hojas de Estilo y la fuente de la Página -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Public+Sans:ital,wght@1,100&display=swap"
       rel="stylesheet"
@@ -23,21 +23,24 @@
     <!-- Fin -->
   </head>
   <body>
-    <!-- Header y menú de la Página -->
-    <div class="header">
+    <div class="portfolio-container">
       <div class="header__logo">
-        <a href="/" id="header__logo--name"
-          ><i class="fa fa-solid fa-code" id="header__logo--img"></i> Isaac
-          Arias
-        </a>
+        <div class="logo">
+          <a href="/" class="logo__name"
+            ><i class="fa fa-solid fa-code logo__img"></i> Isaac Arias
+          </a>
+        </div>
       </div>
       <div class="header__menu">
-        <a href="/" class="header__menu--item">Servicios</a>
-        <a href="/" class="header__menu--item">Sobre mí</a>
-        <a href="/" class="header__menu--item">Mis Trabajos</a>
-        <a href="/" class="header__menu--item">Contacto</a>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#">Servicios</a></li>
+            <li class="menu__item"><a href="#">Sobre mí</a></li>
+            <li class="menu__item"><a href="#">Mis Trabajos</a></li>
+            <li class="menu__item"><a href="#">Contacto</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <!-- Fin -->
   </body>
 </html>
