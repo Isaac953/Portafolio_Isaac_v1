@@ -1,0 +1,83 @@
+/* Estilos para toda la Página */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fin Todo */
+
+/* Estilos para el body */
+
+body {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  background-color: #b1b6ae;
+}
+
+/* Fin Body */
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-rows: 80px 500px 80px;
+}
+
+.header__logo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #536162;
+}
+
+.header__menu {
+  background-color: #536162;
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  height: 100%;
+}
+
+.logo__name {
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+.logo__img {
+  color: #4aa96c;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.menu__item {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu__item a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
