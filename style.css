@@ -42,6 +42,10 @@ body {
   height: 100%;
 }
 
+.logo a:hover {
+  text-decoration: underline;
+}
+
 .logo__name {
   color: white;
   font-size: 35px;
@@ -80,4 +84,8 @@ body {
   font-size: 20px;
   text-decoration: none;
   color: white;
+}
+
+.menu__item a:hover {
+  text-decoration: underline;
 }
