@@ -91,79 +91,6 @@ body {
 
 /* Fin de Estilos para el header */
 
-/* Estilos para el main */
-
-.portfolio-container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-/* Fin main */
-
-/* Estilos para el cover */
-.cover__container {
-  align-items: center;
-  background-color: #eeeeee;
-  display: flex;
-  height: 220px;
-  justify-content: center;
-  width: 85%;
-}
-
-.cover__container--img {
-  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-  height: 200px;
-  width: 200px;
-}
-
-.cover__container--title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 8px;
-  padding-right: 8px;
-  height: 200px;
-  width: 600px;
-}
-
-.cover__container--p_am {
-  align-items: center;
-  display: flex;
-  font-size: 25px;
-  font-weight: 200;
-  height: 45px;
-  margin: 0px;
-  padding-left: 8px;
-}
-
-.cover__container--p_name {
-  align-items: center;
-  display: flex;
-  font-size: 40px;
-  font-weight: 900;
-  height: 60px;
-  margin: 0px;
-  padding-left: 8px;
-}
-
-.cover__container--p_rank {
-  align-items: center;
-  background-color: #005a8d;
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 30px;
-  font-weight: 700;
-  height: 50px;
-  margin: 0px;
-  padding-right: 8px;
-  text-shadow: 2px 2px 4px #dddddd;
-}
-/* Fin cover */
-
 /* Inicio de Media Queries para Header del Portafolio */
 @media only screen and (max-width: 650px) {
   /*Estilos para Header*/
@@ -214,40 +141,5 @@ body {
     height: 35px;
   }
   /*Fin Header*/
-
-  /* Estilos para el cover */
-  .cover__container {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 295px;
-    justify-content: center;
-  }
-  .cover__container--img {
-    margin: 5px;
-    height: 160px;
-    width: 160px;
-  }
-
-  .cover__container--title {
-    height: 115px;
-    width: 315px;
-  }
-
-  .cover__container--p_am {
-    font-size: 16px;
-    height: 25px;
-  }
-
-  .cover__container--p_name {
-    font-size: 28px;
-    height: 40px;
-  }
-
-  .cover__container--p_rank {
-    font-size: 18px;
-    height: 35px;
-    width: 100%;
-  }
-  /* Fin cover */
 }
 /* Fin de Media Queries para Header del Portafolio */

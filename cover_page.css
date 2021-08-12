@@ -16,6 +16,7 @@ body {
 
 /* Fin body */
 
+/* Estilos para el cover */
 .cover__container {
   align-items: center;
   background-color: #eeeeee;
@@ -75,9 +76,11 @@ body {
   padding-right: 8px;
   text-shadow: 2px 2px 4px #dddddd;
 }
+/* Fin cover */
 
 /* Inicio de Media Queries para Header del Portafolio */
 @media only screen and (max-width: 650px) {
+  /* Estilos para el cover */
   .cover__container {
     display: flex;
     flex-direction: column-reverse;
@@ -110,4 +113,5 @@ body {
     height: 35px;
     width: 100%;
   }
+  /* Fin cover */
 }
