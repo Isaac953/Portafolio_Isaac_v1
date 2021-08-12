@@ -78,4 +78,36 @@ body {
 
 /* Inicio de Media Queries para Header del Portafolio */
 @media only screen and (max-width: 650px) {
+  .cover__container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 295px;
+    justify-content: center;
+  }
+  .cover__container--img {
+    margin: 5px;
+    height: 160px;
+    width: 160px;
+  }
+
+  .cover__container--title {
+    height: 115px;
+    width: 315px;
+  }
+
+  .cover__container--p_am {
+    font-size: 16px;
+    height: 25px;
+  }
+
+  .cover__container--p_name {
+    font-size: 28px;
+    height: 40px;
+  }
+
+  .cover__container--p_rank {
+    font-size: 18px;
+    height: 35px;
+    width: 100%;
+  }
 }
