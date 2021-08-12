@@ -9,7 +9,7 @@
 /* Estilos para el body */
 
 body {
-  background-color: #b1b6ae;
+  background-color: #eeeeee;
   font-family: "Mulish", sans-serif;
   margin: 0px;
 }
@@ -40,6 +40,7 @@ body {
 .header__logo--title {
   color: white;
   font-size: 35px;
+  font-weight: 700;
   margin: 0px;
   padding: 0px 10px;
   text-decoration: none;
@@ -77,6 +78,7 @@ body {
   color: white;
   display: flex;
   font-size: 20px;
+  font-weight: 700;
   padding: 0 10px;
   text-decoration: none;
 }

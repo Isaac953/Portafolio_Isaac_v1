@@ -9,7 +9,7 @@
 /* Estilos para el body */
 
 body {
-  background-color: white;
+  background-color: #eeeeee;
   font-family: "Mulish", sans-serif;
   margin: 0px;
 }
@@ -17,59 +17,58 @@ body {
 /* Fin body */
 
 .cover__container {
-  background-color: darkgray;
-  border: solid;
-  border-color: cadetblue;
+  background-color: #eeeeee;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 200px;
-}
-
-.cover__container--card {
-  display: flex;
+  height: 220px;
 }
 
 .cover__container--img {
   width: 200px;
-  border-color: yellowgreen;
-  border-style: solid;
+  height: 200px;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 .cover__container--title {
   display: flex;
-  background-color: deepskyblue;
-  border-color: yellowgreen;
-  border-style: solid;
+  justify-content: center;
   flex-direction: column;
   width: 600px;
+  height: 200px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .cover__container--p_am {
-  border-color: yellowgreen;
-  border-style: solid;
   margin: 0px;
   font-size: 25px;
   font-weight: 200px;
+  height: 45px;
+  padding-left: 8px;
 }
 
 .cover__container--p_name {
-  border-color: yellowgreen;
-  border-style: solid;
   margin: 0px;
   font-size: 40px;
   font-weight: 900;
+  height: 60px;
+  padding-left: 8px;
 }
 
 .cover__container--p_rank {
-  background-color: deepskyblue;
+  background-color: #005a8d;
   display: flex;
   justify-content: flex-end;
   color: white;
-  border-color: yellowgreen;
-  border-style: solid;
   margin: 0px;
   font-size: 30px;
   font-weight: 700;
+  height: 50px;
+  padding-right: 8px;
+  text-shadow: 2px 2px 4px #dddddd;
 }
 
 /* Inicio de Media Queries para Header del Portafolio */
