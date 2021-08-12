@@ -1,0 +1,77 @@
+/* Estilos para toda la Página */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fin Todo */
+
+/* Estilos para el body */
+
+body {
+  background-color: white;
+  font-family: "Mulish", sans-serif;
+  margin: 0px;
+}
+
+/* Fin body */
+
+.cover__container {
+  background-color: darkgray;
+  border: solid;
+  border-color: cadetblue;
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+.cover__container--card {
+  display: flex;
+}
+
+.cover__container--img {
+  width: 200px;
+  border-color: yellowgreen;
+  border-style: solid;
+}
+
+.cover__container--title {
+  display: flex;
+  background-color: deepskyblue;
+  border-color: yellowgreen;
+  border-style: solid;
+  flex-direction: column;
+  width: 600px;
+}
+
+.cover__container--p_am {
+  border-color: yellowgreen;
+  border-style: solid;
+  margin: 0px;
+  font-size: 25px;
+  font-weight: 200px;
+}
+
+.cover__container--p_name {
+  border-color: yellowgreen;
+  border-style: solid;
+  margin: 0px;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.cover__container--p_rank {
+  background-color: deepskyblue;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  border-color: yellowgreen;
+  border-style: solid;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* Inicio de Media Queries para Header del Portafolio */
+@media only screen and (max-width: 650px) {
+}
