@@ -23,7 +23,7 @@ body {
   display: flex;
   height: 270px;
   justify-content: center;
-  width: 85%;
+  width: 100%;
 }
 
 .cover__container--img {
@@ -89,7 +89,7 @@ body {
     flex-direction: column-reverse;
     height: 335px;
     justify-content: flex-start;
-    width: 80%;
+    width: 100%;
   }
   .cover__container--img {
     height: 160px;
