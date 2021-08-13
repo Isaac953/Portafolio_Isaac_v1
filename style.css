@@ -70,6 +70,7 @@ body {
 }
 
 .header__menu--item {
+  align-items: center;
   display: flex;
   justify-content: center;
   width: 120px;
@@ -81,6 +82,7 @@ body {
   display: flex;
   font-size: 20px;
   font-weight: 700;
+  height: 45px;
   padding: 0 10px;
   text-decoration: none;
 }
@@ -170,6 +172,28 @@ body {
 }
 /* Fin cover */
 
+@media only screen and (max-width: 850px) {
+  .header__logo--title {
+    font-size: 28px;
+  }
+
+  .header__logo--icon {
+    font-size: 32px;
+  }
+
+  .header__menu--item {
+    display: flex;
+    align-items: center;
+  }
+  .header__menu--link {
+    font-size: 17px;
+    height: 40px;
+  }
+  .cover__container {
+    width: 95%;
+  }
+}
+
 /* Inicio de Media Queries para Header del Portafolio */
 @media only screen and (max-width: 650px) {
   /*Estilos para Header*/
@@ -209,15 +233,14 @@ body {
     padding: 0px;
     width: inherit;
   }
-
-  .header__menu--link {
-    font-size: 16px;
-  }
   .header__menu--item {
+    display: flex;
+    align-items: center;
     width: 100px;
   }
-  .header__menu--link:hover {
-    height: 35px;
+  .header__menu--link {
+    font-size: 16px;
+    height: 30px;
   }
   /*Fin Header*/
 
