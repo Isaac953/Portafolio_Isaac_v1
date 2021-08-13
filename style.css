@@ -111,7 +111,7 @@ body {
   display: flex;
   height: 270px;
   justify-content: center;
-  width: 85%;
+  width: 100%;
 }
 
 .cover__container--img {
@@ -119,6 +119,8 @@ body {
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   height: 200px;
   margin-bottom: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
   width: 200px;
 }
 
@@ -128,8 +130,8 @@ body {
   height: 200px;
   justify-content: center;
   margin-bottom: 15px;
-  padding-left: 8px;
-  padding-right: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
   width: 600px;
 }
 
@@ -140,7 +142,7 @@ body {
   font-weight: 200;
   height: 45px;
   margin: 0px;
-  padding-left: 8px;
+  margin-left: 8px;
 }
 
 .cover__container--p_name {
@@ -150,7 +152,7 @@ body {
   font-weight: 900;
   height: 60px;
   margin: 0px;
-  padding-left: 8px;
+  margin-left: 8px;
 }
 
 .cover__container--p_rank {
