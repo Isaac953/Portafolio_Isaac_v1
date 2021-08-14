@@ -2,83 +2,84 @@
 
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Fin Todo */
 
 /* Estilos para el body */
 
-body {
+.body {
   background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
   font-family: "Mulish", sans-serif;
   margin: 0px;
 }
 
 /* Fin body */
 
-/* Estilos para el header */
 .header {
   align-items: center;
   display: flex;
   height: 80px;
   justify-content: space-between;
-  width: 100%;
 }
 
-/* Inicio de Subitem header logo estilos */
 .header__logo {
-  align-items: center;
   background-color: #132c33;
   display: flex;
   flex-direction: column;
   height: 80px;
   justify-content: center;
-  width: 285px;
   min-width: 285px;
+  text-align: center;
+  width: 285px;
 }
 
 .header__logo--title {
   color: white;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 700;
   margin: 0px;
   padding: 0px 10px;
-  text-decoration: none;
 }
 
 .header__logo--icon {
   color: #4aa96c;
-  font-size: 40px;
-  text-decoration: none;
+  font-size: 37px;
 }
-/* Fin de Subitem header logo estilos */
 
-/* Inicio de Subitem header menu estilos */
 .header__menu {
   background-color: #055052;
   display: flex;
   height: 80px;
   justify-content: flex-end;
-  width: inherit;
+  text-align: center;
+  width: 100%;
 }
 
 .header__menu--list {
+  align-items: center;
   display: flex;
   list-style: none;
 }
 
 .header__menu--item {
+  align-items: center;
   display: flex;
   justify-content: center;
-  width: 120px;
+  width: 110px;
 }
 
 .header__menu--link {
   align-items: center;
   color: white;
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
+  height: 40px;
   padding: 0 10px;
   text-decoration: none;
 }
@@ -87,59 +88,65 @@ body {
   background-color: #1eae98;
   border-radius: 7px;
 }
-/* Fin de Subitem header menu estilos */
 
-/* Fin de Estilos para el header */
+/* Inicio de Media Queries para Header del Portafolio */
+@media screen and (max-width: 850px) {
+  .header__logo {
+    min-width: 260px;
+    width: 260px;
+  }
+
+  .header__logo--title {
+    font-size: 28px;
+  }
+
+  .header__logo--icon {
+    font-size: 33px;
+  }
+
+  .header__menu--item {
+    width: 95px;
+  }
+
+  .header__menu--link {
+    font-size: 16px;
+    height: 38px;
+  }
+}
 
 /* Inicio de Media Queries para Header del Portafolio */
 @media only screen and (max-width: 650px) {
-  /*Estilos para Header*/
   .header {
     display: flex;
     flex-direction: column;
     height: 100px;
-    width: inherit;
   }
 
   .header__logo {
-    display: flex;
-    justify-content: center;
     height: 50px;
     width: 100%;
   }
 
   .header__logo--title {
-    font-size: 25px;
+    font-size: 24px;
   }
 
   .header__logo--icon {
-    font-size: 30px;
+    font-size: 29px;
   }
 
   .header__menu {
     display: flex;
-    justify-content: center;
     height: 50px;
-    width: 100%;
+    justify-content: center;
   }
 
-  .header__menu--list {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 0px;
-    width: inherit;
+  .header__menu--item {
+    width: 110px;
   }
 
   .header__menu--link {
-    font-size: 16px;
+    font-size: 14px;
+    height: 30px;
   }
-  .header__menu--item {
-    width: 100px;
-  }
-  .header__menu--link:hover {
-    height: 35px;
-  }
-  /*Fin Header*/
 }
-/* Fin de Media Queries para Header del Portafolio */

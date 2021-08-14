@@ -25,8 +25,6 @@
   display: flex;
   height: 80px;
   justify-content: space-between;
-  line-height: 3rem;
-  outline: 1px solid chartreuse;
 }
 
 .header__logo {
@@ -145,10 +143,6 @@
 
 /* Inicio de Media Queries para Header del Portafolio */
 @media screen and (max-width: 850px) {
-  .body {
-    background-color: #e0a04d;
-  }
-
   .header__logo {
     min-width: 260px;
     width: 260px;
@@ -174,10 +168,6 @@
 
 /* Inicio de Media Queries para Header del Portafolio */
 @media only screen and (max-width: 650px) {
-  .body {
-    background-color: #90d9f0;
-  }
-
   .header {
     display: flex;
     flex-direction: column;
