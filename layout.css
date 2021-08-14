@@ -1,0 +1,97 @@
+/* Estilos para toda la Página */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Fin Todo */
+
+/* Estilos para el body */
+
+body {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
+  margin: 0px;
+}
+
+/* Fin body */
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  line-height: 3rem;
+  outline: 1px solid chartreuse;
+}
+
+.header__logo {
+  line-height: 3rem;
+  min-width: 285px;
+  outline: 1px solid rgb(255, 174, 0);
+  text-align: center;
+  width: 285px;
+}
+
+.header__menu {
+  line-height: 3rem;
+  outline: 1px solid rgb(255, 174, 0);
+  text-align: center;
+  width: 500px;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: space-evenly;
+  line-height: 3rem;
+  outline: 1px solid rgb(15, 115, 247);
+}
+
+.content__cover-page {
+  line-height: 3rem;
+  outline: 1px solid rgb(0, 166, 255);
+  text-align: center;
+  width: 200px;
+}
+
+.content__about-me {
+  line-height: 3rem;
+  outline: 1px solid rgb(0, 166, 255);
+  text-align: center;
+  width: 200px;
+}
+
+.content__services {
+  line-height: 3rem;
+  outline: 1px solid rgb(0, 166, 255);
+  text-align: center;
+  width: 200px;
+}
+
+.content__works {
+  line-height: 3rem;
+  outline: 1px solid rgb(0, 166, 255);
+  text-align: center;
+  width: 200px;
+}
+
+.content__contact {
+  line-height: 3rem;
+  outline: 1px solid rgb(0, 166, 255);
+  text-align: center;
+  width: 200px;
+}
+
+.footer {
+  height: 50px;
+  line-height: 3rem;
+  outline: 1px solid rgb(247, 69, 15);
+  text-align: center;
+}
