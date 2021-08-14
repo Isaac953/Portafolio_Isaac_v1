@@ -35,9 +35,7 @@
   flex-direction: column;
   height: 80px;
   justify-content: center;
-  line-height: 3rem;
   min-width: 285px;
-  outline: 1px solid rgb(255, 174, 0);
   text-align: center;
   width: 285px;
 }
@@ -56,10 +54,41 @@
 }
 
 .header__menu {
-  line-height: 3rem;
-  outline: 1px solid rgb(255, 174, 0);
+  background-color: #055052;
+  display: flex;
+  height: 80px;
+  justify-content: flex-end;
   text-align: center;
-  width: 500px;
+  width: 100%;
+}
+
+.header__menu--list {
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+
+.header__menu--item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 110px;
+}
+
+.header__menu--link {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  height: 40px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.header__menu--link:hover {
+  background-color: #1eae98;
+  border-radius: 7px;
 }
 
 .content {
@@ -132,6 +161,15 @@
   .header__logo--icon {
     font-size: 33px;
   }
+
+  .header__menu--item {
+    width: 95px;
+  }
+
+  .header__menu--link {
+    font-size: 16px;
+    height: 38px;
+  }
 }
 
 /* Inicio de Media Queries para Header del Portafolio */
@@ -160,7 +198,17 @@
   }
 
   .header__menu {
+    display: flex;
     height: 50px;
-    width: 100%;
+    justify-content: center;
+  }
+
+  .header__menu--item {
+    width: 110px;
+  }
+
+  .header__menu--link {
+    font-size: 14px;
+    height: 30px;
   }
 }
