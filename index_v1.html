@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Isaac Arias - Full Stack Developer</title>
     <link rel="shortcut icon" type="image/x-icon" href="portfolio.png" />
+
     <!-- Inicio de Inclusión de las hojas de Estilo y la fuente de la Página -->
     <link rel="stylesheet" href="style.css" />
     <link
@@ -13,6 +14,7 @@
       rel="stylesheet"
     />
     <!-- Fin de Inclusión de las hojas de Estilo y la fuente de la Página -->
+
     <!-- Inicio de inclusión los iconos FontAwesome en la Página -->
     <script
       src="https://kit.fontawesome.com/7932647ae3.js"
@@ -20,22 +22,40 @@
     ></script>
     <!-- Fin de inclusión los iconos FontAwesome en la Página -->
   </head>
-  <body class="body">
+  <body>
     <header class="header">
-      <section class="header__logo">
+      <div class="header__logo">
         <p tabindex="0" class="header__logo--title">
           <i class="fa fa-solid fa-code header__logo--icon"></i> Isaac Arias
         </p>
-      </section>
-      <section class="header__menu">Menu</section>
+      </div>
+      <div class="header__menu">
+        <ul class="header__menu--list">
+          <li class="header__menu--item">
+            <a href="#" class="header__menu--link">Sobre mí</a>
+          </li>
+          <li class="header__menu--item">
+            <a href="#" class="header__menu--link">Servicios</a>
+          </li>
+          <li class="header__menu--item">
+            <a href="#" class="header__menu--link">Trabajos</a>
+          </li>
+          <li class="header__menu--item">
+            <a href="#" class="header__menu--link">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </header>
-    <main class="content">
-      <section class="content__cover-page">Portada de presentacion</section>
-      <section class="content__about-me">Sobre Mi</section>
-      <section class="content__services">Servicios</section>
-      <section class="content__works">Proyectos Realizados</section>
-      <section class="content__contact">Contacto</section>
+    <main class="portfolio-container">
+      <section class="cover__container">
+        <img class="cover__container--img" src="me.jpg" alt="Isaac" />
+        <div class="cover__container--title">
+          <p class="cover__container--p_am">Hola Soy</p>
+          <h1 class="cover__container--p_name">Isaac Arias</h1>
+          <h2 class="cover__container--p_rank">Full Stack Developer</h2>
+        </div>
+      </section>
     </main>
-    <footer class="footer">Footer</footer>
+    <footer></footer>
   </body>
 </html>

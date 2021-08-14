@@ -95,3 +95,30 @@ body {
   outline: 1px solid rgb(247, 69, 15);
   text-align: center;
 }
+
+/* Inicio de Media Queries para Header del Portafolio */
+@media screen and (max-width: 850px) {
+}
+
+/* Inicio de Media Queries para Header del Portafolio */
+@media only screen and (max-width: 650px) {
+  body {
+    background-color: #90d9f0;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .header__logo {
+    height: 50px;
+    width: 100%;
+  }
+
+  .header__menu {
+    height: 50px;
+    width: 100%;
+  }
+}
