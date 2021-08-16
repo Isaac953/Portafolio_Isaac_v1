@@ -109,10 +109,10 @@
 
 /* Cover Page Styles */
 .content__cover-page {
-  align-items: flex-end;
+  align-items: center;
   background-color: #eeeeee;
   display: flex;
-  height: 230px;
+  height: 225px;
   justify-content: center;
   width: 100%;
 }
@@ -121,17 +121,17 @@
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   height: 200px;
-  margin: 8px;
-  width: 200px;
+  margin: 10px;
 }
 
 .cover__page--title {
   display: flex;
   flex-direction: column;
-  height: 200px;
-  justify-content: center;
-  margin: 8px;
-  width: 600px;
+  height: 180px;
+  justify-content: space-between;
+  margin: 10px;
+  min-width: 650px;
+  width: 650px;
 }
 
 .cover__page--me {
@@ -139,7 +139,7 @@
   display: flex;
   font-size: 28px;
   font-weight: 200;
-  height: 45px;
+  height: 42px;
   margin: 0px;
   padding-left: 10px;
 }
@@ -149,7 +149,7 @@
   display: flex;
   font-size: 43px;
   font-weight: 900;
-  height: 60px;
+  height: 52px;
   margin: 0px;
   padding-left: 10px;
 }
@@ -230,6 +230,35 @@
     font-size: 16px;
     height: 38px;
   }
+
+  .content__cover-page {
+    height: 195px;
+  }
+
+  .cover__page--img {
+    height: 180px;
+  }
+
+  .cover__page--title {
+    height: 160px;
+    min-width: 450px;
+    width: 450px;
+  }
+
+  .cover__page--me {
+    font-size: 22px;
+    height: 30px;
+  }
+
+  .cover__page--name {
+    font-size: 36px;
+    height: 45px;
+  }
+
+  .cover__page--rank {
+    font-size: 24px;
+    height: 38px;
+  }
 }
 
 /* Inicio de Media Queries para Header del Portafolio */
@@ -274,4 +303,40 @@
     font-size: 12px;
     height: 30px;
   }
+  /* Estilos para el cover */
+  .content__cover-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    min-width: 370px;
+    height: 315px;
+  }
+  .cover__page--img {
+    height: 155px;
+    margin: 0px;
+  }
+
+  .cover__page--title {
+    height: 130px;
+    margin: 0px;
+    min-width: 360px;
+    width: 360px;
+  }
+
+  .cover__page--me {
+    font-size: 18px;
+    height: 28px;
+  }
+
+  .cover__page--name {
+    font-size: 30px;
+    height: 42px;
+  }
+
+  .cover__page--rank {
+    font-size: 20px;
+    height: 36px;
+  }
+  /* Fin cover */
 }

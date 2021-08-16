@@ -22,35 +22,29 @@
 
 /* Cover Page Styles */
 .content__cover-page {
-  align-items: flex-end;
+  align-items: center;
   background-color: #eeeeee;
   display: flex;
   height: 225px;
   justify-content: center;
   width: 100%;
-  border-style: solid;
-  border-color: maroon;
 }
 
 .cover__page--img {
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   height: 200px;
-  margin: 8px;
-  border-style: solid;
-  border-color: maroon;
+  margin: 10px;
 }
 
 .cover__page--title {
   display: flex;
   flex-direction: column;
-  height: 200px;
-  justify-content: space-around;
-  margin: 8px;
+  height: 180px;
+  justify-content: space-between;
+  margin: 10px;
   min-width: 650px;
   width: 650px;
-  border-style: solid;
-  border-color: maroon;
 }
 
 .cover__page--me {
@@ -91,7 +85,7 @@
 /* Inicio de Media Queries para Header del Portafolio */
 @media screen and (max-width: 850px) {
   .content__cover-page {
-    height: 205px;
+    height: 195px;
   }
 
   .cover__page--img {
@@ -99,7 +93,7 @@
   }
 
   .cover__page--title {
-    height: 180px;
+    height: 160px;
     min-width: 450px;
     width: 450px;
   }
@@ -127,17 +121,17 @@
     align-items: center;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     min-width: 370px;
-    height: 365px;
+    height: 305px;
   }
   .cover__page--img {
-    height: 160px;
+    height: 155px;
     margin: 0px;
   }
 
   .cover__page--title {
-    height: 160px;
+    height: 130px;
     margin: 0px;
     min-width: 360px;
     width: 360px;
