@@ -66,6 +66,8 @@
   align-items: center;
   display: flex;
   list-style: none;
+  justify-content: center;
+  padding: 0 5px;
 }
 
 .header__menu--item {
@@ -90,6 +92,7 @@
   background-color: #1eae98;
   border-radius: 7px;
 }
+
 /* End Header Styles */
 
 /* Main content Styles */
@@ -233,6 +236,7 @@
     display: flex;
     flex-direction: column;
     height: 100px;
+    width: 100%;
   }
 
   .header__logo {
@@ -250,12 +254,14 @@
 
   .header__menu {
     display: flex;
+    flex-direction: column;
     height: 50px;
     justify-content: center;
   }
 
   .header__menu--item {
     width: 110px;
+    min-width: 110px;
   }
 
   .header__menu--link {
