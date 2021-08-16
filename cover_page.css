@@ -128,6 +128,7 @@
     align-items: center;
     display: flex;
     flex-direction: column-reverse;
+    min-width: 370px;
     height: 365px;
   }
   .cover__page--img {
@@ -136,8 +137,8 @@
 
   .cover__page--title {
     height: 160px;
-    min-width: 400px;
-    width: 400px;
+    min-width: 350px;
+    width: 350px;
   }
 
   .cover__page--me {
