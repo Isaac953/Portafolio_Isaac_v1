@@ -1,4 +1,4 @@
-/* Estilos para toda la Página */
+/* Universal Styles */
 
 * {
   box-sizing: border-box;
@@ -6,9 +6,9 @@
   padding: 0px;
 }
 
-/* Fin Todo */
+/* End Universal Styles */
 
-/* Estilos para el body */
+/* Body Styles */
 
 .body {
   background-color: #eeeeee;
@@ -18,7 +18,9 @@
   margin: 0px;
 }
 
-/* Fin body */
+/* End Body Styles */
+
+/* Header Styles */
 
 .header {
   align-items: center;
@@ -88,6 +90,7 @@
   background-color: #1eae98;
   border-radius: 7px;
 }
+/* End Header Styles */
 
 /* Inicio de Media Queries para Header del Portafolio */
 @media screen and (max-width: 850px) {

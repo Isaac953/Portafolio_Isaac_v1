@@ -1,86 +1,86 @@
-/* Estilos para toda la Página */
+/* Universal Styles */
 
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-/* Fin Todo */
+/* End Universal Styles */
 
-/* Estilos para el body */
+/* Body Styles */
 
-body {
+.body {
   background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
   font-family: "Mulish", sans-serif;
   margin: 0px;
 }
 
-/* Fin body */
+/* End Body Styles */
 
-/* Estilos para el cover */
-.cover__container {
+/* Cover Page Styles */
+.content__cover-page {
   align-items: flex-end;
   background-color: #eeeeee;
   display: flex;
-  height: 270px;
+  height: 230px;
   justify-content: center;
   width: 100%;
 }
 
-.cover__container--img {
+.cover__page--img {
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   height: 200px;
-  margin-bottom: 15px;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin: 8px;
   width: 200px;
 }
 
-.cover__container--title {
+.cover__page--title {
   display: flex;
   flex-direction: column;
   height: 200px;
   justify-content: center;
-  margin-bottom: 15px;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin: 8px;
   width: 600px;
 }
 
-.cover__container--p_am {
+.cover__page--me {
   align-items: center;
   display: flex;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 200;
   height: 45px;
   margin: 0px;
-  margin-left: 8px;
+  padding-left: 10px;
 }
 
-.cover__container--p_name {
+.cover__page--name {
   align-items: center;
   display: flex;
-  font-size: 40px;
+  font-size: 43px;
   font-weight: 900;
   height: 60px;
   margin: 0px;
-  margin-left: 8px;
+  padding-left: 10px;
 }
 
-.cover__container--p_rank {
+.cover__page--rank {
   align-items: center;
   background-color: #005a8d;
   color: white;
   display: flex;
   justify-content: flex-end;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   height: 50px;
   margin: 0px;
-  padding-right: 8px;
+  padding-right: 10px;
   text-shadow: 2px 2px 4px #dddddd;
 }
-/* Fin cover */
+/* End Cover Page Styles */
 
 /* Inicio de Media Queries para Header del Portafolio */
 @media only screen and (max-width: 650px) {

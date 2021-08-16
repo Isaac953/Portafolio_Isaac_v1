@@ -1,4 +1,4 @@
-/* Estilos para toda la Página */
+/* Universal Styles */
 
 * {
   box-sizing: border-box;
@@ -6,9 +6,9 @@
   padding: 0px;
 }
 
-/* Fin Todo */
+/* End Universal Styles */
 
-/* Estilos para el body */
+/* Body Styles */
 
 .body {
   background-color: #eeeeee;
@@ -18,7 +18,9 @@
   margin: 0px;
 }
 
-/* Fin body */
+/* End Body Styles */
+
+/* Header Styles */
 
 .header {
   align-items: center;
@@ -88,23 +90,80 @@
   background-color: #1eae98;
   border-radius: 7px;
 }
+/* End Header Styles */
 
+/* Main content Styles */
 .content {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 700px;
   justify-content: space-evenly;
   line-height: 3rem;
   outline: 1px solid rgb(15, 115, 247);
 }
 
+/* Cover Page Styles */
 .content__cover-page {
-  line-height: 3rem;
-  outline: 1px solid rgb(0, 166, 255);
-  text-align: center;
+  align-items: flex-end;
+  background-color: #eeeeee;
+  display: flex;
+  height: 230px;
+  justify-content: center;
+  width: 100%;
+}
+
+.cover__page--img {
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  height: 200px;
+  margin: 8px;
   width: 200px;
 }
+
+.cover__page--title {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  margin: 8px;
+  width: 600px;
+}
+
+.cover__page--me {
+  align-items: center;
+  display: flex;
+  font-size: 28px;
+  font-weight: 200;
+  height: 45px;
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.cover__page--name {
+  align-items: center;
+  display: flex;
+  font-size: 43px;
+  font-weight: 900;
+  height: 60px;
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.cover__page--rank {
+  align-items: center;
+  background-color: #005a8d;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 32px;
+  font-weight: 700;
+  height: 50px;
+  margin: 0px;
+  padding-right: 10px;
+  text-shadow: 2px 2px 4px #dddddd;
+}
+/* End Cover Page Styles */
 
 .content__about-me {
   line-height: 3rem;
@@ -133,6 +192,8 @@
   text-align: center;
   width: 200px;
 }
+
+/* End Main content Styles */
 
 .footer {
   height: 50px;
