@@ -25,9 +25,12 @@
   align-items: flex-end;
   background-color: #eeeeee;
   display: flex;
-  height: 230px;
+  height: 225px;
   justify-content: center;
   width: 100%;
+
+  border-style: solid;
+  border-color: maroon;
 }
 
 .cover__page--img {
@@ -35,16 +38,19 @@
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   height: 200px;
   margin: 8px;
-  width: 200px;
+  border-style: solid;
+  border-color: maroon;
 }
 
 .cover__page--title {
   display: flex;
   flex-direction: column;
   height: 200px;
-  justify-content: center;
+  justify-content: space-around;
   margin: 8px;
-  width: 600px;
+  width: 650px;
+  border-style: solid;
+  border-color: maroon;
 }
 
 .cover__page--me {
@@ -52,7 +58,7 @@
   display: flex;
   font-size: 28px;
   font-weight: 200;
-  height: 45px;
+  height: 42px;
   margin: 0px;
   padding-left: 10px;
 }
@@ -62,7 +68,7 @@
   display: flex;
   font-size: 43px;
   font-weight: 900;
-  height: 60px;
+  height: 52px;
   margin: 0px;
   padding-left: 10px;
 }
@@ -83,41 +89,66 @@
 /* End Cover Page Styles */
 
 /* Inicio de Media Queries para Header del Portafolio */
+@media screen and (max-width: 850px) {
+  .content__cover-page {
+    height: 205px;
+  }
+
+  .cover__page--img {
+    height: 180px;
+  }
+
+  .cover__page--title {
+    height: 180px;
+    width: 450px;
+  }
+
+  .cover__page--me {
+    font-size: 22px;
+    height: 30px;
+  }
+
+  .cover__page--name {
+    font-size: 36px;
+    height: 45px;
+  }
+
+  .cover__page--rank {
+    font-size: 24px;
+    height: 38px;
+  }
+}
+
+/* Inicio de Media Queries para Header del Portafolio */
 @media only screen and (max-width: 650px) {
   /* Estilos para el cover */
-  .cover__container {
+  .content__cover-page {
     align-items: center;
     display: flex;
     flex-direction: column-reverse;
-    height: 335px;
-    justify-content: flex-start;
-    width: 100%;
+    height: 385px;
   }
-  .cover__container--img {
+  .cover__page--img {
     height: 160px;
-    margin-bottom: 15px;
-    width: 160px;
   }
 
-  .cover__container--title {
-    height: 115px;
-    width: 335px;
+  .cover__page--title {
+    height: 160px;
   }
 
-  .cover__container--p_am {
-    font-size: 16px;
-    height: 25px;
+  .cover__page--me {
+    font-size: 20px;
+    height: 28px;
   }
 
-  .cover__container--p_name {
-    font-size: 28px;
-    height: 40px;
+  .cover__page--name {
+    font-size: 34px;
+    height: 42px;
   }
 
-  .cover__container--p_rank {
-    font-size: 18px;
-    height: 35px;
-    width: 100%;
+  .cover__page--rank {
+    font-size: 22px;
+    height: 36px;
   }
   /* Fin cover */
 }
