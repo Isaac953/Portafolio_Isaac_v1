@@ -30,14 +30,14 @@
   width: 100%;
 }
 
-.cover__page--img {
+.cover-page__img {
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   height: 200px;
   margin: 10px;
 }
 
-.cover__page--title {
+.cover-page__title {
   display: flex;
   flex-direction: column;
   height: 180px;
@@ -47,7 +47,14 @@
   width: 650px;
 }
 
-.cover__page--me {
+.cover-page__presentation {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: center;
+}
+
+.cover-page__presentation--me {
   align-items: center;
   display: flex;
   font-size: 28px;
@@ -57,7 +64,7 @@
   padding-left: 10px;
 }
 
-.cover__page--name {
+.cover-page__presentation--name {
   align-items: center;
   display: flex;
   font-size: 43px;
@@ -67,7 +74,7 @@
   padding-left: 10px;
 }
 
-.cover__page--rank {
+.cover-page__rank {
   align-items: center;
   background-color: #005a8d;
   color: white;
@@ -88,27 +95,31 @@
     height: 195px;
   }
 
-  .cover__page--img {
+  .cover-page__img {
     height: 180px;
   }
 
-  .cover__page--title {
-    height: 160px;
+  .cover-page__title {
+    height: 150px;
     min-width: 450px;
     width: 450px;
   }
 
-  .cover__page--me {
+  .cover-page__presentation {
+    height: 100px;
+  }
+
+  .cover-page__presentation--me {
     font-size: 22px;
     height: 30px;
   }
 
-  .cover__page--name {
+  .cover-page__presentation--name {
     font-size: 36px;
     height: 45px;
   }
 
-  .cover__page--rank {
+  .cover-page__rank {
     font-size: 24px;
     height: 38px;
   }
@@ -125,29 +136,33 @@
     min-width: 370px;
     height: 305px;
   }
-  .cover__page--img {
+  .cover-page__img {
     height: 155px;
     margin: 0px;
   }
 
-  .cover__page--title {
-    height: 130px;
+  .cover-page__title {
+    height: 135px;
     margin: 0px;
     min-width: 360px;
     width: 360px;
   }
 
-  .cover__page--me {
+  .cover-page__presentation {
+    height: 90px;
+  }
+
+  .cover-page__presentation--me {
     font-size: 18px;
     height: 28px;
   }
 
-  .cover__page--name {
+  .cover-page__presentation--name {
     font-size: 30px;
     height: 42px;
   }
 
-  .cover__page--rank {
+  .cover-page__rank {
     font-size: 20px;
     height: 36px;
   }
