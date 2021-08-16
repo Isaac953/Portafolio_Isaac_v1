@@ -28,7 +28,6 @@
   height: 225px;
   justify-content: center;
   width: 100%;
-
   border-style: solid;
   border-color: maroon;
 }
@@ -128,31 +127,34 @@
     align-items: center;
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-around;
     min-width: 370px;
     height: 365px;
   }
   .cover__page--img {
     height: 160px;
+    margin: 0px;
   }
 
   .cover__page--title {
     height: 160px;
-    min-width: 350px;
-    width: 350px;
+    margin: 0px;
+    min-width: 360px;
+    width: 360px;
   }
 
   .cover__page--me {
-    font-size: 20px;
+    font-size: 18px;
     height: 28px;
   }
 
   .cover__page--name {
-    font-size: 34px;
+    font-size: 30px;
     height: 42px;
   }
 
   .cover__page--rank {
-    font-size: 22px;
+    font-size: 20px;
     height: 36px;
   }
   /* Fin cover */
