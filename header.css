@@ -151,8 +151,10 @@
   }
 
   .header__menu--list {
-    min-width: 340px;
-    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    padding: 0px;
   }
 
   .header__menu--item {
@@ -161,7 +163,7 @@
   }
 
   .header__menu--link {
-    font-size: 12px;
+    font-size: 14px;
     height: 30px;
   }
 }
