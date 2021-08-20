@@ -1,0 +1,56 @@
+/* Universal Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* End Universal Styles */
+
+/* Body Styles */
+
+.body {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
+  margin: 0px;
+}
+
+.content__about-me {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-color: blue;
+  border-style: solid;
+  height: 250px;
+  padding: 10px;
+  width: 100%;
+}
+
+.about-me__title {
+  font-size: 28px;
+  width: 850px;
+  min-width: 850px;
+}
+
+.about-me__p {
+  font-size: 18px;
+  border-color: darkorange;
+  border-style: solid;
+  text-align: justify;
+  width: 850px;
+  min-width: 850px;
+}
+
+/* End Body Styles */
+
+/* Inicio de Media Queries para Header del Portafolio */
+@media screen and (max-width: 850px) {
+}
+
+/* Inicio de Media Queries para Header del Portafolio */
+@media only screen and (max-width: 650px) {
+}
