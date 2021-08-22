@@ -19,38 +19,74 @@
 }
 
 .content__about-me {
+  background-color: #025955;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-color: blue;
   border-style: solid;
-  height: 250px;
+  height: 210px;
   padding: 10px;
   width: 100%;
 }
 
 .about-me__title {
   font-size: 28px;
+  font-weight: 700;
   width: 850px;
   min-width: 850px;
+  padding: 0px 5px;
+  color: white;
 }
 
 .about-me__p {
+  color: white;
   font-size: 18px;
   border-color: darkorange;
   border-style: solid;
   text-align: justify;
   width: 850px;
   min-width: 850px;
+  padding: 0px 10px;
 }
 
 /* End Body Styles */
 
 /* Inicio de Media Queries para Header del Portafolio */
 @media screen and (max-width: 850px) {
+  .content__about-me {
+    height: 230px;
+  }
+
+  .about-me__title {
+    font-size: 28px;
+    width: 630px;
+    min-width: 630px;
+  }
+
+  .about-me__p {
+    font-size: 18px;
+    width: 630px;
+    min-width: 630px;
+  }
 }
 
 /* Inicio de Media Queries para Header del Portafolio */
 @media only screen and (max-width: 650px) {
+  .content__about-me {
+    height: 325px;
+  }
+
+  .about-me__title {
+    font-size: 28px;
+    width: 360px;
+    min-width: 360px;
+  }
+
+  .about-me__p {
+    font-size: 18px;
+    width: 360px;
+    min-width: 360px;
+  }
 }
