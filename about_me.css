@@ -29,17 +29,20 @@
 
 .about-me__card {
   border-radius: 20px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #284e78;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #289672;
+  background-image: url(assets/technology_img.jpg);
   width: 850px;
   min-width: 850px;
   height: 300px;
 }
 
-.about-me__title {
+.about-me__card-title {
   font-size: 28px;
   font-weight: 700;
   width: 850px;
@@ -48,7 +51,7 @@
   color: white;
 }
 
-.about-me__p {
+.about-me__card-p {
   color: white;
   font-size: 18px;
   text-align: justify;
@@ -64,17 +67,17 @@
   .about-me__card {
     width: 630px;
     min-width: 630px;
-    height: 350px;
+    height: 320px;
   }
 
-  .about-me__title {
-    font-size: 28px;
+  .about-me__card-title {
+    font-size: 26px;
     width: 630px;
     min-width: 630px;
   }
 
-  .about-me__p {
-    font-size: 18px;
+  .about-me__card-p {
+    font-size: 16px;
     width: 630px;
     min-width: 630px;
   }
@@ -85,17 +88,17 @@
   .about-me__card {
     width: 360px;
     min-width: 360px;
-    height: 550px;
+    height: 385px;
   }
 
-  .about-me__title {
-    font-size: 28px;
+  .about-me__card-title {
+    font-size: 24px;
     width: 360px;
     min-width: 360px;
   }
 
-  .about-me__p {
-    font-size: 18px;
+  .about-me__card-p {
+    font-size: 14px;
     width: 360px;
     min-width: 360px;
   }
