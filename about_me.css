@@ -40,6 +40,19 @@
   width: 850px;
   min-width: 850px;
   height: 300px;
+  position: relative;
+}
+
+.about-me__card::before {
+  content: "";
+  border-radius: 20px;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .about-me__card-title {
@@ -49,6 +62,7 @@
   min-width: 850px;
   padding: 0px 15px;
   color: white;
+  position: relative;
 }
 
 .about-me__card-p {
@@ -58,6 +72,7 @@
   width: 850px;
   min-width: 850px;
   padding: 8px 15px;
+  position: relative;
 }
 
 /* End Body Styles */
