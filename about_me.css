@@ -11,7 +11,7 @@
 /* Body Styles */
 
 .body {
-  background-color: #eeeeee;
+  background-color: #efefef;
   display: flex;
   flex-direction: column;
   font-family: "Mulish", sans-serif;
@@ -22,57 +22,57 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 700px;
   justify-content: space-between;
   width: 100%;
-  height: 700px;
 }
 
 .about-me__card {
+  align-items: center;
+  background-image: url("assets/technology_img.jpg");
+  border-color: #284e78;
   border-radius: 20px;
   border-style: solid;
   border-width: medium;
-  border-color: #284e78;
-  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-image: url(assets/technology_img.jpg);
-  width: 850px;
-  min-width: 850px;
   height: 300px;
+  justify-content: space-between;
+  min-width: 850px;
   position: relative;
+  width: 850px;
 }
 
 .about-me__card::before {
-  content: "";
-  border-radius: 20px;
-  position: absolute;
   background-color: #000;
-  opacity: 0.2;
-  top: 0;
+  border-radius: 20px;
   bottom: 0;
+  content: "";
   left: 0;
+  opacity: 0.2;
+  position: absolute;
   right: 0;
+  top: 0;
 }
 
 .about-me__card-title {
+  color: white;
   font-size: 28px;
   font-weight: 700;
-  width: 850px;
   min-width: 850px;
   padding: 0px 15px;
-  color: white;
   position: relative;
+  width: 850px;
 }
 
 .about-me__card-p {
   color: white;
   font-size: 18px;
-  text-align: justify;
-  width: 850px;
   min-width: 850px;
   padding: 8px 15px;
   position: relative;
+  text-align: justify;
+  width: 850px;
 }
 
 /* End Body Styles */
@@ -80,41 +80,41 @@
 /* Inicio de Media Queries para Header del Portafolio */
 @media screen and (max-width: 850px) {
   .about-me__card {
-    width: 630px;
-    min-width: 630px;
     height: 320px;
+    min-width: 630px;
+    width: 630px;
   }
 
   .about-me__card-title {
     font-size: 26px;
-    width: 630px;
     min-width: 630px;
+    width: 630px;
   }
 
   .about-me__card-p {
     font-size: 16px;
-    width: 630px;
     min-width: 630px;
+    width: 630px;
   }
 }
 
 /* Inicio de Media Queries para Header del Portafolio */
 @media only screen and (max-width: 650px) {
   .about-me__card {
-    width: 360px;
-    min-width: 360px;
     height: 385px;
+    min-width: 360px;
+    width: 360px;
   }
 
   .about-me__card-title {
     font-size: 24px;
-    width: 360px;
     min-width: 360px;
+    width: 360px;
   }
 
   .about-me__card-p {
     font-size: 14px;
-    width: 360px;
     min-width: 360px;
+    width: 360px;
   }
 }

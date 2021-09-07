@@ -1,4 +1,4 @@
-/* Universal Styles */
+/* Start General Styles */
 
 * {
   box-sizing: border-box;
@@ -6,24 +6,21 @@
   padding: 0px;
 }
 
-/* End Universal Styles */
-
-/* Body Styles */
-
 .body {
-  background-color: #eeeeee;
+  background-color: #efefef;
   display: flex;
   flex-direction: column;
   font-family: "Mulish", sans-serif;
   margin: 0px;
 }
 
-/* End Body Styles */
+/* End General Styles */
 
-/* Cover Page Styles */
+/* Start Component 2 - Cover Page Styles */
+
 .content__cover-page {
   align-items: center;
-  background-color: #eeeeee;
+  background-color: #efefef;
   display: flex;
   height: 225px;
   justify-content: center;
@@ -87,10 +84,11 @@
   padding-right: 10px;
   text-shadow: 2px 2px 4px #dddddd;
 }
-/* End Cover Page Styles */
+/* End Component 2 - Cover Page Styles */
 
-/* Inicio de Media Queries para Header del Portafolio */
+/* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
+  /* Start Component 2 - Cover Page Styles */
   .content__cover-page {
     height: 195px;
   }
@@ -123,18 +121,20 @@
     font-size: 24px;
     height: 38px;
   }
+  /* End Component 2 - Cover Page Styles */
 }
+/* End Media Queries Screems 850px */
 
-/* Inicio de Media Queries para Header del Portafolio */
+/* Start Media Queries Screems 650px */
 @media only screen and (max-width: 650px) {
-  /* Estilos para el cover */
+  /* Start Component 2 - Cover Page Styles */
   .content__cover-page {
     align-items: center;
     display: flex;
     flex-direction: column-reverse;
+    height: 305px;
     justify-content: space-between;
     min-width: 370px;
-    height: 305px;
   }
   .cover-page__img {
     height: 155px;
@@ -166,5 +166,6 @@
     font-size: 20px;
     height: 36px;
   }
-  /* Fin cover */
+  /* End Component 2 - Cover Page Styles */
 }
+/* End Media Queries Screems 650px */

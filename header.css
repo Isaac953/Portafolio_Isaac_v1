@@ -1,4 +1,4 @@
-/* Universal Styles */
+/*Start General Styles */
 
 * {
   box-sizing: border-box;
@@ -6,21 +6,17 @@
   padding: 0px;
 }
 
-/* End Universal Styles */
-
-/* Body Styles */
-
 .body {
-  background-color: #aaaaaa;
+  background-color: #efefef;
   display: flex;
   flex-direction: column;
   font-family: "Mulish", sans-serif;
   margin: 0px;
 }
 
-/* End Body Styles */
+/*End General Styles */
 
-/* Header Styles */
+/* Start Component 1 - Header Styles */
 
 .header {
   align-items: center;
@@ -92,10 +88,11 @@
   background-color: #e98606;
   border-radius: 7px;
 }
-/* End Header Styles */
+/* End Component 1 - Header Styles */
 
-/* Inicio de Media Queries para Header del Portafolio */
+/* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
+  /* Start Component 1 - Header Styles */
   .header__logo {
     min-width: 260px;
     width: 260px;
@@ -118,10 +115,13 @@
     font-size: 16px;
     height: 38px;
   }
+  /* End Component 1 - Header Styles */
 }
+/* End Media Queries Screems 850px */
 
-/* Inicio de Media Queries para Header del Portafolio */
+/* Start Media Queries Screems 650px */
 @media only screen and (max-width: 650px) {
+  /* End Component 1 - Header Styles */
   .header {
     display: flex;
     flex-direction: column;
@@ -164,4 +164,6 @@
     font-size: 14px;
     height: 30px;
   }
+  /* End Component 1 - Header Styles */
 }
+/* End Media Queries Screems 850px */
