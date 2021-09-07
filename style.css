@@ -11,7 +11,7 @@
 /* Body Styles */
 
 .body {
-  background-color: #eeeeee;
+  background-color: #aaaaaa;
   display: flex;
   flex-direction: column;
   font-family: "Mulish", sans-serif;
@@ -24,7 +24,7 @@
 
 .header {
   align-items: center;
-  background-color: #055052;
+  background-color: #0e7608;
   display: flex;
   height: 80px;
   justify-content: space-between;
@@ -32,7 +32,6 @@
 }
 
 .header__logo {
-  background-color: #132c33;
   display: flex;
   flex-direction: column;
   height: 80px;
@@ -51,12 +50,11 @@
 }
 
 .header__logo--icon {
-  color: #4aa96c;
+  color: #f3b712;
   font-size: 37px;
 }
 
 .header__menu {
-  background-color: #055052;
   display: flex;
   height: 80px;
   justify-content: flex-end;
@@ -91,7 +89,7 @@
 }
 
 .header__menu--link:hover {
-  background-color: #1eae98;
+  background-color: #e98606;
   border-radius: 7px;
 }
 /* End Header Styles */
