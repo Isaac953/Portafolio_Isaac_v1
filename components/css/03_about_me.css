@@ -29,7 +29,7 @@
 
 .about-me__card {
   align-items: center;
-  background-image: url("./assets/technology_img.jpg");
+  background-image: url("../../assets/technology_img.jpg");
   border-color: #284e78;
   border-radius: 20px;
   border-style: solid;
