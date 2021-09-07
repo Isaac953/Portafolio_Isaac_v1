@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cover Page</title>
-    <link rel="shortcut icon" type="image/x-icon" href="portfolio.png" />
+    <title>Layout Portafolio 2.0</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/portfolio_icon.png"
+    />
 
     <!-- Inicio de Inclusión de las hojas de Estilo y la fuente de la Página -->
-    <link rel="stylesheet" href="cover_page.css" />
+    <link rel="stylesheet" href="/components/css/04_layout.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,900;1,700&display=swap"
       rel="stylesheet"
@@ -22,16 +27,18 @@
     ></script>
     <!-- Fin de inclusión los iconos FontAwesome en la Página -->
   </head>
-  <body class="body">
-    <section class="content__cover-page">
-      <img class="cover-page__img" src="me.jpg" alt="Isaac" />
-      <div class="cover-page__title">
-        <div class="cover-page__presentation">
-          <p class="cover-page__presentation--me">Hola Soy</p>
-          <h1 class="cover-page__presentation--name">Isaac Arias</h1>
-        </div>
-        <h2 class="cover-page__rank">Full Stack Developer</h2>
-      </div>
-    </section>
+  <body>
+    <header class="header">
+      <section class="header__logo">Logo</section>
+      <section class="header__menu">Menu</section>
+    </header>
+    <main class="content">
+      <section class="content__cover-page">Portada de presentacion</section>
+      <section class="content__about-me">Sobre Mi</section>
+      <section class="content__services">Servicios</section>
+      <section class="content__works">Proyectos Realizados</section>
+      <section class="content__contact">Contacto</section>
+    </main>
+    <footer class="footer">Footer</footer>
   </body>
 </html>
