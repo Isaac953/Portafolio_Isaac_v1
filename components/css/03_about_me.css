@@ -1,14 +1,10 @@
-/* Universal Styles */
+/* Start General Styles */
 
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
-
-/* End Universal Styles */
-
-/* Body Styles */
 
 .body {
   background-color: #efefef;
@@ -17,6 +13,10 @@
   font-family: "Mulish", sans-serif;
   margin: 0px;
 }
+
+/* End General Styles */
+
+/* Start Component 3 - About me Styles */
 
 .content__about-me {
   align-items: center;
@@ -68,6 +68,7 @@
 .about-me__card-p {
   color: white;
   font-size: 18px;
+  line-height: 25px;
   min-width: 850px;
   padding: 8px 15px;
   position: relative;
@@ -75,10 +76,11 @@
   width: 850px;
 }
 
-/* End Body Styles */
+/* End Component 3 - About me Styles */
 
-/* Inicio de Media Queries para Header del Portafolio */
+/* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
+  /* Start Component 3 - About me Styles */
   .about-me__card {
     height: 320px;
     min-width: 630px;
@@ -93,13 +95,17 @@
 
   .about-me__card-p {
     font-size: 16px;
+    line-height: 20px;
     min-width: 630px;
     width: 630px;
   }
+  /* End Component 3 - About me Styles */
 }
+/* End Media Queries Screems 850px */
 
-/* Inicio de Media Queries para Header del Portafolio */
+/* Start Media Queries Screems 650px */
 @media only screen and (max-width: 650px) {
+  /* Start Component 3 - About me Styles */
   .about-me__card {
     height: 385px;
     min-width: 360px;
@@ -114,7 +120,10 @@
 
   .about-me__card-p {
     font-size: 14px;
+    line-height: 18px;
     min-width: 360px;
     width: 360px;
   }
+  /* End Component 3 - About me Styles */
 }
+/* End Media Queries Screems 650px */

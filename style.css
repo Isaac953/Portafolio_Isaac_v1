@@ -97,7 +97,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 1500px;
   justify-content: space-evenly;
   line-height: 3rem;
   outline: 1px solid rgb(15, 115, 247);
@@ -172,12 +172,67 @@
 
 /* End Component 2 - Cover Page Styles */
 
+/* Start Component 3 - About me Styles */
+
 .content__about-me {
-  line-height: 3rem;
-  outline: 1px solid rgb(0, 166, 255);
-  text-align: center;
-  width: 200px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: space-between;
+  width: 100%;
+  /* border-style: solid; */
 }
+
+.about-me__card {
+  align-items: center;
+  background-image: url("/assets/technology_img.jpg");
+  border-color: #284e78;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: medium;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+  min-width: 850px;
+  position: relative;
+  width: 850px;
+}
+
+.about-me__card::before {
+  background-color: #000;
+  border-radius: 20px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.about-me__card-title {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  min-width: 850px;
+  padding: 0px 15px;
+  position: relative;
+  width: 850px;
+}
+
+.about-me__card-p {
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  min-width: 850px;
+  padding: 8px 15px;
+  position: relative;
+  text-align: justify;
+  width: 850px;
+}
+/* End Component 3 - About me Styles */
 
 .content__services {
   line-height: 3rem;
@@ -270,6 +325,27 @@
     height: 38px;
   }
   /* End Component 2 - Cover Page Styles */
+
+  /* Start Component 3 - About me Styles */
+  .about-me__card {
+    height: 320px;
+    min-width: 630px;
+    width: 630px;
+  }
+
+  .about-me__card-title {
+    font-size: 26px;
+    min-width: 630px;
+    width: 630px;
+  }
+
+  .about-me__card-p {
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 630px;
+    width: 630px;
+  }
+  /* End Component 3 - About me Styles */
 }
 /* End Media Queries Screems 850px */
 
@@ -360,5 +436,26 @@
     height: 36px;
   }
   /* End Component 2 - Cover Page Styles */
+
+  /* Start Component 3 - About me Styles */
+  .about-me__card {
+    height: 385px;
+    min-width: 360px;
+    width: 360px;
+  }
+
+  .about-me__card-title {
+    font-size: 24px;
+    min-width: 360px;
+    width: 360px;
+  }
+
+  .about-me__card-p {
+    font-size: 14px;
+    line-height: 18px;
+    min-width: 360px;
+    width: 360px;
+  }
+  /* End Component 3 - About me Styles */
 }
 /* End Media Queries Screems 650px */
