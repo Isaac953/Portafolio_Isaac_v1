@@ -30,7 +30,7 @@
 
 .about-me__card {
   align-items: center;
-  background-image: url("./assets/technology_img.jpg");
+  background-image: url("../../assets/technology_img.jpg");
   border-color: #284e78;
   border-radius: 20px;
   border-style: solid;
@@ -89,8 +89,8 @@
 
 .buttons-card__component {
   align-items: center;
-  background-color: #007bff;
-  border-color: #026ee1;
+  background-color: #007596;
+  border-color: #01576e;
   border-radius: 10px;
   border-style: solid;
   color: white;
@@ -106,13 +106,13 @@
 }
 
 .buttons-card__component:hover {
-  background-color: #545b62;
-  border-color: #4e555b;
+  background-color: #ec8208;
+  border-color: #ce7005;
 }
 
 .buttons-card__home {
   align-items: center;
-  color: #ff2626;
+  color: #1321e9;
   display: flex;
   flex-direction: column;
   font-size: 24px;
