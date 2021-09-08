@@ -25,7 +25,7 @@
     <!-- Fin de inclusión los iconos FontAwesome en la Página -->
   </head>
   <body class="body">
-    <header class="header">
+    <header id="header" class="header">
       <section class="header__logo">
         <p tabindex="0" class="header__logo--title">
           <i class="fa fa-laptop header__logo--icon" aria-hidden="true"></i>
@@ -35,13 +35,13 @@
       <section class="header__menu">
         <ul class="header__menu--list">
           <li class="header__menu--item">
-            <a href="#" class="header__menu--link">Sobre mí</a>
+            <a href="#about-me" class="header__menu--link">Sobre mí</a>
           </li>
           <li class="header__menu--item">
             <a href="#" class="header__menu--link">Servicios</a>
           </li>
           <li class="header__menu--item">
-            <a href="#" class="header__menu--link">Trabajos</a>
+            <a href="#" class="header__menu--link">Proyectos</a>
           </li>
           <li class="header__menu--item">
             <a href="#" class="header__menu--link">Contacto</a>
@@ -50,7 +50,7 @@
       </section>
     </header>
     <main class="content">
-      <section class="content__cover-page">
+      <section id="cover-page" class="content__cover-page">
         <img
           class="cover-page__img"
           src="./assets/profile_me.jpg"
@@ -65,7 +65,7 @@
         </div>
       </section>
       <!-- <section class="content__about-me">Sobre Mi</section> -->
-      <section class="content__about-me">
+      <section id="about-me" class="content__about-me">
         <div class="about-me__card">
           <h1 class="about-me__card-title">Sobre Mí</h1>
           <p class="about-me__card-p">
@@ -90,8 +90,14 @@
             gráficos.
           </p>
         </div>
+        <div class="buttons-card">
+          <a href="#services" class="buttons-card__component">Servicios</a>
+          <a href="#header" class="buttons-card__home"
+            ><i class="fas fa-angle-double-up" aria-hidden="true"></i
+          ></a>
+        </div>
       </section>
-      <section class="content__services">Servicios</section>
+      <section id="services" class="content__services">Servicios</section>
       <section class="content__works">Proyectos Realizados</section>
       <section class="content__contact">Contacto</section>
     </main>

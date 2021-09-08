@@ -97,7 +97,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 1500px;
+  height: 1200px;
   justify-content: space-evenly;
   line-height: 3rem;
   outline: 1px solid rgb(15, 115, 247);
@@ -107,9 +107,10 @@
   align-items: center;
   background-color: #efefef;
   display: flex;
-  height: 225px;
+  height: 270px;
   justify-content: center;
   width: 100%;
+  /* border-style: solid; */
 }
 
 .cover-page__img {
@@ -178,8 +179,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 700px;
-  justify-content: space-between;
+  height: 475px;
+  justify-content: space-evenly;
   width: 100%;
   /* border-style: solid; */
 }
@@ -232,6 +233,51 @@
   text-align: justify;
   width: 850px;
 }
+
+.buttons-card {
+  align-items: center;
+  display: flex;
+  /* border-style: solid; */
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 130px;
+  height: 85px;
+}
+
+.buttons-card__component {
+  align-items: center;
+  background-color: #007bff;
+  border-color: #026ee1;
+  border-radius: 10px;
+  border-style: solid;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+  height: 35px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  width: 85px;
+}
+
+.buttons-card__component:hover {
+  background-color: #545b62;
+  border-color: #4e555b;
+}
+
+.buttons-card__home {
+  align-items: center;
+  color: #ff2626;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  height: 35px;
+  justify-content: center;
+  text-decoration: none;
+}
+
 /* End Component 3 - About me Styles */
 
 .content__services {
@@ -327,6 +373,11 @@
   /* End Component 2 - Cover Page Styles */
 
   /* Start Component 3 - About me Styles */
+
+  .content__about-me {
+    height: 450px;
+  }
+
   .about-me__card {
     height: 320px;
     min-width: 630px;
@@ -438,6 +489,11 @@
   /* End Component 2 - Cover Page Styles */
 
   /* Start Component 3 - About me Styles */
+
+  .content__about-me {
+    height: 510px;
+  }
+
   .about-me__card {
     height: 385px;
     min-width: 360px;
