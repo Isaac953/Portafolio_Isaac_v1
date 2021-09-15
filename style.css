@@ -20,7 +20,7 @@
 
 .header {
   align-items: center;
-  background-color: #0e7608;
+  background-color: #0696a0;
   display: flex;
   height: 80px;
   justify-content: space-between;
@@ -46,7 +46,7 @@
 }
 
 .header__logo--icon {
-  color: #f3b712;
+  color: #ffad15;
   font-size: 37px;
 }
 
@@ -303,12 +303,23 @@
 
 /* End Main content Styles */
 
+/* Start Component 7 - Footer Styles */
 .footer {
-  height: 50px;
-  line-height: 3rem;
-  outline: 1px solid rgb(247, 69, 15);
+  align-items: center;
+  background-color: #0696a0;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+}
+
+.footer__description {
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
   text-align: center;
 }
+
+/* End Component 7 - Footer Styles */
 
 /* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
