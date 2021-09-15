@@ -33,3 +33,13 @@
 }
 
 /* End Component 7 - Footer Styles */
+
+/* Start Media Queries Screems 650px */
+@media only screen and (max-width: 650px) {
+  /* Start Component 7 - Footer Styles */
+  .footer__description {
+    font-size: 14px;
+  }
+  /* End Component 7 - Footer Styles */
+}
+/* End Media Queries Screems 850px */
