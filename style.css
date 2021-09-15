@@ -408,6 +408,12 @@
     width: 630px;
   }
   /* End Component 3 - About me Styles */
+
+  /* Start Component 7 - Footer Styles */
+  .footer__description {
+    font-size: 16px;
+  }
+  /* End Component 7 - Footer Styles */
 }
 /* End Media Queries Screems 850px */
 
