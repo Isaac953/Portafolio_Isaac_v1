@@ -98,6 +98,11 @@
   justify-content: center;
   text-decoration: none;
   position: relative;
+  transition: font-size 1s;
+}
+
+.buttons-card__home:hover {
+  font-size: 50px;
 }
 
 .contact__social-media {
@@ -125,6 +130,11 @@
   text-decoration: none;
   font-size: 25px;
   position: relative;
+  transition: font-size 1s;
+}
+
+.social-media__button:hover {
+  font-size: 50px;
 }
 
 /*End General Styles */
