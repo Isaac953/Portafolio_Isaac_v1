@@ -52,7 +52,7 @@ a:focus-visible {
 }
 
 .header__logo--icon {
-  color: #ffad15;
+  color: #cad315;
   font-size: 37px;
 }
 
@@ -179,7 +179,7 @@ a:focus-visible {
   display: flex;
   justify-content: flex-end;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 900;
   height: 50px;
   margin: 0px;
   padding-right: 10px;
@@ -230,7 +230,7 @@ a:focus-visible {
 .about-me__card-title {
   color: white;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 900;
   min-width: 850px;
   padding: 0px 15px;
   position: relative;
@@ -347,7 +347,7 @@ a:focus-visible {
 .contact__card--title {
   color: white;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 900;
   min-width: 850px;
   padding: 0px 15px;
   position: relative;
