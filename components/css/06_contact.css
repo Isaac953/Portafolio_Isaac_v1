@@ -31,10 +31,12 @@ a:focus-visible {
   border-width: 1px;
   display: flex;
   flex-direction: column;
-  height: 305px;
+  height: 295px;
   justify-content: space-evenly;
   position: relative;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 .content__contact::before {
@@ -83,17 +85,15 @@ a:focus-visible {
   color: white;
   font-size: 20px;
   font-weight: 700;
-  min-width: 850px;
   padding: 0px 15px;
   position: relative;
   text-align: center;
-  width: 850px;
 }
 
 .contact__social--media {
   align-items: center;
   display: flex;
-  height: 75px;
+  height: 55px;
   justify-content: space-evenly;
   list-style: none;
   position: relative;
