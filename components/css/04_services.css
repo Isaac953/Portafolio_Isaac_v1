@@ -14,6 +14,12 @@
   margin: 0px;
 }
 
+a:focus-visible {
+  border-color: #0021da;
+  border-style: solid;
+  outline: none;
+}
+
 /* End General Styles */
 
 /* Start Component 4 - Services Styles */

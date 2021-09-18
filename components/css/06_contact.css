@@ -22,7 +22,7 @@ a:focus-visible {
 
 /* End General Styles */
 
-/* Start Component 7 - Contact Styles */
+/* Start Component 6 - Contact Styles */
 .content__contact {
   align-items: center;
   background-image: url("../../assets/ice_background.jpg");
@@ -146,11 +146,11 @@ a:focus-visible {
   font-size: 35px;
 }
 
-/* End Component 7 - Contact Styles */
+/* End Component 6 - Contact Styles */
 
 /* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
-  /* Start Component 7 - Contact Styles */
+  /* Start Component 6 - Contact Styles */
   .content__contact {
     height: 265px;
   }
@@ -207,13 +207,13 @@ a:focus-visible {
   .buttons-card__home:hover {
     font-size: 28px;
   }
-  /* End Component 7 - Contact Styles */
+  /* End Component 6 - Contact Styles */
 }
 /* End Media Queries Screems 850px */
 
 /* Start Media Queries Screems 650px */
 @media only screen and (max-width: 650px) {
-  /* Start Component 7 - Contact Styles */
+  /* Start Component 6 - Contact Styles */
   .content__contact {
     height: 280px;
   }
@@ -270,6 +270,6 @@ a:focus-visible {
   .buttons-card__home:hover {
     font-size: 25px;
   }
-  /* End Component 7 - Contact Styles */
+  /* End Component 6 - Contact Styles */
 }
 /* End Media Queries Screems 850px */

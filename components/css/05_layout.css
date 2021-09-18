@@ -20,6 +20,12 @@ body {
 
 /* Fin body */
 
+a:focus-visible {
+  border-color: #0021da;
+  border-style: solid;
+  outline: none;
+}
+
 .header {
   align-items: center;
   display: flex;

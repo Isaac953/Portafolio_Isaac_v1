@@ -14,6 +14,12 @@
   margin: 0px;
 }
 
+a:focus-visible {
+  border-color: #0021da;
+  border-style: solid;
+  outline: none;
+}
+
 /* End General Styles */
 
 /* Start Component 1 - Header Styles */
@@ -97,8 +103,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 1200px;
-  justify-content: space-evenly;
+  height: 1270px;
+  justify-content: space-between;
   line-height: 3rem;
   outline: 1px solid rgb(15, 115, 247);
 }
@@ -294,12 +300,131 @@
   width: 200px;
 }
 
+/* Start Component 6 - Contact Styles */
 .content__contact {
-  line-height: 3rem;
-  outline: 1px solid rgb(0, 166, 255);
-  text-align: center;
-  width: 200px;
+  align-items: center;
+  background-image: url("../../assets/ice_background.jpg");
+  background-size: cover;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  height: 295px;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
+
+.content__contact::before {
+  background-color: #000;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.contact__card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 270px;
+  justify-content: space-between;
+  min-width: 850px;
+  width: 850px;
+}
+
+.contact__card--title {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  min-width: 850px;
+  padding: 0px 15px;
+  position: relative;
+  width: 850px;
+}
+
+.contact__card--p {
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  min-width: 850px;
+  padding: 8px 15px;
+  position: relative;
+  text-align: justify;
+  width: 850px;
+}
+
+.contact__card--subtitle {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0px 15px;
+  position: relative;
+  text-align: center;
+}
+
+.contact__social--media {
+  align-items: center;
+  display: flex;
+  height: 55px;
+  justify-content: space-evenly;
+  list-style: none;
+  position: relative;
+  width: 350px;
+}
+
+.social--media__item {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+}
+
+.social--media__button {
+  align-items: center;
+  color: #ff4c29;
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  height: 50px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: font-size 1s;
+  width: 50px;
+}
+
+.social--media__button:hover {
+  font-size: 35px;
+}
+
+.buttons-card__home {
+  align-items: center;
+  color: #86e716;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  height: 40px;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  transition: font-size 1s;
+  width: 50px;
+}
+
+.buttons-card__home:hover {
+  font-size: 35px;
+}
+
+/* End Component 6 - Contact Styles */
 
 /* End Main content Styles */
 
@@ -323,6 +448,10 @@
 
 /* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
+  .content {
+    height: 1100px;
+  }
+
   /* Start Component 1 - Header Styles */
   .header__logo {
     min-width: 260px;
@@ -409,6 +538,65 @@
   }
   /* End Component 3 - About me Styles */
 
+  /* Start Component 6 - Contact Styles */
+  .content__contact {
+    height: 265px;
+  }
+
+  .contact__card {
+    height: 235px;
+    min-width: 630px;
+    width: 630px;
+  }
+
+  .contact__card--title {
+    font-size: 26px;
+    min-width: 630px;
+    width: 630px;
+  }
+
+  .contact__card--p {
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 630px;
+    width: 630px;
+  }
+
+  .contact__card--subtitle {
+    font-size: 18px;
+  }
+
+  .contact__social--media {
+    height: 45px;
+    width: 310px;
+  }
+
+  .social--media__item {
+    height: 40px;
+    width: 40px;
+  }
+
+  .social--media__button {
+    font-size: 23px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .social--media__button:hover {
+    font-size: 28px;
+  }
+
+  .buttons-card__home {
+    font-size: 23px;
+    height: 35px;
+    width: 40px;
+  }
+
+  .buttons-card__home:hover {
+    font-size: 28px;
+  }
+  /* End Component 6 - Contact Styles */
+
   /* Start Component 7 - Footer Styles */
   .footer__description {
     font-size: 16px;
@@ -419,6 +607,10 @@
 
 /* Start Media Queries Screems 650px */
 @media only screen and (max-width: 650px) {
+  .content {
+    height: 1300px;
+  }
+
   /* Start Component 1 - Header Styles */
   .header {
     display: flex;
@@ -530,6 +722,65 @@
     width: 360px;
   }
   /* End Component 3 - About me Styles */
+
+  /* Start Component 6 - Contact Styles */
+  .content__contact {
+    height: 280px;
+  }
+
+  .contact__card {
+    height: 250px;
+    min-width: 360px;
+    width: 360px;
+  }
+
+  .contact__card--title {
+    font-size: 24px;
+    min-width: 360px;
+    width: 360px;
+  }
+
+  .contact__card--p {
+    font-size: 14px;
+    line-height: 18px;
+    min-width: 360px;
+    width: 360px;
+  }
+
+  .contact__card--subtitle {
+    font-size: 16px;
+  }
+
+  .contact__social--media {
+    height: 40px;
+    width: 255px;
+  }
+
+  .social--media__item {
+    height: 35px;
+    width: 35px;
+  }
+
+  .social--media__button {
+    font-size: 20px;
+    height: 30px;
+    width: 35px;
+  }
+
+  .social--media__button:hover {
+    font-size: 25px;
+  }
+
+  .buttons-card__home {
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .buttons-card__home:hover {
+    font-size: 25px;
+  }
+  /* End Component 6 - Contact Styles */
 
   /* Start Component 7 - Footer Styles */
   .footer__description {
