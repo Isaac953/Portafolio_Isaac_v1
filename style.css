@@ -682,8 +682,8 @@ a:focus-visible {
     flex-direction: column-reverse;
     height: 310px;
     justify-content: space-between;
-    min-width: 630px;
-    width: 630px;
+    min-width: 360px;
+    width: 360px;
   }
 
   .cover-page__card--img {
