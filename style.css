@@ -97,8 +97,6 @@ a:focus-visible {
 
 /* End Component 1 - Header Styles */
 
-/* Start Component 2 - Cover Page Styles */
-
 .content {
   align-items: center;
   display: flex;
@@ -109,41 +107,52 @@ a:focus-visible {
   outline: 1px solid rgb(15, 115, 247);
 }
 
+/* Start Component 2 - Cover Page Styles */
+
 .content__cover-page {
   align-items: center;
   background-color: #efefef;
   display: flex;
-  height: 270px;
+  height: 280px;
   justify-content: center;
   width: 100%;
-  /* border-style: solid; */
 }
 
-.cover-page__img {
+.cover-page__card {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  justify-content: space-between;
+  min-width: 850px;
+  width: 850px;
+}
+
+.cover-page__card--img {
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   height: 200px;
   margin: 10px;
 }
 
-.cover-page__title {
+.cover-page__card--title {
   display: flex;
   flex-direction: column;
   height: 180px;
   justify-content: space-between;
   margin: 10px;
-  min-width: 650px;
-  width: 650px;
+  min-width: 605px;
+  width: 605px;
 }
 
-.cover-page__presentation {
+.title__presentation {
   display: flex;
   flex-direction: column;
   height: 120px;
   justify-content: center;
 }
 
-.cover-page__presentation--me {
+.title__presentation--me {
   align-items: center;
   display: flex;
   font-size: 28px;
@@ -153,7 +162,7 @@ a:focus-visible {
   padding-left: 10px;
 }
 
-.cover-page__presentation--name {
+.title__presentation--name {
   align-items: center;
   display: flex;
   font-size: 43px;
@@ -163,7 +172,7 @@ a:focus-visible {
   padding-left: 10px;
 }
 
-.cover-page__rank {
+.cover-page__card--rank {
   align-items: center;
   background-color: #005a8d;
   color: white;
@@ -176,7 +185,6 @@ a:focus-visible {
   padding-right: 10px;
   text-shadow: 2px 2px 4px #dddddd;
 }
-
 /* End Component 2 - Cover Page Styles */
 
 /* Start Component 3 - About me Styles */
@@ -303,7 +311,7 @@ a:focus-visible {
 /* Start Component 6 - Contact Styles */
 .content__contact {
   align-items: center;
-  background-image: url("../../assets/ice_background.jpg");
+  background-image: url("./assets/ice_background.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -477,34 +485,40 @@ a:focus-visible {
 
   /* Start Component 2 - Cover Page Styles */
   .content__cover-page {
-    height: 195px;
+    height: 265px;
   }
 
-  .cover-page__img {
+  .cover-page__card {
+    height: 235px;
+    min-width: 630px;
+    width: 630px;
+  }
+
+  .cover-page__card--img {
     height: 180px;
   }
 
-  .cover-page__title {
+  .cover-page__card--title {
     height: 150px;
-    min-width: 450px;
-    width: 450px;
+    min-width: 405px;
+    width: 405px;
   }
 
-  .cover-page__presentation {
+  .title__presentation {
     height: 100px;
   }
 
-  .cover-page__presentation--me {
+  .title__presentation--me {
     font-size: 22px;
     height: 30px;
   }
 
-  .cover-page__presentation--name {
+  .title__presentation--name {
     font-size: 36px;
     height: 45px;
   }
 
-  .cover-page__rank {
+  .cover-page__card--rank {
     font-size: 24px;
     height: 38px;
   }
@@ -658,38 +672,47 @@ a:focus-visible {
   .content__cover-page {
     align-items: center;
     display: flex;
-    flex-direction: column-reverse;
-    height: 305px;
-    justify-content: space-between;
+    height: 350px;
+    justify-content: center;
     min-width: 370px;
   }
-  .cover-page__img {
+
+  .cover-page__card {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 310px;
+    justify-content: space-between;
+    min-width: 630px;
+    width: 630px;
+  }
+
+  .cover-page__card--img {
     height: 155px;
     margin: 0px;
   }
 
-  .cover-page__title {
+  .cover-page__card--title {
     height: 135px;
     margin: 0px;
     min-width: 360px;
     width: 360px;
   }
 
-  .cover-page__presentation {
+  .title__presentation {
     height: 90px;
   }
 
-  .cover-page__presentation--me {
+  .title__presentation--me {
     font-size: 18px;
     height: 28px;
   }
 
-  .cover-page__presentation--name {
+  .title__presentation--name {
     font-size: 30px;
     height: 42px;
   }
 
-  .cover-page__rank {
+  .cover-page__card--rank {
     font-size: 20px;
     height: 36px;
   }
