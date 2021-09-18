@@ -305,8 +305,6 @@ a:focus-visible {
   align-items: center;
   background-image: url("../../assets/ice_background.jpg");
   background-size: cover;
-  border-style: solid;
-  border-width: 1px;
   display: flex;
   flex-direction: column;
   height: 295px;
