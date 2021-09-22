@@ -189,7 +189,7 @@ a:focus-visible {
 
 .content__about-me {
   align-items: center;
-  background-image: url("../../assets/technology_img.jpg");
+  background-image: url("./assets/technology_img.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -197,7 +197,6 @@ a:focus-visible {
   justify-content: space-evenly;
   position: relative;
   width: 100%;
-  border-style: solid;
 }
 
 .content__about-me::before {

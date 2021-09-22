@@ -34,7 +34,6 @@ a:focus-visible {
   justify-content: space-evenly;
   position: relative;
   width: 100%;
-  border-style: solid;
 }
 
 .content__about-me::before {
