@@ -103,8 +103,6 @@ a:focus-visible {
   flex-direction: column;
   height: 1270px;
   justify-content: space-between;
-  line-height: 3rem;
-  outline: 1px solid rgb(15, 115, 247);
 }
 
 /* Start Component 2 - Cover Page Styles */
@@ -191,33 +189,19 @@ a:focus-visible {
 
 .content__about-me {
   align-items: center;
+  background-image: url("../../assets/technology_img.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 475px;
+  height: 440px;
   justify-content: space-evenly;
-  width: 100%;
-  /* border-style: solid; */
-}
-
-.about-me__card {
-  align-items: center;
-  background-image: url("./assets/technology_img.jpg");
-  border-color: #284e78;
-  border-radius: 20px;
-  border-style: solid;
-  border-width: medium;
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  justify-content: space-between;
-  min-width: 850px;
   position: relative;
-  width: 850px;
+  width: 100%;
+  border-style: solid;
 }
 
-.about-me__card::before {
+.content__about-me::before {
   background-color: #000;
-  border-radius: 20px;
   bottom: 0;
   content: "";
   left: 0;
@@ -225,6 +209,16 @@ a:focus-visible {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.about-me__card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 415px;
+  justify-content: space-between;
+  min-width: 850px;
+  width: 850px;
 }
 
 .about-me__card-title {
@@ -251,45 +245,53 @@ a:focus-visible {
 .buttons-card {
   align-items: center;
   display: flex;
-  /* border-style: solid; */
   flex-direction: column;
-  justify-content: space-evenly;
-  width: 130px;
-  height: 85px;
+  height: 93px;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  width: 160px;
 }
 
 .buttons-card__component {
   align-items: center;
-  background-color: #007596;
-  border-color: #01576e;
-  border-radius: 10px;
+  background-color: #0696a0;
+  border-color: #05848d;
+  border-radius: 8px;
   border-style: solid;
   color: white;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  font-size: 14px;
-  font-weight: bold;
-  height: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
   justify-content: center;
   text-align: center;
   text-decoration: none;
-  width: 85px;
+  transition-duration: 0.4s;
+  width: 110px;
 }
 
 .buttons-card__component:hover {
-  background-color: #ec8208;
-  border-color: #ce7005;
+  background-color: #86e716;
+  border-color: #71c017;
 }
 
 .buttons-card__home {
   align-items: center;
-  color: #1321e9;
+  color: #86e716;
   display: flex;
   flex-direction: column;
   font-size: 24px;
   height: 35px;
   justify-content: center;
   text-decoration: none;
+  transition: font-size 1s;
+}
+
+.buttons-card__home:hover {
+  font-size: 35px;
 }
 
 /* End Component 3 - About me Styles */
@@ -531,7 +533,7 @@ a:focus-visible {
   }
 
   .about-me__card {
-    height: 320px;
+    height: 425px;
     min-width: 630px;
     width: 630px;
   }
@@ -547,6 +549,27 @@ a:focus-visible {
     line-height: 20px;
     min-width: 630px;
     width: 630px;
+  }
+
+  .buttons-card {
+    height: 88px;
+    width: 150px;
+  }
+
+  .buttons-card__component {
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+  }
+
+  .buttons-card__home {
+    font-size: 23px;
+    height: 35px;
+    width: 40px;
+  }
+
+  .buttons-card__home:hover {
+    font-size: 28px;
   }
   /* End Component 3 - About me Styles */
 
@@ -721,11 +744,11 @@ a:focus-visible {
   /* Start Component 3 - About me Styles */
 
   .content__about-me {
-    height: 510px;
+    height: 505px;
   }
 
   .about-me__card {
-    height: 385px;
+    height: 485px;
     min-width: 360px;
     width: 360px;
   }
@@ -741,6 +764,27 @@ a:focus-visible {
     line-height: 18px;
     min-width: 360px;
     width: 360px;
+  }
+
+  .buttons-card {
+    height: 83px;
+    width: 140px;
+  }
+
+  .buttons-card__component {
+    font-size: 14px;
+    height: 35px;
+    width: 95px;
+  }
+
+  .buttons-card__home {
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .buttons-card__home:hover {
+    font-size: 25px;
   }
   /* End Component 3 - About me Styles */
 
