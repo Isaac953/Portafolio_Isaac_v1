@@ -7,7 +7,7 @@
 }
 
 .body {
-  background-color: #ececec;
+  background-color: #e6e6e6;
   display: flex;
   flex-direction: column;
   font-family: "Mulish", sans-serif;
@@ -88,6 +88,7 @@ a:focus-visible {
   height: 40px;
   padding: 0 10px;
   text-decoration: none;
+  transition-duration: 0.4s;
 }
 
 .header__menu--link:hover {
@@ -190,25 +191,12 @@ a:focus-visible {
 
 .content__about-me {
   align-items: center;
-  background-image: url("./assets/technology_img.jpg");
-  background-size: cover;
+  background-color: #0696a0;
   display: flex;
   flex-direction: column;
   height: 440px;
   justify-content: space-evenly;
-  position: relative;
   width: 100%;
-}
-
-.content__about-me::before {
-  background-color: #000;
-  bottom: 0;
-  content: "";
-  left: 0;
-  opacity: 0.2;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .about-me__card {
@@ -227,7 +215,6 @@ a:focus-visible {
   font-weight: 900;
   min-width: 850px;
   padding: 0px 15px;
-  position: relative;
   width: 850px;
 }
 
@@ -237,7 +224,6 @@ a:focus-visible {
   line-height: 25px;
   min-width: 850px;
   padding: 8px 15px;
-  position: relative;
   text-align: justify;
   width: 850px;
 }
@@ -248,15 +234,14 @@ a:focus-visible {
   flex-direction: column;
   height: 93px;
   justify-content: space-between;
-  position: relative;
   text-align: center;
   width: 160px;
 }
 
 .buttons-card__component {
   align-items: center;
-  background-color: #0696a0;
-  border-color: #05848d;
+  background-color: #0021da;
+  border-color: #021cad;
   border-radius: 8px;
   border-style: solid;
   color: white;
@@ -274,8 +259,8 @@ a:focus-visible {
 }
 
 .buttons-card__component:hover {
-  background-color: #86e716;
-  border-color: #71c017;
+  background-color: #ff4c29;
+  border-color: #e04425;
 }
 
 .buttons-card__home {
@@ -313,27 +298,14 @@ a:focus-visible {
 /* Start Component 6 - Contact Styles */
 .content__contact {
   align-items: center;
-  background-image: url("./assets/ice_background.jpg");
-  background-size: cover;
+  background-color: #0696a0;
   display: flex;
   flex-direction: column;
   height: 295px;
   justify-content: space-evenly;
-  position: relative;
   width: 100%;
   margin: 0px;
   padding: 0px;
-}
-
-.content__contact::before {
-  background-color: #000;
-  bottom: 0;
-  content: "";
-  left: 0;
-  opacity: 0.2;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .contact__card {
@@ -352,7 +324,6 @@ a:focus-visible {
   font-weight: 900;
   min-width: 850px;
   padding: 0px 15px;
-  position: relative;
   width: 850px;
 }
 
@@ -362,7 +333,6 @@ a:focus-visible {
   line-height: 25px;
   min-width: 850px;
   padding: 8px 15px;
-  position: relative;
   text-align: justify;
   width: 850px;
 }
@@ -372,7 +342,6 @@ a:focus-visible {
   font-size: 20px;
   font-weight: 700;
   padding: 0px 15px;
-  position: relative;
   text-align: center;
 }
 
@@ -382,7 +351,6 @@ a:focus-visible {
   height: 55px;
   justify-content: space-evenly;
   list-style: none;
-  position: relative;
   width: 350px;
 }
 
@@ -391,7 +359,6 @@ a:focus-visible {
   display: flex;
   height: 50px;
   justify-content: center;
-  position: relative;
   width: 50px;
 }
 
@@ -403,7 +370,6 @@ a:focus-visible {
   font-weight: bold;
   height: 50px;
   justify-content: center;
-  position: relative;
   text-align: center;
   text-decoration: none;
   transition: font-size 1s;
@@ -422,7 +388,6 @@ a:focus-visible {
   font-size: 25px;
   height: 40px;
   justify-content: center;
-  position: relative;
   text-decoration: none;
   transition: font-size 1s;
   width: 50px;
@@ -439,7 +404,7 @@ a:focus-visible {
 /* Start Component 7 - Footer Styles */
 .footer {
   align-items: center;
-  background-color: #0696a0;
+  background-color: #0f1e80;
   display: flex;
   height: 70px;
   justify-content: center;

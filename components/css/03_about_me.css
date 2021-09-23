@@ -7,7 +7,7 @@
 }
 
 .body {
-  background-color: #efefef;
+  background-color: #e6e6e6;
   display: flex;
   flex-direction: column;
   font-family: "Mulish", sans-serif;
@@ -26,25 +26,12 @@ a:focus-visible {
 
 .content__about-me {
   align-items: center;
-  background-image: url("../../assets/technology_img.jpg");
-  background-size: cover;
+  background-color: #0696a0;
   display: flex;
   flex-direction: column;
   height: 440px;
   justify-content: space-evenly;
-  position: relative;
   width: 100%;
-}
-
-.content__about-me::before {
-  background-color: #000;
-  bottom: 0;
-  content: "";
-  left: 0;
-  opacity: 0.2;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .about-me__card {
@@ -63,7 +50,6 @@ a:focus-visible {
   font-weight: 900;
   min-width: 850px;
   padding: 0px 15px;
-  position: relative;
   width: 850px;
 }
 
@@ -73,7 +59,6 @@ a:focus-visible {
   line-height: 25px;
   min-width: 850px;
   padding: 8px 15px;
-  position: relative;
   text-align: justify;
   width: 850px;
 }
@@ -84,15 +69,14 @@ a:focus-visible {
   flex-direction: column;
   height: 93px;
   justify-content: space-between;
-  position: relative;
   text-align: center;
   width: 160px;
 }
 
 .buttons-card__component {
   align-items: center;
-  background-color: #0696a0;
-  border-color: #05848d;
+  background-color: #0021da;
+  border-color: #021cad;
   border-radius: 8px;
   border-style: solid;
   color: white;
@@ -110,8 +94,8 @@ a:focus-visible {
 }
 
 .buttons-card__component:hover {
-  background-color: #86e716;
-  border-color: #71c017;
+  background-color: #ff4c29;
+  border-color: #e04425;
 }
 
 .buttons-card__home {
