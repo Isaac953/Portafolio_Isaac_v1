@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaac Arias - Full Stack Developer</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/portfolio_icon.png"
+    />
+    <!-- Inicio de Inclusión de las hojas de Estilo y la fuente de la Página -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fin de Inclusión de las hojas de Estilo y la fuente de la Página -->
+    <!-- Inicio de inclusión los iconos FontAwesome en la Página -->
+    <script
+      src="https://kit.fontawesome.com/7932647ae3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fin de inclusión los iconos FontAwesome en la Página -->
+  </head>
+  <body class="body">
+    <header id="header" class="header">
+      <section class="header__logo">
+        <p tabindex="0" class="header__logo--title">
+          <i class="fa fa-laptop header__logo--icon" aria-hidden="true"></i>
+          Isaac Arias
+        </p>
+      </section>
+      <section class="header__menu">
+        <ul class="header__menu--list">
+          <li class="header__menu--item">
+            <a href="#" onclick="loadCoverPage()" class="header__menu--link"
+              >Inicio</a
+            >
+          </li>
+          <li class="header__menu--item">
+            <a href="#" onclick="loadAboutMe()" class="header__menu--link"
+              >Sobre mí</a
+            >
+          </li>
+          <li class="header__menu--item">
+            <a href="#" onclick="loadServices()" class="header__menu--link"
+              >Servicios</a
+            >
+          </li>
+          <li class="header__menu--item">
+            <a href="#" class="header__menu--link">Proyectos</a>
+          </li>
+          <li class="header__menu--item">
+            <a href="#" onclick="loadContact()" class="header__menu--link"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </section>
+    </header>
+    <main id="content" class="content"></main>
+    <footer class="footer">
+      <p class="footer__description">Copyright © Isaac Arias 2021</p>
+    </footer>
+  </body>
+
+  <script src="portfolio.js"></script>
+</html>
