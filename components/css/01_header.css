@@ -49,6 +49,7 @@ a:focus-visible {
   font-weight: 700;
   margin: 0px;
   padding: 0px 10px;
+  text-decoration: none;
 }
 
 .header__logo--icon {
@@ -75,20 +76,21 @@ a:focus-visible {
   align-items: center;
   display: flex;
   justify-content: center;
-  width: 110px;
-  min-width: 110px;
 }
 
 .header__menu--link {
   align-items: center;
   color: white;
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   height: 40px;
+  justify-content: space-around;
   padding: 0 10px;
   text-decoration: none;
   transition-duration: 0.4s;
+  width: 114px;
+  min-width: 114px;
 }
 
 .header__menu--link:hover {
@@ -113,14 +115,11 @@ a:focus-visible {
     font-size: 33px;
   }
 
-  .header__menu--item {
-    width: 95px;
-    min-width: 95px;
-  }
-
   .header__menu--link {
-    font-size: 16px;
+    font-size: 15px;
     height: 38px;
+    width: 107px;
+    min-width: 107px;
   }
   /* End Component 1 - Header Styles */
 }
@@ -162,14 +161,11 @@ a:focus-visible {
     padding: 0px;
   }
 
-  .header__menu--item {
-    min-width: 85px;
-    width: 85px;
-  }
-
   .header__menu--link {
     font-size: 14px;
     height: 30px;
+    min-width: 102px;
+    width: 102px;
   }
   /* End Component 1 - Header Styles */
 }
