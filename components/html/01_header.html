@@ -5,23 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="../../assets/portfolio_icon.png"
-    />
-
-    <!-- Inicio de Inclusión de las hojas de Estilo y la fuente de la Página -->
-    <link rel="stylesheet" href="../css/01_header.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700;900&display=swap" rel="stylesheet">
-    <!-- Fin de Inclusión de las hojas de Estilo y la fuente de la Página -->
-    <!-- Inicio de inclusión los iconos FontAwesome en la Página -->
-    <script
-      src="https://kit.fontawesome.com/7932647ae3.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Fin de inclusión los iconos FontAwesome en la Página -->
-  </head>
   </head>
   <body class="body">
     <header class="header">
@@ -34,16 +17,27 @@
       <section class="header__menu">
         <ul class="header__menu--list">
           <li class="header__menu--item">
-            <a href="#" class="header__menu--link">Sobre mí</a>
+            <a href="#" onclick="loadCoverPage()" class="header__menu--link"
+              >Inicio</a
+            >
           </li>
           <li class="header__menu--item">
-            <a href="#" class="header__menu--link">Servicios</a>
+            <a href="#" onclick="loadAboutMe()" class="header__menu--link"
+              >Sobre mí</a
+            >
           </li>
           <li class="header__menu--item">
-            <a href="#" class="header__menu--link">Trabajos</a>
+            <a href="#" onclick="loadServices()" class="header__menu--link"
+              >Servicios</a
+            >
           </li>
           <li class="header__menu--item">
-            <a href="#" class="header__menu--link">Contacto</a>
+            <a href="#" class="header__menu--link">Proyectos</a>
+          </li>
+          <li class="header__menu--item">
+            <a href="#" onclick="loadContact()" class="header__menu--link"
+              >Contacto</a
+            >
           </li>
         </ul>
       </section>
