@@ -132,9 +132,9 @@
   .content__cover-page {
     align-items: center;
     display: flex;
-    height: 78vh;
+    height: 79vh;
     justify-content: center;
-    min-height: 78vh;
+    min-height: 79vh;
   }
 
   .cover-page__card {
