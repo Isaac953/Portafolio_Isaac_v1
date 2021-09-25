@@ -36,24 +36,23 @@ a:focus-visible {
 .header__nav {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-between;
   padding: 5px;
+  width: 100%;
 }
 
 .header__nav--logo {
+  align-items: center;
+  color: white;
   display: flex;
   flex-direction: row;
-  color: white;
-  /* border-style: solid; */
-  text-decoration: none;
   font-size: 32px;
   font-weight: 700;
-  min-width: 255px;
-  width: 255px;
   height: 60px;
   justify-content: space-evenly;
-  align-items: center;
+  min-width: 255px;
+  text-decoration: none;
+  width: 255px;
 }
 
 .header__nav--icon {
@@ -62,35 +61,34 @@ a:focus-visible {
 }
 
 .header__nav--menu {
+  align-items: center;
   display: flex;
   flex-direction: row;
   list-style: none;
-  align-items: center;
 }
 
 .menu__item {
-  display: flex;
-  width: 115px;
-  min-width: 115px;
-  /* border-style: solid; */
-  text-align: center;
-  height: 40px;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: center;
+  min-width: 115px;
+  text-align: center;
+  width: 115px;
 }
 
 .menu__item:hover {
   background-color: #fc8c23;
-  transition-duration: 0.7s;
   border-radius: 7px;
+  transition-duration: 0.5s;
 }
 
 .menu__link {
   color: white;
-  text-decoration: none;
   font-size: 16px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 /* End Component 1 - Header Styles */
@@ -104,9 +102,9 @@ a:focus-visible {
   }
 
   .header__nav--logo {
+    font-size: 28px;
     min-width: 235px;
     width: 235px;
-    font-size: 28px;
   }
 
   .header__nav--icon {
@@ -114,8 +112,8 @@ a:focus-visible {
   }
 
   .menu__item {
-    width: 105px;
     min-width: 105px;
+    width: 105px;
   }
 
   .menu__link {
@@ -135,17 +133,17 @@ a:focus-visible {
   }
 
   .header__nav {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   .header__nav--logo {
     display: flex;
+    font-size: 24px;
     justify-content: center;
     width: 100%;
-    font-size: 24px;
   }
 
   .header__nav--icon {
@@ -156,13 +154,13 @@ a:focus-visible {
   .header__nav--menu {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
     min-width: 400px;
+    width: 100%;
   }
 
   .menu__item {
-    width: 95px;
     min-width: 95px;
+    width: 95px;
   }
 
   .menu__link {
