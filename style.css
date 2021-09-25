@@ -33,19 +33,3 @@ a:focus-visible {
   /* height: 1270px; */
   justify-content: space-between;
 }
-
-/* Start Media Queries Screems 850px */
-@media screen and (max-width: 850px) {
-  .content {
-    height: 1100px;
-  }
-}
-/* End Media Queries Screems 850px */
-
-/* Start Media Queries Screems 650px */
-@media only screen and (max-width: 650px) {
-  .content {
-    height: 1300px;
-  }
-}
-/* End Media Queries Screems 650px */
