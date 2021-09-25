@@ -3,6 +3,8 @@
 .content__cover-page {
   align-items: center;
   background-image: url("../../assets/wooden_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   height: 76vh;
   justify-content: center;
