@@ -1,16 +1,57 @@
+/* Start General Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
+  margin: 0px;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus-visible {
+  border-color: #0021da;
+  border-style: solid;
+  outline: none;
+}
+
+/* End General Styles */
+
 /* Start Component 3 - About me Styles */
 
 .content__about-me {
   align-items: center;
   background-image: url("../../assets/city_img.jpg");
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   height: 440px;
   justify-content: space-evenly;
+  position: relative;
   width: 100%;
+}
+
+.content__about-me::before {
+  background-color: #000;
+  border-radius: 20px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .about-me__card {
@@ -20,6 +61,7 @@
   height: 415px;
   justify-content: space-between;
   min-width: 850px;
+  position: relative;
   width: 850px;
 }
 
@@ -29,6 +71,7 @@
   font-weight: 900;
   min-width: 850px;
   padding: 0px 15px;
+  position: relative;
   width: 850px;
 }
 
@@ -39,6 +82,7 @@
   min-width: 850px;
   padding: 8px 15px;
   text-align: justify;
+  position: relative;
   width: 850px;
 }
 
@@ -48,6 +92,7 @@
   flex-direction: column;
   height: 93px;
   justify-content: space-between;
+  position: relative;
   text-align: center;
   width: 160px;
 }
@@ -66,6 +111,7 @@
   font-weight: 700;
   height: 45px;
   justify-content: center;
+  position: relative;
   text-align: center;
   text-decoration: none;
   transition-duration: 0.4s;
@@ -85,6 +131,7 @@
   font-size: 24px;
   height: 35px;
   justify-content: center;
+  position: relative;
   text-decoration: none;
   transition: font-size 1s;
 }
