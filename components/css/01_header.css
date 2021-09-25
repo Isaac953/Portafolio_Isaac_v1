@@ -88,6 +88,7 @@
   }
 
   .menu__item {
+    height: 38px;
     min-width: 105px;
     width: 105px;
   }
@@ -135,6 +136,7 @@
   }
 
   .menu__item {
+    height: 30px;
     min-width: 95px;
     width: 95px;
   }

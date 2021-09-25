@@ -16,6 +16,10 @@ async function loadServices() {
     content.innerHTML = await (await fetch('./components/html/04_services.html')).text();
 }
 
+async function loadProyects() {
+    content.innerHTML = await (await fetch('./components/html/05_proyects.html')).text();
+}
+
 async function loadContact() {
     content.innerHTML = await (await fetch('./components/html/06_contact.html')).text();
 }
