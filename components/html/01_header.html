@@ -20,45 +20,18 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="body">
-    <header class="header">
-      <section class="header__nav">
-        <a
-          href="#home"
-          onclick="loadCoverPage()"
-          class="header__nav--logo"
-          tabindex="0"
-          ><i class="fa fa-laptop header__nav--icon" aria-hidden="true"></i>
-          Isaac Arias
-        </a>
-        <a href="#" class="header__nav--hamburger"
-          ><i class="fas fa-bars"></i
-        ></a>
-        <nav class="header__nav">
-          <ul class="header__nav--menu">
-            <li class="menu__item">
-              <a href="#about-me" onclick="loadAboutMe()" class="menu__link"
-                ><i class="fa fa-user" aria-hidden="true"></i> Sobre mí</a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#services" onclick="loadServices()" class="menu__link"
-                ><i class="fa fa-file-code"></i> Servicios</a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#proyects" onclick="loadProyects()" class="menu__link"
-                ><i class="fas fa-briefcase"></i> Proyectos</a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#contact" onclick="loadContact()" class="menu__link"
-                ><i class="far fa-comment-alt"></i> Contacto</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </section>
-    </header>
+  <body>
+    <div class="menu-container">
+      <a>logo</a>
+      <button type="button" class="hamburger">Menu</button>
+      <nav class="navbar">
+        <ul>
+          <li>Opcion 1</li>
+          <li>Opcion 2</li>
+          <li>Opcion 3</li>
+          <li>Opcion 4</li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>
