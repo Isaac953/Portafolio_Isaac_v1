@@ -31,6 +31,7 @@ async function loadFooter() {
 // End Functions Load Components with index.html //
 
 // Start Load Functions default //
+
 loadHeader();
 
 loadCoverPage();

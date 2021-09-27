@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <section class="header__nav">
+        <a
+          href="#home"
+          onclick="loadCoverPage()"
+          class="header__nav--logo"
+          tabindex="0"
+          ><i class="fa fa-laptop header__nav--icon" aria-hidden="true"></i>
+          Isaac Arias
+        </a>
+        <ul class="header__nav--menu">
+          <li class="menu__item">
+            <a href="#about-me" onclick="loadAboutMe()" class="menu__link"
+              ><i class="fa fa-user" aria-hidden="true"></i> Sobre mí</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="#services" onclick="loadServices()" class="menu__link"
+              ><i class="fa fa-file-code"></i> Servicios</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="#proyects" onclick="loadProyects()" class="menu__link"
+              ><i class="fas fa-briefcase"></i> Proyectos</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="#contact" onclick="loadContact()" class="menu__link"
+              ><i class="far fa-comment-alt"></i> Contacto</a
+            >
+          </li>
+        </ul>
+      </section>
+    </header>
+  </body>
+</html>

@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../assets/portfolio_icon.png"
+    />
+    <link rel="stylesheet" href="../css/01_header.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7932647ae3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="body">
     <header class="header">
@@ -17,28 +31,33 @@
           ><i class="fa fa-laptop header__nav--icon" aria-hidden="true"></i>
           Isaac Arias
         </a>
-        <ul class="header__nav--menu">
-          <li class="menu__item">
-            <a href="#about-me" onclick="loadAboutMe()" class="menu__link"
-              ><i class="fa fa-user" aria-hidden="true"></i> Sobre mí</a
-            >
-          </li>
-          <li class="menu__item">
-            <a href="#services" onclick="loadServices()" class="menu__link"
-              ><i class="fa fa-file-code"></i> Servicios</a
-            >
-          </li>
-          <li class="menu__item">
-            <a href="#proyects" onclick="loadProyects()" class="menu__link"
-              ><i class="fas fa-briefcase"></i> Proyectos</a
-            >
-          </li>
-          <li class="menu__item">
-            <a href="#contact" onclick="loadContact()" class="menu__link"
-              ><i class="far fa-comment-alt"></i> Contacto</a
-            >
-          </li>
-        </ul>
+        <a href="#" class="header__nav--hamburger"
+          ><i class="fas fa-bars"></i
+        ></a>
+        <nav class="header__nav">
+          <ul class="header__nav--menu">
+            <li class="menu__item">
+              <a href="#about-me" onclick="loadAboutMe()" class="menu__link"
+                ><i class="fa fa-user" aria-hidden="true"></i> Sobre mí</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#services" onclick="loadServices()" class="menu__link"
+                ><i class="fa fa-file-code"></i> Servicios</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#proyects" onclick="loadProyects()" class="menu__link"
+                ><i class="fas fa-briefcase"></i> Proyectos</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#contact" onclick="loadContact()" class="menu__link"
+                ><i class="far fa-comment-alt"></i> Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
       </section>
     </header>
   </body>
