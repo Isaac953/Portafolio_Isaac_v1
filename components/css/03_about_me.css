@@ -36,9 +36,8 @@ a:focus-visible {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 76vh;
+  height: 100vh;
   justify-content: space-evenly;
-  min-height: 76vh;
   position: relative;
   width: 100%;
 }
@@ -132,10 +131,10 @@ a:focus-visible {
 @media screen and (max-width: 850px) {
   /* Start Component 3 - About me Styles */
 
-  .content__about-me {
+  /* .content__about-me {
     height: 90vh;
     min-height: 90vh;
-  }
+  } */
 
   .about-me__card {
     height: 425px;
@@ -185,10 +184,10 @@ a:focus-visible {
 @media only screen and (max-width: 650px) {
   /* Start Component 3 - About me Styles */
 
-  .content__about-me {
+  /* .content__about-me {
     height: 97vh;
     min-height: 97vh;
-  }
+  } */
 
   .about-me__card {
     height: 485px;

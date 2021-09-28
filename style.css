@@ -30,15 +30,14 @@ a:focus-visible {
   align-items: center;
   display: flex;
   flex-direction: column;
-  /* height: 1270px; */
   justify-content: space-between;
-  min-height: 76vh;
+  height: 100vh;
 }
 
 /* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
   .content {
-    min-height: 77vh;
+    min-height: 76.8vh;
   }
 }
 /* End Media Queries Screems 850px */

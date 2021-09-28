@@ -6,9 +6,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 76vh;
+  height: 100vh;
   justify-content: center;
-  min-height: 76vh;
   width: 100%;
 }
 
@@ -85,10 +84,10 @@
 /* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 2 - Cover Page Styles */
-  .content__cover-page {
+  /* .content__cover-page {
     height: 77vh;
     min-height: 77vh;
-  }
+  } */
 
   .cover-page__card {
     height: 235px;
@@ -134,9 +133,9 @@
   .content__cover-page {
     align-items: center;
     display: flex;
-    height: 79vh;
+    /* height: 79vh; */
     justify-content: center;
-    min-height: 79vh;
+    /* min-height: 79vh; */
   }
 
   .cover-page__card {
