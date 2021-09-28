@@ -31,13 +31,15 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  border-style: solid;
+  /* min-height: 76.8vh; */
+  min-height: 75.9vh;
 }
 
 /* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
   .content {
-    min-height: 76.8vh;
+    min-height: 76.2vh;
   }
 }
 /* End Media Queries Screems 850px */
@@ -45,7 +47,7 @@ a:focus-visible {
 /* Start Media Queries Screems 650px */
 @media screen and (max-width: 650px) {
   .content {
-    min-height: 79vh;
+    min-height: 77.9vh;
   }
 }
 /* End Media Queries Screems 650px */

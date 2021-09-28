@@ -196,12 +196,12 @@ a:focus-visible {
 
   .menu__item {
     height: 45px;
-    min-width: 100px;
-    width: 100px;
+    min-width: 85px;
+    width: 85px;
   }
 
   .menu__item-link {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .header .header__navbar {
