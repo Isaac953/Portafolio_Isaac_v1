@@ -1,42 +1,4 @@
-/* Start General Styles */
-
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-.body {
-  background-color: #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  font-family: "Mulish", sans-serif;
-  margin: 0px;
-}
-
-a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-a:focus-visible {
-  border-color: #0021da;
-  border-style: solid;
-  outline: none;
-}
-
-/* End General Styles */
-
 /* Start Component 1 - Header Styles */
-
-.header {
-  align-items: center;
-  background-color: #125d98;
-  display: flex;
-  flex-direction: row;
-  height: 75px;
-  justify-content: space-between;
-  width: 100%;
-}
 
 .header__logo {
   align-items: center;
@@ -99,7 +61,7 @@ a:focus-visible {
 }
 
 .menu__item:hover {
-  background-color: #ff4301;
+  background-color: #1597bb;
   transition-duration: 0.5s;
 }
 
@@ -115,10 +77,6 @@ a:focus-visible {
 /* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 1 - Header Styles */
-
-  .header {
-    height: 70px;
-  }
 
   .header__logo {
     height: 70px;
@@ -156,12 +114,6 @@ a:focus-visible {
 @media only screen and (max-width: 650px) {
   /* Start Component 1 - Header Styles */
 
-  .header {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-  }
-
   .header__logo {
     height: 60px;
     width: 100%;
@@ -179,7 +131,7 @@ a:focus-visible {
   }
 
   .header__navbar {
-    background-color: #2b2b2b;
+    background-color: #0f0f0f;
   }
 
   .header__logo-hamburger {

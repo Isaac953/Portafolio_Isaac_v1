@@ -30,28 +30,20 @@ a:focus-visible {
 
 .content__about-me {
   align-items: center;
-  background-image: url("../../assets/city_img.jpg");
+  /* background-image: url("../../assets/city_img.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat; 
+  background-size: cover; */
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(69, 86, 102, 1) 0%,
+    rgba(34, 34, 34, 1) 90%
+  );
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-evenly;
-  position: relative;
   width: 100%;
-}
-
-.content__about-me::before {
-  background-color: #000;
-  border-radius: 20px;
-  bottom: 0;
-  content: "";
-  left: 0;
-  opacity: 0.2;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .about-me__card {
@@ -61,7 +53,6 @@ a:focus-visible {
   height: 415px;
   justify-content: space-between;
   min-width: 850px;
-  position: relative;
   width: 850px;
 }
 
@@ -71,7 +62,6 @@ a:focus-visible {
   font-weight: 900;
   min-width: 850px;
   padding: 0px 15px;
-  position: relative;
   width: 850px;
 }
 
@@ -82,7 +72,6 @@ a:focus-visible {
   min-width: 850px;
   padding: 8px 15px;
   text-align: justify;
-  position: relative;
   width: 850px;
 }
 
@@ -93,7 +82,6 @@ a:focus-visible {
   height: 93px;
   justify-content: space-between;
   padding: 0px 5px;
-  position: relative;
   text-align: center;
   width: 850px;
 }
@@ -108,7 +96,6 @@ a:focus-visible {
   height: 45px;
   justify-content: left;
   padding-left: 5px;
-  position: relative;
   text-decoration: none;
   transition: font-size 1s;
 }

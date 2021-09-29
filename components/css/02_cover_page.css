@@ -2,11 +2,16 @@
 
 .content__cover-page {
   align-items: center;
-  background-image: url("../../assets/wooden_img.jpg");
+  /* background-image: url("../../assets/wooden_img.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(69, 86, 102, 1) 0%,
+    rgba(34, 34, 34, 1) 90%
+  );
   display: flex;
-  min-height: 76.8vh;
+  min-height: 76vh;
   justify-content: center;
   width: 100%;
 }
@@ -134,7 +139,7 @@
     display: flex;
     /* height: 79vh; */
     justify-content: center;
-    min-height: 78.8vh;
+    min-height: 80vh;
   }
 
   .cover-page__card {
