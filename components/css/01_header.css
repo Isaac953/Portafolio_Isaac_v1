@@ -8,7 +8,7 @@
   justify-content: space-between;
 }
 
-.header__logo-name {
+.header__logo--name {
   align-items: center;
   color: white;
   display: flex;
@@ -24,12 +24,12 @@
   width: 250px;
 }
 
-.header__logo-icon {
+.header__logo--icon {
   color: #cad315;
   font-size: 37px;
 }
 
-.header__logo-hamburger {
+.header__logo--hamburger {
   color: white;
   display: none;
   font-size: 28px;
@@ -41,7 +41,7 @@
   height: 75px;
 }
 
-.header__navbar-menu {
+.header__navbar--menu {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -65,7 +65,7 @@
   transition: background-color 0.7s;
 }
 
-.menu__item-link {
+.menu__item--link {
   color: white;
   font-size: 16px;
   font-weight: 700;
@@ -82,13 +82,13 @@
     height: 70px;
   }
 
-  .header__logo-name {
+  .header__logo--name {
     font-size: 28px;
     min-width: 225px;
     width: 225px;
   }
 
-  .header__logo-icon {
+  .header__logo--icon {
     font-size: 33px;
   }
 
@@ -102,7 +102,7 @@
     width: 105px;
   }
 
-  .menu__item-link {
+  .menu__item--link {
     font-size: 15px;
   }
 
@@ -119,13 +119,13 @@
     width: 100%;
   }
 
-  .header__logo-name {
+  .header__logo--name {
     font-size: 24px;
     min-width: 195px;
     width: 195px;
   }
 
-  .header__logo-icon {
+  .header__logo--icon {
     font-size: 29px;
     padding-right: 7px;
   }
@@ -134,12 +134,12 @@
     background-color: #0f0f0f;
   }
 
-  .header__logo-hamburger {
+  .header__logo--hamburger {
     display: block;
     font-size: 24px;
   }
 
-  .header__navbar-menu {
+  .header__navbar--menu {
     display: flex;
     justify-content: space-evenly;
     min-width: 400px;
@@ -152,7 +152,7 @@
     width: 85px;
   }
 
-  .menu__item-link {
+  .menu__item--link {
     font-size: 12px;
   }
 

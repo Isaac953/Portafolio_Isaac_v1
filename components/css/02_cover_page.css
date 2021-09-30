@@ -1,3 +1,49 @@
+/* Start General Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
+  margin: 0px;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus-visible {
+  border-color: #0021da;
+  border-style: solid;
+  outline: none;
+}
+
+.nav-button {
+  align-items: center;
+  /* border-style: solid; */
+  color: #ff4c29;
+  display: flex;
+  font-size: 27px;
+  font-weight: bold;
+  justify-content: center;
+  transition: font-size 0.5s;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  font-size: 35px;
+}
+
+/* End General Styles */
+
 /* Start Component 2 - Cover Page Styles */
 
 @keyframes slideInFromTop {
@@ -35,23 +81,35 @@
   align-items: center;
   animation: 1.2s ease-out 0s 1 slideInFromTop;
   display: flex;
-  flex-direction: row;
-  height: 250px;
+  flex-direction: column;
+  height: 290px;
   justify-content: space-between;
   min-width: 850px;
   position: relative;
   width: 850px;
+  /* border-style: solid; */
 }
 
-.cover-page__card--img {
-  image-rendering: pixelated;
+.cover-page__card--profile {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border-style: solid; */
+}
+
+.profile__fig {
   filter: drop-shadow(0 0 7px #292828);
-  height: 200px;
-  margin: 10px;
   position: relative;
 }
 
-.cover-page__card--title {
+.profile__fig--img {
+  image-rendering: pixelated;
+  height: 200px;
+  margin: 10px;
+}
+
+.profile__title {
   display: flex;
   flex-direction: column;
   height: 180px;
@@ -62,7 +120,7 @@
   width: 605px;
 }
 
-.title__presentation {
+.profile__title--presentation {
   display: flex;
   flex-direction: column;
   height: 120px;
@@ -70,7 +128,7 @@
   position: relative;
 }
 
-.title__presentation--me {
+.presentation__me {
   align-items: center;
   color: white;
   display: flex;
@@ -80,7 +138,7 @@
   padding-left: 10px;
 }
 
-.title__presentation--name {
+.presentation__name {
   align-items: center;
   color: white;
   display: flex;
@@ -91,7 +149,7 @@
   padding-left: 10px;
 }
 
-.cover-page__card--rank {
+.profile__title--rank {
   align-items: center;
   background-color: #63b603;
   color: white;
@@ -104,103 +162,12 @@
   padding-right: 10px;
   text-shadow: 2px 2px 4px #dddddd;
 }
+
+.cover-page__card--buttons {
+  display: flex;
+  justify-content: flex-end;
+  /* border-style: solid; */
+  min-width: 850px;
+}
+
 /* End Component 2 - Cover Page Styles */
-
-/* Start Media Queries Screems 850px */
-@media screen and (max-width: 850px) {
-  /* Start Component 2 - Cover Page Styles */
-  .content__cover-page {
-    min-height: 79vh;
-  }
-
-  .cover-page__card {
-    height: 235px;
-    min-width: 630px;
-    width: 630px;
-  }
-
-  .cover-page__card--img {
-    height: 180px;
-  }
-
-  .cover-page__card--title {
-    height: 150px;
-    min-width: 405px;
-    width: 405px;
-  }
-
-  .title__presentation {
-    height: 100px;
-  }
-
-  .title__presentation--me {
-    font-size: 22px;
-    height: 30px;
-  }
-
-  .title__presentation--name {
-    font-size: 36px;
-    height: 45px;
-  }
-
-  .cover-page__card--rank {
-    font-size: 24px;
-    height: 38px;
-  }
-  /* End Component 2 - Cover Page Styles */
-}
-/* End Media Queries Screems 850px */
-
-/* Start Media Queries Screems 650px */
-@media only screen and (max-width: 650px) {
-  /* Start Component 2 - Cover Page Styles */
-  .content__cover-page {
-    align-items: center;
-    display: flex;
-    /* height: 79vh; */
-    justify-content: center;
-    min-height: 80vh;
-  }
-
-  .cover-page__card {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 310px;
-    justify-content: space-between;
-    min-width: 360px;
-    width: 360px;
-  }
-
-  .cover-page__card--img {
-    height: 155px;
-    margin: 0px;
-  }
-
-  .cover-page__card--title {
-    height: 135px;
-    margin: 0px;
-    min-width: 360px;
-    width: 360px;
-  }
-
-  .title__presentation {
-    height: 90px;
-  }
-
-  .title__presentation--me {
-    font-size: 18px;
-    height: 28px;
-  }
-
-  .title__presentation--name {
-    font-size: 30px;
-    height: 42px;
-  }
-
-  .cover-page__card--rank {
-    font-size: 20px;
-    height: 36px;
-  }
-  /* End Component 2 - Cover Page Styles */
-}
-/* End Media Queries Screems 650px */
