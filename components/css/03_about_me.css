@@ -28,8 +28,18 @@ a:focus-visible {
 
 /* Start Component 3 - About me Styles */
 
+@keyframes slideInFromleft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 .content__about-me {
   align-items: center;
+  animation: 1.5s ease-out 0s 1 slideInFromleft;
   /* background-image: url("../../assets/city_img.jpg");
   background-position: center;
   background-repeat: no-repeat; 
