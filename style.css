@@ -24,6 +24,23 @@ a:focus-visible {
   outline: none;
 }
 
+.nav-button {
+  align-items: center;
+  color: #ff5200;
+  display: flex;
+  font-size: 27px;
+  font-weight: bold;
+  height: 50px;
+  justify-content: center;
+  text-decoration: none;
+  transition: font-size 0.5s;
+  width: 50px;
+}
+
+.nav-button:hover {
+  font-size: 35px;
+}
+
 .header {
   align-items: center;
   background-image: radial-gradient(
@@ -65,12 +82,22 @@ a:focus-visible {
 @media screen and (max-width: 850px) {
   /* Start General Styles */
 
+  .nav-button {
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .nav-button:hover {
+    font-size: 30px;
+  }
+
   .header {
     height: 70px;
   }
 
   .content {
-    min-height: 79vh;
+    min-height: 81vh;
   }
 
   .footer {
@@ -84,6 +111,16 @@ a:focus-visible {
 /* Start Media Queries Screems 650px */
 @media screen and (max-width: 650px) {
   /* Start General Styles */
+
+  .nav-button {
+    font-size: 22px;
+    height: 37px;
+    width: 37px;
+  }
+
+  .nav-button:hover {
+    font-size: 28px;
+  }
 
   .header {
     display: flex;

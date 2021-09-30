@@ -26,29 +26,28 @@ a:focus-visible {
 
 .nav-button {
   align-items: center;
-  /* border-style: solid; */
-  color: #ff4c29;
+  color: #ff5200;
   display: flex;
-  font-size: 27px;
+  font-size: 28px;
   font-weight: bold;
+  height: 45px;
   justify-content: center;
-  transition: font-size 0.5s;
-  height: 50px;
-  width: 50px;
   text-decoration: none;
+  transition: font-size 0.5s;
+  width: 45px;
 }
 
 .nav-button:hover {
-  font-size: 35px;
+  font-size: 34px;
 }
 
 /* End General Styles */
 
 /* Start Component 2 - Cover Page Styles */
 
-@keyframes slideInFromTop {
+@keyframes slideInFromBottom {
   0% {
-    transform: translateY(-40%);
+    transform: translateY(-32%);
   }
   100% {
     transform: translateX(0%);
@@ -79,15 +78,14 @@ a:focus-visible {
 
 .cover-page__card {
   align-items: center;
-  animation: 1.2s ease-out 0s 1 slideInFromTop;
+  animation: 1.2s ease-out 0s 1 slideInFromBottom;
   display: flex;
   flex-direction: column;
-  height: 290px;
+  height: 285px;
   justify-content: space-between;
   min-width: 850px;
   position: relative;
   width: 850px;
-  /* border-style: solid; */
 }
 
 .cover-page__card--profile {
@@ -95,7 +93,6 @@ a:focus-visible {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* border-style: solid; */
 }
 
 .profile__fig {
@@ -154,10 +151,10 @@ a:focus-visible {
   background-color: #63b603;
   color: white;
   display: flex;
-  justify-content: flex-end;
   font-size: 32px;
   font-weight: 900;
   height: 50px;
+  justify-content: flex-end;
   margin: 0px;
   padding-right: 10px;
   text-shadow: 2px 2px 4px #dddddd;
@@ -166,8 +163,140 @@ a:focus-visible {
 .cover-page__card--buttons {
   display: flex;
   justify-content: flex-end;
-  /* border-style: solid; */
   min-width: 850px;
 }
 
 /* End Component 2 - Cover Page Styles */
+
+/* Start Media Queries Screems 850px */
+@media screen and (max-width: 850px) {
+  /* Start Component 2 - Cover Page Styles */
+  .content__cover-page {
+    min-height: 81vh;
+  }
+
+  .cover-page__card {
+    height: 260px;
+    min-width: 630px;
+    width: 630px;
+  }
+
+  .profile__fig--img {
+    height: 180px;
+  }
+
+  .profile__title {
+    height: 150px;
+    min-width: 405px;
+    width: 405px;
+  }
+
+  .profile__title--presentation {
+    height: 100px;
+  }
+
+  .presentation__me {
+    font-size: 22px;
+    height: 30px;
+  }
+
+  .presentation__name {
+    font-size: 36px;
+    height: 45px;
+  }
+
+  .profile__title--rank {
+    font-size: 24px;
+    height: 38px;
+  }
+
+  .cover-page__card--buttons {
+    min-width: 630px;
+  }
+
+  .nav-button {
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .nav-button:hover {
+    font-size: 30px;
+  }
+
+  /* End Component 2 - Cover Page Styles */
+}
+/* End Media Queries Screems 850px */
+
+/* Start Media Queries Screems 650px */
+@media only screen and (max-width: 650px) {
+  /* Start Component 2 - Cover Page Styles */
+
+  .content__cover-page {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 82vh;
+  }
+
+  .cover-page__card {
+    height: 352px;
+    min-width: 360px;
+    width: 360px;
+  }
+
+  .cover-page__card--profile {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 302px;
+    justify-content: space-between;
+  }
+
+  .profile__fig--img {
+    height: 155px;
+    margin: 0px;
+  }
+
+  .profile__title {
+    height: 122px;
+    margin: 0px;
+    min-width: 360px;
+    width: 360px;
+  }
+
+  .profile__title--presentation {
+    height: 80px;
+  }
+
+  .presentation__me {
+    font-size: 18px;
+    height: 28px;
+  }
+
+  .presentation__name {
+    font-size: 30px;
+    height: 42px;
+  }
+
+  .profile__title--rank {
+    font-size: 20px;
+    height: 36px;
+  }
+
+  .cover-page__card--buttons {
+    min-width: 360px;
+  }
+
+  .nav-button {
+    font-size: 22px;
+    height: 37px;
+    width: 37px;
+  }
+
+  .nav-button:hover {
+    font-size: 28px;
+  }
+
+  /* End Component 2 - Cover Page Styles */
+}
+/* End Media Queries Screems 650px */

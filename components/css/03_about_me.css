@@ -24,6 +24,10 @@ a:focus-visible {
   outline: none;
 }
 
+.repair__page {
+  color: yellow;
+}
+
 /* End General Styles */
 
 /* Start Component 3 - About me Styles */

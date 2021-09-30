@@ -1,0 +1,21 @@
+.repair__page {
+  color: yellow;
+}
+
+.content__proyects {
+  align-items: center;
+  /* background-image: url("../../assets/city_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; */
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(69, 86, 102, 1) 0%,
+    rgba(34, 34, 34, 1) 90%
+  );
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+  width: 100%;
+}
