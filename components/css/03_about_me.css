@@ -39,7 +39,6 @@ a:focus-visible {
 
 .content__about-me {
   align-items: center;
-  animation: 1.5s ease-out 0s 1 slideInFromleft;
   /* background-image: url("../../assets/city_img.jpg");
   background-position: center;
   background-repeat: no-repeat; 
@@ -58,6 +57,7 @@ a:focus-visible {
 
 .about-me__card {
   align-items: center;
+  animation: 1.2s ease-out 0s 1 slideInFromleft;
   display: flex;
   flex-direction: column;
   height: 415px;

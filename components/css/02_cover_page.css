@@ -1,8 +1,8 @@
 /* Start Component 2 - Cover Page Styles */
 
-@keyframes slideInFromRight {
+@keyframes slideInFromTop {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-40%);
   }
   100% {
     transform: translateX(0%);
@@ -10,29 +10,36 @@
 }
 
 .content__cover-page {
-  animation: 1.5s ease-out 0s 1 slideInFromRight;
   align-items: center;
-  /* background-image: url("../../assets/wooden_img.jpg");
+  background-image: url("../../assets/cover_page_img.jpg");
   background-repeat: no-repeat;
-  background-size: cover; */
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(69, 86, 102, 1) 0%,
-    rgba(34, 34, 34, 1) 90%
-  );
+  background-size: cover;
   display: flex;
-  min-height: 76vh;
   justify-content: center;
+  min-height: 76vh;
+  position: relative;
   width: 100%;
+}
+
+.content__cover-page::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .cover-page__card {
   align-items: center;
+  animation: 1.2s ease-out 0s 1 slideInFromTop;
   display: flex;
   flex-direction: row;
   height: 250px;
   justify-content: space-between;
   min-width: 850px;
+  position: relative;
   width: 850px;
 }
 
@@ -41,6 +48,7 @@
   filter: drop-shadow(0 0 7px #292828);
   height: 200px;
   margin: 10px;
+  position: relative;
 }
 
 .cover-page__card--title {
@@ -50,6 +58,7 @@
   justify-content: space-between;
   margin: 10px;
   min-width: 605px;
+  position: relative;
   width: 605px;
 }
 
@@ -58,6 +67,7 @@
   flex-direction: column;
   height: 120px;
   justify-content: center;
+  position: relative;
 }
 
 .title__presentation--me {
@@ -100,7 +110,7 @@
 @media screen and (max-width: 850px) {
   /* Start Component 2 - Cover Page Styles */
   .content__cover-page {
-    min-height: 77.2vh;
+    min-height: 79vh;
   }
 
   .cover-page__card {
