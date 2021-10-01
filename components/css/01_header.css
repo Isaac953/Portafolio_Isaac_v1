@@ -21,7 +21,12 @@
   padding-left: 7px;
   padding-right: 7px;
   text-decoration: none;
+  transition: color 0.5s;
   width: 250px;
+}
+
+.header__logo--name:hover {
+  color: #f98903;
 }
 
 .header__logo--icon {
@@ -56,13 +61,28 @@
   height: 75px;
   justify-content: center;
   min-width: 115px;
+  position: relative;
   text-align: center;
   width: 115px;
+  z-index: 1;
 }
 
-.menu__item:hover {
-  background-color: #089900;
-  transition: background-color 0.7s;
+.menu__item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top center;
+  background: #089900;
+  z-index: -1;
+  transition: transform 0.3s;
+}
+
+.menu__item:hover::after {
+  transform: scaleY(1);
 }
 
 .menu__item--link {
@@ -106,6 +126,10 @@
     font-size: 15px;
   }
 
+  .menu__item:hover::after {
+    transform: none;
+  }
+
   /* End Component 1 - Header Styles */
 }
 /* End Media Queries Screems 850px */
@@ -122,7 +146,12 @@
   .header__logo--name {
     font-size: 24px;
     min-width: 195px;
+    transition: color 0s;
     width: 195px;
+  }
+
+  .header__logo--name:hover {
+    color: white;
   }
 
   .header__logo--icon {
@@ -152,13 +181,23 @@
     width: 85px;
   }
 
+  .menu__item:hover {
+    background-color: #089900;
+    transition: background-color 0.7s;
+  }
+
+  .menu__item:hover::after {
+    transform: scaleY(0);
+  }
+
   .menu__item--link {
     font-size: 12px;
   }
 
-  .header .header__navbar {
+  .header__navbar {
     display: none;
   }
+
   .header:focus-within .header__navbar {
     align-items: center;
     display: flex;
