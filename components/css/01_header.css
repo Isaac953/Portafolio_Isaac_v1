@@ -25,10 +25,6 @@
   width: 250px;
 }
 
-.header__logo--name:hover {
-  color: #f98903;
-}
-
 .header__logo--icon {
   color: #cad315;
   font-size: 37px;
@@ -179,15 +175,6 @@
     height: 45px;
     min-width: 85px;
     width: 85px;
-  }
-
-  .menu__item:hover {
-    background-color: #089900;
-    transition: background-color 0.7s;
-  }
-
-  .menu__item:hover::after {
-    transform: scaleY(0);
   }
 
   .menu__item--link {
