@@ -24,34 +24,45 @@ a:focus-visible {
   outline: none;
 }
 
-.repair__page {
-  color: yellow;
+.nav-button {
+  align-items: center;
+  background-color: #0f52ba;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  height: 45px;
+  justify-content: center;
+  text-decoration: none;
+  transition: font-size 0.5s;
+  width: 45px;
+}
+
+.nav-button:hover {
+  font-size: 34px;
 }
 
 /* End General Styles */
 
 /* Start Component 3 - About me Styles */
 
-@keyframes slideInFromleft {
+/* @keyframes slideInFromleft {
   0% {
     transform: translateX(100%);
   }
   100% {
     transform: translateX(0%);
   }
-}
+} */
 
 .content__about-me {
   align-items: center;
   /* background-image: url("../../assets/city_img.jpg");
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover; */
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(69, 86, 102, 1) 0%,
-    rgba(34, 34, 34, 1) 90%
-  );
+  background-color: #334756;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -61,10 +72,10 @@ a:focus-visible {
 
 .about-me__card {
   align-items: center;
-  animation: 1.2s ease-out 0s 1 slideInFromleft;
+  /* animation: 1.2s ease-out 0s 1 slideInFromleft; */
   display: flex;
   flex-direction: column;
-  height: 415px;
+  height: 390px;
   justify-content: space-between;
   min-width: 850px;
   width: 850px;
@@ -89,41 +100,10 @@ a:focus-visible {
   width: 850px;
 }
 
-.buttons-card {
-  align-items: center;
+.about-me__card--buttons {
   display: flex;
-  flex-direction: row;
-  height: 93px;
   justify-content: space-between;
-  padding: 0px 5px;
-  text-align: center;
-  width: 850px;
-}
-
-.buttons-card__component {
-  align-items: center;
-  color: #ffbc04;
-  display: flex;
-  flex-direction: row;
-  font-size: 18px;
-  font-weight: bold;
-  height: 45px;
-  justify-content: left;
-  padding-left: 5px;
-  text-decoration: none;
-  transition: font-size 1s;
-}
-
-.buttons-card__component:hover {
-  font-size: 22px;
-}
-
-.left_button {
-  padding-left: 7px;
-}
-
-.right_button {
-  padding-right: 7px;
+  min-width: 850px;
 }
 
 /* End Component 3 - About me Styles */
@@ -138,7 +118,7 @@ a:focus-visible {
   } */
 
   .about-me__card {
-    height: 425px;
+    height: 405px;
     min-width: 630px;
     width: 630px;
   }
@@ -156,27 +136,20 @@ a:focus-visible {
     width: 630px;
   }
 
-  .buttons-card {
-    width: 630px;
+  .about-me__card--buttons {
+    min-width: 630px;
   }
 
-  .buttons-card__component {
-    font-size: 16px;
+  .nav-button {
+    font-size: 24px;
     height: 40px;
-    padding-left: 4px;
+    width: 40px;
   }
 
-  .buttons-card__component:hover {
-    font-size: 20px;
+  .nav-button:hover {
+    font-size: 30px;
   }
 
-  .left_button {
-    padding-left: 6px;
-  }
-
-  .right_button {
-    padding-right: 6px;
-  }
   /* End Component 3 - About me Styles */
 }
 /* End Media Queries Screems 850px */
@@ -191,7 +164,7 @@ a:focus-visible {
   } */
 
   .about-me__card {
-    height: 485px;
+    height: 460px;
     min-width: 360px;
     width: 360px;
   }
@@ -209,27 +182,20 @@ a:focus-visible {
     width: 360px;
   }
 
-  .buttons-card {
-    width: 360px;
+  .about-me__card--buttons {
+    min-width: 360px;
   }
 
-  .buttons-card__component {
-    font-size: 14px;
-    height: 38px;
-    padding-left: 3px;
+  .nav-button {
+    font-size: 22px;
+    height: 37px;
+    width: 37px;
   }
 
-  .buttons-card__component:hover {
-    font-size: 18px;
+  .nav-button:hover {
+    font-size: 28px;
   }
 
-  .left_button {
-    padding-left: 5px;
-  }
-
-  .right_button {
-    padding-right: 5px;
-  }
   /* End Component 3 - About me Styles */
 }
 /* End Media Queries Screems 650px */

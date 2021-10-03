@@ -63,7 +63,7 @@ a:focus-visible {
   background-size: cover;
   display: flex;
   justify-content: center;
-  min-height: 76vh;
+  min-height: 100vh;
   position: relative;
   width: 100%;
 }
@@ -173,9 +173,9 @@ a:focus-visible {
 /* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 2 - Cover Page Styles */
-  .content__cover-page {
+  /* .content__cover-page {
     min-height: 81vh;
-  }
+  } */
 
   .cover-page__card {
     height: 260px;
@@ -238,7 +238,7 @@ a:focus-visible {
     align-items: center;
     display: flex;
     justify-content: center;
-    min-height: 82vh;
+    /* min-height: 82vh; */
   }
 
   .cover-page__card {

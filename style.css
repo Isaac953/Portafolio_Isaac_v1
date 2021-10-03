@@ -62,7 +62,7 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 76vh;
+  min-height: 100vh;
 }
 
 .footer {
@@ -98,9 +98,9 @@ a:focus-visible {
     height: 70px;
   }
 
-  .content {
+  /* .content {
     min-height: 81vh;
-  }
+  } */
 
   .footer {
     height: 70px;
@@ -130,9 +130,9 @@ a:focus-visible {
     height: max-content;
   }
 
-  .content {
+  /* .content {
     min-height: 80vh;
-  }
+  } */
 
   .footer {
     height: 65px;
