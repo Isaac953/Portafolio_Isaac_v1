@@ -59,6 +59,7 @@ a:focus-visible {
 .content__cover-page {
   align-items: center;
   background-image: url("../../assets/cover_page_img.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -75,7 +76,7 @@ a:focus-visible {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .cover-page__card {
@@ -99,7 +100,6 @@ a:focus-visible {
 
 .profile__fig {
   filter: drop-shadow(0 0 7px #292828);
-  position: relative;
 }
 
 .profile__fig--img {
@@ -115,7 +115,6 @@ a:focus-visible {
   justify-content: space-between;
   margin: 10px;
   min-width: 605px;
-  position: relative;
   width: 605px;
 }
 
@@ -124,7 +123,6 @@ a:focus-visible {
   flex-direction: column;
   height: 120px;
   justify-content: center;
-  position: relative;
 }
 
 .presentation__me {

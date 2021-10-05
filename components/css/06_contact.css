@@ -45,27 +45,28 @@ a:focus-visible {
 
 /* End General Styles */
 
-/* Start Component 6 - Contact Styles */
-/* .content__contact {
-  align-items: center;
-  background-color: #0696a0;
-  display: flex;
-  flex-direction: column;
-  height: 295px;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-} */
-
 .content__contact {
   align-items: center;
-  background-color: #334756;
+  background-image: url("../../assets/contact_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-evenly;
+  position: relative;
   width: 100%;
+}
+
+.content__contact::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .contact__card {
@@ -75,6 +76,7 @@ a:focus-visible {
   height: 285px;
   justify-content: space-between;
   min-width: 850px;
+  position: relative;
   width: 850px;
 }
 
@@ -109,11 +111,9 @@ a:focus-visible {
   align-items: center;
   display: flex;
   height: 55px;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
   width: 350px;
-  /* border-style: solid;
-  border-color: white; */
 }
 
 .social--media__item {
@@ -126,20 +126,22 @@ a:focus-visible {
 
 .social--media__button {
   align-items: center;
-  color: #ff4c29;
+  background-color: #fc5404;
+  border-radius: 8px;
+  color: white;
   display: flex;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
-  height: 50px;
+  height: 45px;
   justify-content: center;
   text-align: center;
   text-decoration: none;
   transition: font-size 1s;
-  width: 50px;
+  width: 45px;
 }
 
 .social--media__button:hover {
-  font-size: 35px;
+  font-size: 34px;
 }
 
 .contact__card--buttons {
@@ -179,13 +181,13 @@ a:focus-visible {
   }
 
   .contact__social--media {
-    height: 45px;
+    height: 50px;
     width: 310px;
   }
 
   .social--media__item {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
   }
 
   .social--media__button {
@@ -243,19 +245,19 @@ a:focus-visible {
   }
 
   .contact__social--media {
-    height: 40px;
+    height: 45px;
     width: 255px;
   }
 
   .social--media__item {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
   }
 
   .social--media__button {
     font-size: 20px;
-    height: 30px;
-    width: 35px;
+    height: 37px;
+    width: 37px;
   }
 
   .social--media__button:hover {
