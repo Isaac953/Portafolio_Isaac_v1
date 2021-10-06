@@ -171,9 +171,9 @@ a:focus-visible {
 /* Start Media Queries Screems 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 2 - Cover Page Styles */
-  /* .content__cover-page {
-    min-height: 81vh;
-  } */
+  .content__cover-page {
+    height: 120vh;
+  }
 
   .cover-page__card {
     height: 260px;

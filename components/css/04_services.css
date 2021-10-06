@@ -1,3 +1,50 @@
+/* Start General Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
+  margin: 0px;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus-visible {
+  border-color: #0021da;
+  border-style: solid;
+  outline: none;
+}
+
+.nav-button {
+  align-items: center;
+  background-color: #0f52ba;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  height: 45px;
+  justify-content: center;
+  text-decoration: none;
+  transition: font-size 0.5s;
+  width: 45px;
+}
+
+.nav-button:hover {
+  font-size: 34px;
+}
+
+/* End General Styles */
+
 .repair__page {
   color: yellow;
 }
@@ -22,20 +69,98 @@
   width: 100%;
 }
 
-.services-card {
-  width: 500px;
-  border: solid;
-  height: 140px;
+.services__card {
+  align-items: center;
+  /* animation: 1.2s ease-out 0s 1 slideInFromleft; */
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-between;
+  min-width: 850px;
+  position: relative;
+  width: 850px;
+  border-style: solid;
+}
+
+.services__card--title {
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+  min-width: 850px;
+  padding: 0px 15px;
+  width: 850px;
+}
+
+.services__card--dev {
+  border-style: solid;
+  border-color: cyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 280px;
+  min-width: 825px;
+  width: 825px;
+}
+
+.card--dev__title {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card--dev__list {
+  border-style: solid;
+  border-color: orange;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  height: 230px;
 }
 
-.services-card__dev {
-  width: 200px;
-  border: solid;
-  height: 50px;
+.list__devitem {
+  align-items: center;
+  border-style: solid;
+  border-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 200px;
+  width: 350px;
+  list-style: none;
+}
+
+.list__devitem--icon {
+  font-size: 50px;
+  border-style: solid;
+  width: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__devitem--role {
+  border-style: solid;
+  width: 250px;
+}
+
+.role__title {
+  color: white;
+}
+
+.role__list {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.services__card--skills {
+  border-style: solid;
+  border-color: green;
+  height: 300px;
+  min-width: 825px;
+  width: 825px;
 }
 
 /* End Component 4 - Services Styles */

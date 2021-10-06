@@ -171,10 +171,9 @@ a:focus-visible {
 @media only screen and (max-width: 650px) {
   /* Start Component 3 - About me Styles */
 
-  /* .content__about-me {
-    height: 97vh;
-    min-height: 97vh;
-  } */
+  .content__about-me {
+    height: 120vh;
+  }
 
   .about-me__card {
     height: 425px;

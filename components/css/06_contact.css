@@ -157,6 +157,10 @@ a:focus-visible {
 @media screen and (max-width: 850px) {
   /* Start Component 6 - Contact Styles */
 
+  .content__contact {
+    height: 120vh;
+  }
+
   .contact__card {
     height: 250px;
     min-width: 630px;
