@@ -64,7 +64,7 @@ a:focus-visible {
   );
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 130vh;
   justify-content: space-evenly;
   width: 100%;
 }
@@ -74,11 +74,11 @@ a:focus-visible {
   /* animation: 1.2s ease-out 0s 1 slideInFromleft; */
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 650px;
   justify-content: space-between;
-  min-width: 850px;
+  min-width: 1050px;
   position: relative;
-  width: 850px;
+  width: 1050px;
   border-style: solid;
 }
 
@@ -86,9 +86,9 @@ a:focus-visible {
   color: white;
   font-size: 28px;
   font-weight: 900;
-  min-width: 850px;
-  padding: 0px 15px;
-  width: 850px;
+  min-width: 1050px;
+  padding-left: 25px;
+  width: 1050px;
 }
 
 .services__card--dev {
@@ -97,9 +97,9 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 280px;
-  min-width: 825px;
-  width: 825px;
+  height: 550px;
+  min-width: 1000px;
+  width: 1000px;
 }
 
 .card--dev__title {
@@ -116,7 +116,7 @@ a:focus-visible {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 230px;
+  height: 430px;
 }
 
 .list__devitem {
@@ -126,15 +126,16 @@ a:focus-visible {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 200px;
-  width: 350px;
+  height: 380px;
+  width: 470px;
   list-style: none;
 }
 
 .list__devitem--icon {
-  font-size: 50px;
+  font-size: 60px;
   border-style: solid;
-  width: 70px;
+  width: 100px;
+  height: 100px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -143,16 +144,26 @@ a:focus-visible {
 
 .list__devitem--role {
   border-style: solid;
-  width: 250px;
+  width: 330px;
+  height: 330px;
 }
 
 .role__title {
   color: white;
+  padding-bottom: 10px;
+  font-size: 20px;
 }
 
 .role__list {
   list-style: disc;
   list-style-position: inside;
+}
+
+.role__list--item {
+  color: white;
+  font-size: 14px;
+  padding-bottom: 7px;
+  text-align: justify;
 }
 
 .services__card--skills {
