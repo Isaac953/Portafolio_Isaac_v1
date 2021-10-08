@@ -1,35 +1,78 @@
-<div class="header__logo">
-  <a
-    href="#home"
-    onclick="loadCoverPage()"
-    class="header__logo--name"
-    tabindex="0"
-    ><i class="fa fa-laptop header__logo--icon" aria-hidden="true"></i>
-    Isaac Arias
-  </a>
-  <a href="#" class="header__logo--hamburger"><i class="fas fa-bars"></i></a>
-</div>
-<nav class="header__navbar">
-  <ul class="header__navbar--menu">
-    <li class="menu__item">
-      <a href="#about-me" onclick="loadAboutMe()" class="menu__item--link"
-        ><i class="fa fa-user" aria-hidden="true"></i> Sobre mí</a
-      >
-    </li>
-    <li class="menu__item">
-      <a href="#services" onclick="loadServices()" class="menu__item--link"
-        ><i class="fa fa-file-code"></i> Servicios</a
-      >
-    </li>
-    <li class="menu__item">
-      <a href="#proyects" onclick="loadProyects()" class="menu__item--link"
-        ><i class="fas fa-briefcase"></i> Proyectos</a
-      >
-    </li>
-    <li class="menu__item">
-      <a href="#contact" onclick="loadContact()" class="menu__item--link"
-        ><i class="far fa-comment-alt"></i> Contacto</a
-      >
-    </li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaac Arias - Full Stack Developer</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../assets/portfolio_icon.png"
+    />
+    <link rel="stylesheet" href="../css/01_header.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fin de Inclusión de las hojas de Estilo y la fuente de la Página -->
+    <!-- Inicio de inclusión los iconos FontAwesome en la Página -->
+    <script
+      src="https://kit.fontawesome.com/7932647ae3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fin de inclusión los iconos FontAwesome en la Página -->
+  </head>
+  <body class="body">
+    <header id="header" class="header">
+      <div class="header__logo">
+        <a
+          href="#home"
+          onclick="loadCoverPage()"
+          class="header__logo--name"
+          tabindex="0"
+          ><i class="fa fa-laptop header__logo--icon" aria-hidden="true"></i>
+          Isaac Arias
+        </a>
+        <a href="#" class="header__logo--hamburger"
+          ><i class="fas fa-bars"></i
+        ></a>
+      </div>
+      <nav class="header__navbar">
+        <ul class="header__navbar--menu">
+          <li class="menu__item">
+            <a href="#about-me" onclick="loadAboutMe()" class="menu__item--link"
+              ><i class="fa fa-user" aria-hidden="true"></i> Sobre mí</a
+            >
+          </li>
+          <li class="menu__item">
+            <a
+              href="#services"
+              onclick="loadServices()"
+              class="menu__item--link"
+              ><i class="fa fa-code"></i> Servicios</a
+            >
+          </li>
+          <li class="menu__item skills">
+            <a href="#skills" onclick="loadSkills()" class="menu__item--link"
+              ><i class="fas fa-pencil-alt"></i> Habilidades</a
+            >
+          </li>
+          <li class="menu__item">
+            <a
+              href="#proyects"
+              onclick="loadProyects()"
+              class="menu__item--link"
+              ><i class="fas fa-briefcase"></i> Proyectos</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="#contact" onclick="loadContact()" class="menu__item--link"
+              ><i class="far fa-comment-alt"></i> Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

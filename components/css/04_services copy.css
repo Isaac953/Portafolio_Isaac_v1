@@ -1,0 +1,177 @@
+/* Start General Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
+  margin: 0px;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus-visible {
+  border-color: #0021da;
+  border-style: solid;
+  outline: none;
+}
+
+.nav-button {
+  align-items: center;
+  background-color: #0f52ba;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  height: 45px;
+  justify-content: center;
+  text-decoration: none;
+  transition: font-size 0.5s;
+  width: 45px;
+}
+
+.nav-button:hover {
+  font-size: 34px;
+}
+
+/* End General Styles */
+
+.repair__page {
+  color: yellow;
+}
+
+/* Start Component 4 - Services Styles */
+
+.content__services {
+  align-items: center;
+  /* background-image: url("../../assets/city_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; */
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(69, 86, 102, 1) 0%,
+    rgba(34, 34, 34, 1) 90%
+  );
+  display: flex;
+  flex-direction: column;
+  height: 130vh;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.services__card {
+  align-items: center;
+  /* animation: 1.2s ease-out 0s 1 slideInFromleft; */
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  justify-content: space-between;
+  min-width: 1050px;
+  position: relative;
+  width: 1050px;
+  border-style: solid;
+}
+
+.services__card--title {
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+  min-width: 1050px;
+  padding-left: 25px;
+  width: 1050px;
+}
+
+.services__card--dev {
+  border-style: solid;
+  border-color: cyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+  min-width: 1000px;
+  width: 1000px;
+}
+
+.card--dev__title {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card--dev__list {
+  border-style: solid;
+  border-color: orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 430px;
+}
+
+.list__devitem {
+  align-items: center;
+  border-style: solid;
+  border-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 380px;
+  width: 470px;
+  list-style: none;
+}
+
+.list__devitem--icon {
+  font-size: 60px;
+  border-style: solid;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__devitem--role {
+  border-style: solid;
+  width: 330px;
+  height: 330px;
+}
+
+.role__title {
+  color: white;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.role__list {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.role__list--item {
+  color: white;
+  font-size: 14px;
+  padding-bottom: 7px;
+  text-align: justify;
+}
+
+.services__card--skills {
+  border-style: solid;
+  border-color: green;
+  height: 300px;
+  min-width: 825px;
+  width: 825px;
+}
+
+/* End Component 4 - Services Styles */
