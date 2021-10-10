@@ -45,7 +45,7 @@ a:focus-visible {
 
 .header {
   background-color: #343a40;
-  min-width: 250px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -86,11 +86,25 @@ a:focus-visible {
   border-radius: 3px;
 }
 
+.header__logo--hamburger2 {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  border-style: solid;
+  border-width: thin;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
 .header__logo--icon {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: white;
+  color: red;
   font-size: 28px;
   text-decoration: none;
   width: 230px;

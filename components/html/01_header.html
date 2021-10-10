@@ -23,16 +23,20 @@
     ></script>
     <!-- Fin de inclusión los iconos FontAwesome en la Página -->
   </head>
-  <body class="body">
+  <body id="body" class="body">
     <header id="header" class="header">
       <section class="header__logo">
-        <a href="#" href="#home" onclick="loadCoverPage()" class="header__logo--hamburger"
+        <a href="#" onclick="closeNav()" id="hamburger" class="header__logo--hamburger"
+          ><i class="fas fa-bars "></i>
+        </a>
+
+        <a href="#" onclick="openNav()" id="hamburger2" class="header__logo--hamburger2"
           ><i class="fas fa-bars "></i>
         </a>
 
           <a href="#" href="#home" onclick="loadCoverPage()" class="header__logo--icon"
           ><i class="fa fa-laptop" aria-hidden="true"></i>
-          <p> Isaac Arias</p></a>
+          <p id="logoname"> Isaac Arias</p></a>
         </a>
       </section>
       <nav class="header__navbar">
@@ -71,5 +75,24 @@
         </ul> -->
       </nav>
     </header>
+    <script>
+      function openNav() {
+        document.getElementById("hamburger").style.display = "flex";
+        document.getElementById("hamburger2").style.display = "none";
+        document.getElementById("header").style.width = "250px";
+        document.getElementById("header").style.transition = "0.5s";
+        document.getElementById("logoname").style.display = "flex";
+        document.getElementById("logoname").style.transition = "all 0.1s ease-in-out";
+      }
+      
+      function closeNav() {
+        document.getElementById("hamburger").style.display = "none";
+        document.getElementById("hamburger2").style.display = "flex";
+        document.getElementById("header").style.width = "4.6rem";
+        document.getElementById("header").style.transition = "0.5s";
+        document.getElementById("logoname").style.display = "none";
+      }
+      </script>
   </body>
+  
 </html>
