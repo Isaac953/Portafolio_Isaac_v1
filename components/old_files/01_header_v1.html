@@ -25,18 +25,21 @@
   </head>
   <body class="body">
     <header id="header" class="header">
-      <section class="header__logo">
-        <a href="#" href="#home" onclick="loadCoverPage()" class="header__logo--hamburger"
-          ><i class="fas fa-bars "></i>
+      <div class="header__logo">
+        <a
+          href="#home"
+          onclick="loadCoverPage()"
+          class="header__logo--name"
+          tabindex="0"
+          ><i class="fa fa-laptop header__logo--icon" aria-hidden="true"></i>
+          Isaac Arias
         </a>
-
-          <a href="#" href="#home" onclick="loadCoverPage()" class="header__logo--icon"
-          ><i class="fa fa-laptop" aria-hidden="true"></i>
-          <p> Isaac Arias</p></a>
-        </a>
-      </section>
+        <a href="#" class="header__logo--hamburger"
+          ><i class="fas fa-bars"></i
+        ></a>
+      </div>
       <nav class="header__navbar">
-        <!-- <ul class="header__navbar--menu">
+        <ul class="header__navbar--menu">
           <li class="menu__item">
             <a href="#about-me" onclick="loadAboutMe()" class="menu__item--link"
               ><i class="fa fa-user" aria-hidden="true"></i> Sobre mí</a
@@ -68,7 +71,7 @@
               ><i class="far fa-comment-alt"></i> Contacto</a
             >
           </li>
-        </ul> -->
+        </ul>
       </nav>
     </header>
   </body>

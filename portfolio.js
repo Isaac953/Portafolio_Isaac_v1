@@ -36,7 +36,7 @@ async function loadFooter() {
 
 // Start Load Functions default //
 
-loadHeader();
+// loadHeader();
 
 loadCoverPage();
 
