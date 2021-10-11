@@ -26,11 +26,11 @@
   <body id="body" class="body">
     <header id="header" class="header">
       <section class="header__logo">
-        <a href="#" onclick="closeNav()" id="hamburger" class="header__logo--hamburger"
+        <a href="#" onclick="closeNav()" id="hamburger_close" class="header__logo--hamburger-open"
           ><i class="fas fa-bars "></i>
         </a>
 
-        <a href="#" onclick="openNav()" id="hamburger2" class="header__logo--hamburger2"
+        <a href="#" onclick="openNav()" id="hamburger_open" class="header__logo--hamburger-close"
           ><i class="fas fa-bars "></i>
         </a>
 
@@ -40,10 +40,10 @@
         </a>
       </section>
       <nav class="header__navbar">
-        <!-- <ul class="header__navbar--menu">
+        <ul id="menu" class="header__navbar--menu">
           <li class="menu__item">
             <a href="#about-me" onclick="loadAboutMe()" class="menu__item--link"
-              ><i class="fa fa-user" aria-hidden="true"></i> Sobre mí</a
+              ><i class="fa fa-user" aria-hidden="true"></i><p id="aboutme"> Sobre mí</p></a
             >
           </li>
           <li class="menu__item">
@@ -51,12 +51,12 @@
               href="#services"
               onclick="loadServices()"
               class="menu__item--link"
-              ><i class="fa fa-code"></i> Servicios</a
+              ><i class="fa fa-code"></i><p id="services"> Servicios</p>  </a
             >
           </li>
           <li class="menu__item skills">
             <a href="#skills" onclick="loadSkills()" class="menu__item--link"
-              ><i class="fas fa-pencil-alt"></i> Habilidades</a
+              ><i class="fas fa-pencil-alt"></i><p id="skills"> Habilidades</p></a
             >
           </li>
           <li class="menu__item">
@@ -64,33 +64,55 @@
               href="#proyects"
               onclick="loadProyects()"
               class="menu__item--link"
-              ><i class="fas fa-briefcase"></i> Proyectos</a
+              ><i class="fas fa-briefcase"></i><p id="proyects"> Proyectos</p> </a
             >
           </li>
           <li class="menu__item">
             <a href="#contact" onclick="loadContact()" class="menu__item--link"
-              ><i class="far fa-comment-alt"></i> Contacto</a
+              ><i class="far fa-comment-alt"></i><p id="contact"> Contacto </p></a
             >
           </li>
-        </ul> -->
+        </ul>
       </nav>
     </header>
     <script>
       function openNav() {
-        document.getElementById("hamburger").style.display = "flex";
-        document.getElementById("hamburger2").style.display = "none";
+        document.getElementById("hamburger_close").style.display = "flex";
+        document.getElementById("hamburger_open").style.display = "none";
         document.getElementById("header").style.width = "250px";
         document.getElementById("header").style.transition = "0.5s";
         document.getElementById("logoname").style.display = "flex";
-        document.getElementById("logoname").style.transition = "all 0.1s ease-in-out";
+        document.getElementById("menu").style.width = "230px";
+        // document.getElementById("aboutme").style.display = "flex";
+        // document.getElementById("aboutme").style.width = "230px";
+        // document.getElementById("services").style.display = "flex";
+        // document.getElementById("services").style.width = "230px";
+        // document.getElementById("skills").style.display = "flex";
+        // document.getElementById("skills").style.width = "230px";
+        // document.getElementById("proyects").style.display = "flex";
+        // document.getElementById("proyects").style.width = "230px";
+        // document.getElementById("contact").style.display = "flex";
+        // document.getElementById("contact").style.width = "230px";
       }
       
       function closeNav() {
-        document.getElementById("hamburger").style.display = "none";
-        document.getElementById("hamburger2").style.display = "flex";
+        document.getElementById("hamburger_close").style.display = "none";
+        document.getElementById("hamburger_open").style.display = "flex";
         document.getElementById("header").style.width = "4.6rem";
         document.getElementById("header").style.transition = "0.5s";
         document.getElementById("logoname").style.display = "none";
+
+        document.getElementById("aboutme").style.display = "none";
+        // document.getElementById("menu").style.width = "4.6rem";
+        // document.getElementById("services").style.display = "none";
+        // document.getElementById("services").style.width = "4.6rem";
+        // document.getElementById("skills").style.display = "none";
+        // document.getElementById("skills").style.width = "4.6rem";
+        // document.getElementById("proyects").style.display = "none";
+        // document.getElementById("proyects").style.width = "4.6rem";
+        // document.getElementById("contact").style.display = "none";
+        // document.getElementById("contact").style.width = "4.6rem";
+
       }
       </script>
   </body>
