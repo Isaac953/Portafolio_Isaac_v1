@@ -45,7 +45,7 @@ a:focus-visible {
 
 .header {
   background-color: #343a40;
-  width: 250px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -65,10 +65,10 @@ a:focus-visible {
 
 .header__logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-evenly;
-  height: 100px;
+  height: 70px;
   border-style: solid;
 }
 
@@ -77,9 +77,9 @@ a:focus-visible {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 20px;
-  width: 35px;
-  height: 35px;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
   border-style: solid;
   border-width: thin;
   text-decoration: none;
@@ -91,9 +91,9 @@ a:focus-visible {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 20px;
-  width: 35px;
-  height: 35px;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
   border-style: solid;
   border-width: thin;
   text-decoration: none;
@@ -105,11 +105,12 @@ a:focus-visible {
   align-items: center;
   justify-content: space-evenly;
   color: white;
-  font-size: 28px;
+  font-size: 26px;
   text-decoration: none;
-  width: 230px;
-  height: 35px;
+  min-width: 205px;
+  height: 40px;
   font-weight: 700;
+  /* border-style: solid; */
 }
 
 .header__navbar {
@@ -127,40 +128,10 @@ a:focus-visible {
 .menu__item {
   align-items: stretch;
   list-style: none;
-}
-
-.menu__item--link {
-  color: white;
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  text-align: center;
-  border-style: solid;
   display: flex;
-  height: 50px;
-  width: 230px;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #003cff;
-  border-radius: 7px;
-  padding-left: 15px;
-}
-
-.menu__item--link i {
-  display: flex;
-  width: 30px;
-  height: 30px;
-  border-style: solid;
   justify-content: center;
-  align-items: center;
-}
-
-.menu__item--link p {
-  display: flex;
-  width: 130px;
   border-style: solid;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 15px;
+  border-color: chocolate;
+  width: 100px;
+  height: 50px;
 }

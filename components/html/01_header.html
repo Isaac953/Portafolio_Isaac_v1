@@ -25,21 +25,29 @@
   </head>
   <body id="body" class="body">
     <header id="header" class="header">
-      <section class="header__logo">
-        <a href="#" onclick="closeNav()" id="hamburger_close" class="header__logo--hamburger-open"
-          ><i class="fas fa-bars "></i>
+      <section id="header__logo" class="header__logo">
+        <a
+          href="#"
+          onclick="closeNav()"
+          id="hamburger_close"
+          class="header__logo--hamburger-open"
+          ><i class="fas fa-bars"></i>
         </a>
 
-        <a href="#" onclick="openNav()" id="hamburger_open" class="header__logo--hamburger-close"
-          ><i class="fas fa-bars "></i>
+        <a
+          href="#"
+          onclick="openNav()"
+          id="hamburger_open"
+          class="header__logo--hamburger-close"
+          ><i class="fas fa-bars"></i>
         </a>
 
-          <a href="#" href="#home" onclick="loadCoverPage()" class="header__logo--icon"
+        <a id="logo_icon" href="#" href="#home" onclick="loadCoverPage()" class="header__logo--icon"
           ><i class="fa fa-laptop" aria-hidden="true"></i>
           <p id="logoname"> Isaac Arias</p></a>
         </a>
       </section>
-      <nav class="header__navbar">
+      <!-- <nav class="header__navbar">
         <ul id="menu" class="header__navbar--menu">
           <li class="menu__item">
             <a href="#about-me" onclick="loadAboutMe()" class="menu__item--link"
@@ -73,48 +81,32 @@
             >
           </li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
     <script>
       function openNav() {
         document.getElementById("hamburger_close").style.display = "flex";
         document.getElementById("hamburger_open").style.display = "none";
-        document.getElementById("header").style.width = "250px";
+        document.getElementById("header").style.width = "270px";
         document.getElementById("header").style.transition = "0.5s";
+        document.getElementById("header").style.display = "flex";
+        document.getElementById("header__logo").style.height = "70px";
+        document.getElementById("header__logo").style.flexDirection = "row-reverse";
+        document.getElementById("logo_icon").style.minWidth = "205px";
         document.getElementById("logoname").style.display = "flex";
-        document.getElementById("menu").style.width = "230px";
-        // document.getElementById("aboutme").style.display = "flex";
-        // document.getElementById("aboutme").style.width = "230px";
-        // document.getElementById("services").style.display = "flex";
-        // document.getElementById("services").style.width = "230px";
-        // document.getElementById("skills").style.display = "flex";
-        // document.getElementById("skills").style.width = "230px";
-        // document.getElementById("proyects").style.display = "flex";
-        // document.getElementById("proyects").style.width = "230px";
-        // document.getElementById("contact").style.display = "flex";
-        // document.getElementById("contact").style.width = "230px";
       }
-      
+
       function closeNav() {
         document.getElementById("hamburger_close").style.display = "none";
         document.getElementById("hamburger_open").style.display = "flex";
-        document.getElementById("header").style.width = "4.6rem";
+        document.getElementById("header").style.width = "70px";
         document.getElementById("header").style.transition = "0.5s";
+        document.getElementById("header").style.display = "flex";
+        document.getElementById("header__logo").style.height = "130px";
+        document.getElementById("header__logo").style.flexDirection = "column";
+        document.getElementById("logo_icon").style.minWidth = "70px";
         document.getElementById("logoname").style.display = "none";
-
-        document.getElementById("aboutme").style.display = "none";
-        // document.getElementById("menu").style.width = "4.6rem";
-        // document.getElementById("services").style.display = "none";
-        // document.getElementById("services").style.width = "4.6rem";
-        // document.getElementById("skills").style.display = "none";
-        // document.getElementById("skills").style.width = "4.6rem";
-        // document.getElementById("proyects").style.display = "none";
-        // document.getElementById("proyects").style.width = "4.6rem";
-        // document.getElementById("contact").style.display = "none";
-        // document.getElementById("contact").style.width = "4.6rem";
-
       }
-      </script>
+    </script>
   </body>
-  
 </html>
