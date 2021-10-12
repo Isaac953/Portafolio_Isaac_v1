@@ -49,6 +49,7 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: fixed;
 }
 
 /* .header:hover {
@@ -70,30 +71,20 @@ a:focus-visible {
   justify-content: space-evenly;
   height: 70px;
   border-style: solid;
+  position: absolute;
+  padding-right: 15px;
+  top: 0px;
+  right: 0px;
 }
 
-.header__logo--hamburger-open {
+.header__logo--hamburger_buttom {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 22px;
-  width: 40px;
-  height: 40px;
-  border-style: solid;
-  border-width: thin;
-  text-decoration: none;
-  border-radius: 3px;
-}
-
-.header__logo--hamburger-close {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 22px;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border-style: solid;
   border-width: thin;
   text-decoration: none;
@@ -110,7 +101,6 @@ a:focus-visible {
   min-width: 205px;
   height: 40px;
   font-weight: 700;
-  /* border-style: solid; */
 }
 
 .header__navbar {
