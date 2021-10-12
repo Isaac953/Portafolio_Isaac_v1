@@ -46,23 +46,23 @@ a:focus-visible {
 .header {
   background-color: #343a40;
   border-style: solid;
-  min-width: 250px;
+  min-width: 270px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.header:hover {
+/* .header:hover {
   min-width: 4.6rem;
-}
+} */
 
-.header__logo {
+/* .header__logo {
   height: 10vh;
 }
 
 .header__menu {
   height: 90vh;
-}
+} */
 
 .main {
   border-color: cyan;

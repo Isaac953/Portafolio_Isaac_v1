@@ -28,17 +28,9 @@
       <section id="header__logo" class="header__logo">
         <a
           href="#"
-          onclick="closeNav()"
-          id="hamburger_close"
+          id="hamburger_buttom"
+          onclick="headerClick()"
           class="header__logo--hamburger-open"
-          ><i class="fas fa-bars"></i>
-        </a>
-
-        <a
-          href="#"
-          onclick="openNav()"
-          id="hamburger_open"
-          class="header__logo--hamburger-close"
           ><i class="fas fa-bars"></i>
         </a>
 
@@ -83,30 +75,7 @@
         </ul>
       </nav> -->
     </header>
-    <script>
-      function openNav() {
-        document.getElementById("hamburger_close").style.display = "flex";
-        document.getElementById("hamburger_open").style.display = "none";
-        document.getElementById("header").style.width = "270px";
-        document.getElementById("header").style.transition = "0.5s";
-        document.getElementById("header").style.display = "flex";
-        document.getElementById("header__logo").style.height = "70px";
-        document.getElementById("header__logo").style.flexDirection = "row-reverse";
-        document.getElementById("logo_icon").style.minWidth = "205px";
-        document.getElementById("logoname").style.display = "flex";
-      }
+    <script src="/components/js/header.js"></script>
 
-      function closeNav() {
-        document.getElementById("hamburger_close").style.display = "none";
-        document.getElementById("hamburger_open").style.display = "flex";
-        document.getElementById("header").style.width = "70px";
-        document.getElementById("header").style.transition = "0.5s";
-        document.getElementById("header").style.display = "flex";
-        document.getElementById("header__logo").style.height = "130px";
-        document.getElementById("header__logo").style.flexDirection = "column";
-        document.getElementById("logo_icon").style.minWidth = "70px";
-        document.getElementById("logoname").style.display = "none";
-      }
-    </script>
   </body>
 </html>
