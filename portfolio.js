@@ -4,6 +4,10 @@ async function loadHeader() {
     header.innerHTML = await (await fetch('./components/html/01_header.html')).text();
 }
 
+async function loadSidebar() {
+    sidebar.innerHTML = await (await fetch('./components/html/02_sidebar.html')).text();
+}
+
 async function loadCoverPage() {
     content.innerHTML = await (await fetch('./components/html/02_cover_page.html')).text();
 }
@@ -38,7 +42,9 @@ async function loadFooter() {
 
 loadHeader();
 
-loadCoverPage();
+loadSidebar();
+
+// loadCoverPage();
 
 loadFooter();
 

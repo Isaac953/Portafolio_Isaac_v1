@@ -24,68 +24,58 @@ a:focus-visible {
   outline: none;
 }
 
-.nav-button {
-  align-items: center;
-  background-color: #0f52ba;
-  border-radius: 8px;
-  color: white;
-  display: flex;
-  font-size: 28px;
-  font-weight: bold;
-  height: 45px;
-  justify-content: center;
-  text-decoration: none;
-  transition: font-size 0.5s;
-  width: 45px;
-}
-
-.nav-button:hover {
-  font-size: 34px;
-}
-
-.header {
+.sidebar {
   background-color: #343a40;
-  border-style: solid;
-  min-width: 270px;
-  display: flex;
-  flex-direction: column;
+  width: 210px;
   min-height: 100vh;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/* .header:hover {
-  min-width: 4.6rem;
-} */
-
-/* .header__logo {
-  height: 10vh;
-}
-
-.header__menu {
-  height: 90vh;
-} */
 
 .main {
-  border-color: cyan;
-  border-style: solid;
   display: flex;
   flex-direction: column;
   width: 100vw;
   min-height: 100vh;
 }
 
+.header {
+  background-color: #035397;
+  min-width: 100%;
+  min-height: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .content {
   align-items: center;
+  background-color: #515e63;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
   display: flex;
+  min-width: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 100vh;
 }
 
 .footer {
   align-items: center;
-  background-color: rgb(17, 114, 240);
+  background-color: #035397;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
   display: flex;
-  height: 75px;
+  height: 70px;
   justify-content: center;
   width: 100%;
 }
@@ -96,8 +86,21 @@ a:focus-visible {
 @media screen and (max-width: 850px) {
   /* Start General Styles */
 
+  .sidebar {
+    min-width: 220px;
+    min-height: 100vh;
+    font-size: 18px;
+    display: none;
+  }
+
   .footer {
-    height: 70px;
+    height: 65px;
+    font-size: 18px;
+  }
+
+  .header {
+    height: 65px;
+    font-size: 18px;
   }
 
   /* End General Styles */
@@ -108,8 +111,21 @@ a:focus-visible {
 @media screen and (max-width: 650px) {
   /* Start General Styles */
 
+  .sidebar {
+    min-width: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    display: none;
+  }
+
   .footer {
-    height: 65px;
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .header {
+    height: 60px;
+    font-size: 16px;
   }
 
   /* End General Styles */
