@@ -58,6 +58,7 @@ a:focus-visible {
 
 .content__about-me {
   align-items: center;
+  background-attachment: fixed;
   background-image: url("../../assets/about_me_img.jpg");
   background-position: top;
   background-repeat: no-repeat;
