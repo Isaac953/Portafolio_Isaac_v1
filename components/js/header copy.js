@@ -1,33 +1,65 @@
-const header = document.getElementById("header");
-
-header.style.width = "270px";
-
-// let logoname = document.getElementById("logoname");
-
-// logoname.style.display = "flex";
-
+//Function Normal NavBar
 function headerClick() {
-  const hamburger_buttom = document.getElementById("hamburger_buttom");
-  const header = document.getElementById("header");
-  const header__logo = document.getElementById("header__logo");
-  const logo_icon = document.getElementById("logo_icon");
-  const logoname = document.getElementById("logoname");
 
-  if (header.style.width === "270px") {
-    header.style.width = "70px";
-    header.style.transition = "0.8s";
-    header__logo.style.height = "130px";
-    header__logo.style.flexDirection = "column";
-    logo_icon.style.minWidth = "70px";
-    header__logo.style.paddingRight = "0px";
-    logoname.style.display = "none";
-  } else {
-    header.style.width = "270px";
-    header.style.transition = "0.8s";
-    header__logo.style.height = "70px";
-    header__logo.style.flexDirection = "row-reverse";
-    logo_icon.style.minWidth = "205px";
-    header__logo.style.paddingRight = "15px";
-    logoname.style.display = "flex";
+  const sidebarValue = (document.getElementById("sidebar").offsetWidth).toString() + 'px';
+
+  const sidebar = document.getElementById("sidebar").style;
+  const sidebarExpanded = document.getElementById("sidebarExpanded").style;
+  const sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
+
+  let screemSize = screen.width;
+  console.log(screemSize);
+
+  console.log(sidebarValue);
+
+  switch (sidebarValue) {
+    case '210px':
+      sidebar.width = "70px";
+      sidebarExpanded.display = "none";
+      sidebarCollapsed.display = "flex";
+      sidebar.transition = "0.5s";
+      console.log('Sidebar es de 210px');
+      break;
+    case '70px':
+      sidebar.width = "210px";
+      sidebarExpanded.display = "flex";
+      sidebarCollapsed.display = "none";
+      sidebar.transition = "0.5s";
+      console.log('Sidebar es de 70px');
+      break;
+    case '195px':
+      sidebar.width = "65px";
+      sidebarExpanded.display = "none";
+      sidebarCollapsed.display = "flex";
+      sidebar.transition = "0.5s";
+      console.log('Sidebar es de 195px');
+      break;
+    case '65px':
+      sidebar.width = "195px";
+      sidebarExpanded.display = "flex";
+      sidebarCollapsed.display = "none";
+      sidebar.transition = "0.5s";
+      console.log('Sidebar es de 65px');
+      break;
+  }
+}
+
+//Function Mobile NavBar
+function headerMobileClick() {
+  let navMobile = document.getElementById("navMobile");
+  let navMobileValue = navMobile.value;
+  let sidebar = document.getElementById("sidebar").style;
+  let sidebarExpanded = document.getElementById("sidebarExpanded").style;
+  let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
+
+  if (navMobileValue === "Collapsed") {
+    navMobile.value = "Expanded";
+    sidebar.display = "flex";
+    sidebar.transition = "0.5s";
+  }
+  else {
+    navMobile.value = "Collapsed";
+    sidebar.display = "none";
+    sidebar.transition = "0.5s";
   }
 }
