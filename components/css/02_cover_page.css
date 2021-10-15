@@ -65,7 +65,7 @@ a:focus-visible {
   background-size: cover;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   width: 100%;
 }

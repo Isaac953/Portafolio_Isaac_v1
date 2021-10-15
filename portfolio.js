@@ -44,7 +44,7 @@ loadHeader();
 
 loadSidebar();
 
-loadCoverPage();
+// loadCoverPage();
 
 loadFooter();
 

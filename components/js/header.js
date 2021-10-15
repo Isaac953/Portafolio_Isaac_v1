@@ -19,32 +19,40 @@ function headerClick() {
       sidebar.width = "70px";
       sidebarExpanded.display = "none";
       sidebarCollapsed.display = "flex";
+      sidebar.transition = "0.5s";
       console.log('Sidebar es de 210px');
       break;
     case '70px':
       sidebar.width = "210px";
       sidebarExpanded.display = "flex";
       sidebarCollapsed.display = "none";
+      sidebar.transition = "0.5s";
       console.log('Sidebar es de 70px');
       break;
     case '195px':
       sidebar.width = "65px";
+      sidebarExpanded.display = "none";
+      sidebarCollapsed.display = "flex";
+      sidebar.transition = "0.5s";
       console.log('Sidebar es de 195px');
       break;
     case '65px':
       sidebar.width = "195px";
+      sidebarExpanded.display = "flex";
+      sidebarCollapsed.display = "none";
+      sidebar.transition = "0.5s";
       console.log('Sidebar es de 65px');
       break;
-    case '0px':
-      sidebar.width = "180px";
-      sidebar.display = "flex";
-      console.log('Sidebar es de 0px');
-      break;
-    case '180px':
-      sidebar.width = "0px";
-      sidebar.display = "none";
-      console.log('Sidebar es de 180px');
-      break;
+    // case 'none':
+    //   sidebar.height = "225px";
+    //   sidebarExpanded.display = "flex";
+    //   console.log('Sidebar es de 0px');
+    //   break;
+    // case '650px':
+    //   sidebar.height = "0px";
+    //   sidebarExpanded.display = "none";
+    //   console.log('Sidebar es de 180px');
+    //   break;
   }
 
 

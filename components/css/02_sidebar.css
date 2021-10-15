@@ -48,7 +48,7 @@ a:focus-visible {
 .sidebar {
   background-color: #343a40;
   width: 210px;
-  min-height: 100vh;
+  height: 100vh;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -56,6 +56,7 @@ a:focus-visible {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 8px;
 }
 
 .sidebar__list {
@@ -146,7 +147,6 @@ a:focus-visible {
 
   .sidebar {
     width: 195px;
-    min-height: 100vh;
   }
 
   .sidebar__list {
@@ -182,15 +182,17 @@ a:focus-visible {
 
 /* Start Media Queries Screems 650px */
 @media only screen and (max-width: 650px) {
-  /* Start Component 2 - Sidebar Styles */
 
   /* Start Component 2 - Sidebar Styles */
 
   .sidebar {
+    width: 100%;
+    height: 225px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
 
-    min-width: 180px;
-    height: 100vh;
-    display: none;
+    /* display: none; */
   }
 
   .sidebar__list {
