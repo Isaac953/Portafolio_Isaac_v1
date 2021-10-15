@@ -1,3 +1,7 @@
+async function loadSidebar() {
+  sidebar.innerHTML = await (await fetch('./components/html/02_sidebar.html')).text();
+}
+
 //Function Normal NavBar
 function headerClick() {
 

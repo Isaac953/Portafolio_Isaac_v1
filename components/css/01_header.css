@@ -53,7 +53,6 @@ a:focus-visible {
   justify-content: flex-start;
   min-height: 70px;
   min-width: 100%;
-  position: absolute;
 }
 
 /* End General Styles */
@@ -141,6 +140,7 @@ a:focus-visible {
   .header {
     font-size: 16px;
     min-height: 60px;
+    position: absolute;
   }
 
   .header__logo {
