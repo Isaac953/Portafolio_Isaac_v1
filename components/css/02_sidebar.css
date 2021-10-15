@@ -42,7 +42,9 @@ a:focus-visible {
 .nav-button:hover {
   font-size: 34px;
 }
+/* End General Styles */
 
+/* Start Component 2 - Sidebar Styles */
 .sidebar {
   background-color: #343a40;
   width: 210px;
@@ -79,7 +81,7 @@ a:focus-visible {
   align-items: center;
   font-size: 20px;
   min-width: 185px;
-  min-height: 55px;
+  height: 55px;
   padding: 10px;
 }
 
@@ -106,6 +108,78 @@ a:focus-visible {
   min-width: 140px;
 }
 
-/* End General Styles */
+/* End Component 2 - Sidebar Styles */
 
-/* Start Component 2 - Sidebar Styles */
+/* Start Media Queries Screems 850px */
+@media screen and (max-width: 850px) {
+  /* Start Component 2 - Sidebar Styles */
+
+  .sidebar {
+    width: 195px;
+    min-height: 100vh;
+  }
+
+  .sidebar__navbar {
+    width: 180px;
+  }
+
+  .list__item {
+    height: 50px;
+  }
+
+  .list__item a {
+    font-size: 18px;
+    min-width: 175px;
+    height: 50px;
+  }
+
+  .list__item i {
+    min-width: 28px;
+    min-height: 28px;
+  }
+
+  .list__item p {
+    min-width: 135px;
+  }
+  /* End Component 2 - Sidebar Styles */
+}
+
+/* Start Media Queries Screems 650px */
+@media only screen and (max-width: 650px) {
+  /* Start Component 2 - Sidebar Styles */
+
+  /* Start Component 2 - Sidebar Styles */
+
+  .sidebar {
+    position: absolute;
+
+    min-width: 180px;
+    height: 100vh;
+    z-index: 50;
+  }
+
+  .sidebar__navbar {
+    width: 165px;
+  }
+
+  .list__item {
+    height: 40px;
+  }
+
+  .list__item a {
+    font-size: 16px;
+    min-width: 155px;
+    height: 40px;
+  }
+
+  .list__item i {
+    min-width: 26px;
+    min-height: 26px;
+  }
+
+  .list__item p {
+    min-width: 130px;
+  }
+
+  /* End Component 2 - Sidebar Styles */
+}

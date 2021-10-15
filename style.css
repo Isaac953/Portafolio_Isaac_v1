@@ -24,7 +24,7 @@ a:focus-visible {
   outline: none;
 }
 
-.sidebar {
+/* .sidebar {
   background-color: #343a40;
   width: 210px;
   min-height: 100vh;
@@ -34,7 +34,7 @@ a:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .main {
   display: flex;
@@ -86,12 +86,10 @@ a:focus-visible {
 @media screen and (max-width: 850px) {
   /* Start General Styles */
 
-  .sidebar {
-    min-width: 220px;
+  /* .sidebar {
+    width: 195px;
     min-height: 100vh;
-    font-size: 18px;
-    display: none;
-  }
+  } */
 
   .footer {
     height: 65px;
@@ -111,12 +109,11 @@ a:focus-visible {
 @media screen and (max-width: 650px) {
   /* Start General Styles */
 
-  .sidebar {
-    min-width: 100%;
+  /* .sidebar {
+    width: 180px;
     min-height: 100vh;
-    font-size: 16px;
     display: none;
-  }
+  } */
 
   .footer {
     height: 60px;

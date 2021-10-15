@@ -55,6 +55,10 @@ a:focus-visible {
   align-items: center;
 }
 
+.sidebarm{
+  display: none;
+}
+
 .content {
   align-items: center;
   background-color: #515e63;
@@ -90,7 +94,6 @@ a:focus-visible {
     min-width: 220px;
     min-height: 100vh;
     font-size: 18px;
-    display: none;
   }
 
   .footer {
@@ -101,6 +104,10 @@ a:focus-visible {
   .header {
     height: 65px;
     font-size: 18px;
+  }
+
+  .sidebarm{
+    display: none;
   }
 
   /* End General Styles */
@@ -126,6 +133,18 @@ a:focus-visible {
   .header {
     height: 60px;
     font-size: 16px;
+  }
+
+  .sidebarm{
+    background-color: #343a40;
+    min-width: 100vw;
+    min-height: 70px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* End General Styles */
