@@ -137,7 +137,7 @@ a:focus-visible {
 
   .sidebarm{
     background-color: #343a40;
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 70px;
     color: white;
     font-weight: bold;

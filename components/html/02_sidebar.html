@@ -24,61 +24,75 @@
     <!-- Fin de inclusión los iconos FontAwesome en la Página -->
   </head>
   <body id="body" class="body">
-    <section id="sidebar" class="sidebar">
-      <nav id="sidebar__navbar" class="sidebar__navbar">
-        <ul id="navbar__list" class="navbar__list">
-          <li class="list__item">
-            <a
-              title="Sobre mí"
-              id="aboutme_link"
-              href="#about-me"
-              onclick="loadAboutMe()"
-              ><i class="fa fa-user" aria-hidden="true"></i>
-              <p id="aboutme">Sobre mí</p></a
-            >
-          </li>
-          <li class="list__item">
-            <a
-              title="Servicios"
-              id="services_link"
-              href="#services"
-              onclick="loadServices()"
-              ><i class="fa fa-code"></i>
-              <p id="services">Servicios</p>
-            </a>
-          </li>
-          <li class="list__item">
-            <a
-              title="Habilidades"
-              id="skills_link"
-              href="#skills"
-              onclick="loadSkills()"
-              ><i class="fas fa-pencil-alt"></i>
-              <p id="skills">Habilidades</p></a
-            >
-          </li>
-          <li class="list__item">
-            <a
-              title="Proyectos"
-              id="proyects_link"
-              href="#proyects"
-              onclick="loadProyects()"
-              ><i class="fas fa-briefcase"></i>
-              <p id="proyects">Proyectos</p>
-            </a>
-          </li>
-          <li class="list__item">
-            <a
-              title="Contacto"
-              id="contact_link"
-              href="#contact"
-              onclick="loadContact()"
-              ><i class="far fa-comment-alt"></i>
-              <p id="contact">Contacto</p></a
-            >
-          </li>
-        </ul>
-      </nav>
-    </section>
+    <nav id="sidebar" class="sidebar">
+      <ul id="sidebarExpanded" class="sidebar__list expanded">
+        <li class="list__item">
+          <a title="Sobre mí" href="#about-me" onclick="loadAboutMe()">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <p>Sobre mí</p>
+          </a>
+        </li>
+
+        <li class="list__item">
+          <a title="Servicios" href="#services" onclick="loadServices()">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <p>Servicios</p>
+          </a>
+        </li>
+
+        <li class="list__item">
+          <a title="Habilidades" href="#skills" onclick="loadSkills()">
+            <i class="fa fa-pencil-alt" aria-hidden="true"></i>
+            <p>Habilidades</p>
+          </a>
+        </li>
+
+        <li class="list__item">
+          <a title="Proyectos" href="#proyects" onclick="loadProyects()">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            <p>Proyectos</p>
+          </a>
+        </li>
+
+        <li class="list__item">
+          <a title="Contacto" href="#contact" onclick="loadContact()">
+            <i class="fa fa-comment-alt" aria-hidden="true"></i>
+            <p>Contacto</p>
+          </a>
+        </li>
+      </ul>
+
+      <ul id="sidebarCollapsed" class="sidebar__list collapsed">
+        <li class="list__item--collapsed">
+          <a title="Sobre mí" href="#about-me" onclick="loadAboutMe()">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li class="list__item--collapsed">
+          <a title="Servicios" href="#services" onclick="loadServices()">
+            <i class="fa fa-code" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li class="list__item--collapsed">
+          <a title="Habilidades" href="#skills" onclick="loadSkills()">
+            <i class="fa fa-pencil-alt" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li class="list__item--collapsed">
+          <a title="Proyectos" href="#proyects" onclick="loadProyects()">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li class="list__item--collapsed">
+          <a title="Contacto" href="#contact" onclick="loadContact()">
+            <i class="fa fa-comment-alt" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>

@@ -9,28 +9,22 @@ function headerClick() {
   const sidebarValue = (document.getElementById("sidebar").offsetWidth).toString() + 'px';
 
   const sidebar = document.getElementById("sidebar").style;
-  const sidebarNavbar = document.getElementById("sidebar__navbar").style;
-  const aboutme = document.getElementById("aboutme").style;
-  const services = document.getElementById("services").style;
-  const skills = document.getElementById("skills").style;
-  const proyects = document.getElementById("proyects").style;
-  const contact = document.getElementById("contact").style;
-
-  const aboutmeLink = document.getElementById("aboutme_link").style;
-  const servicesLink = document.getElementById("services_link").style;
-  const skillsLink = document.getElementById("skills_link").style;
-  const proyectsLink = document.getElementById("proyects_link").style;
-  const contactLink = document.getElementById("contact_link").style;
+  const sidebarExpanded = document.getElementById("sidebarExpanded").style;
+  const sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
 
   console.log(sidebarValue);
 
   switch (sidebarValue) {
     case '210px':
       sidebar.width = "70px";
+      sidebarExpanded.display = "none";
+      sidebarCollapsed.display = "flex";
       console.log('Sidebar es de 210px');
       break;
     case '70px':
       sidebar.width = "210px";
+      sidebarExpanded.display = "flex";
+      sidebarCollapsed.display = "none";
       console.log('Sidebar es de 70px');
       break;
     case '195px':
