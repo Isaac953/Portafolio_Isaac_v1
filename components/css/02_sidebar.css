@@ -121,7 +121,7 @@ a:focus-visible {
   min-width: 140px;
 }
 
-.list__item--collapsed a{
+.list__item--collapsed a {
   color: #b2b1b9;
   text-decoration: none;
   display: flex;
@@ -163,7 +163,7 @@ a:focus-visible {
     height: 50px;
   }
 
-  .list__item--collapsed a{
+  .list__item--collapsed a {
     font-size: 18px;
     min-width: 50px;
     height: 50px;
@@ -182,17 +182,16 @@ a:focus-visible {
 
 /* Start Media Queries Screems 650px */
 @media only screen and (max-width: 650px) {
-
   /* Start Component 2 - Sidebar Styles */
 
   .sidebar {
     width: 100%;
     height: 225px;
     padding-top: 0px;
-    display: flex;
+    padding-left: 15px;
+    display: none;
     justify-content: space-evenly;
-
-    /* display: none; */
+    align-items: flex-start;
   }
 
   .sidebar__list {
