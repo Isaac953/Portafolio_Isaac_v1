@@ -201,7 +201,7 @@ a:focus-visible {
 
   
 .expanded {
-  display:none;
+  /* display:none; */
 }
 
   .list__item {
