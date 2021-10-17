@@ -47,7 +47,7 @@ a:focus-visible {
 /* Start Component 2 - Sidebar Styles */
 .sidebar {
   background-color: #343a40;
-  width: 275px;
+  width: 255px;
   height: 100vh;
   color: white;
   font-weight: bold;
@@ -146,11 +146,11 @@ a:focus-visible {
   /* Start Component 2 - Sidebar Styles */
 
   .sidebar {
-    width: 250px;
+    width: 235px;
   }
 
   .sidebar__list {
-    width: 180px;
+    width: 175px;
   }
 
   .list__item {
@@ -158,13 +158,13 @@ a:focus-visible {
   }
 
   .list__item a {
-    font-size: 18px;
-    width: 175px;
+    font-size: 17px;
+    width: 165px;
     height: 50px;
   }
 
   .list__item--collapsed a {
-    font-size: 18px;
+    font-size: 17px;
     width: 50px;
     height: 50px;
   }
@@ -175,7 +175,7 @@ a:focus-visible {
   }
 
   .list__item p {
-    width: 135px;
+    width: 130px;
   }
   /* End Component 2 - Sidebar Styles */
 }
@@ -189,14 +189,14 @@ a:focus-visible {
     height: 0px;
     padding-top: 0px;
     padding-left: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
   }
 
   .sidebar__list {
-    width: 165px;
+    width: 175px;
   }
 
   .expanded {
@@ -213,7 +213,7 @@ a:focus-visible {
 
   .list__item a {
     font-size: 16px;
-    width: 155px;
+    width: 165px;
     height: 40px;
   }
 

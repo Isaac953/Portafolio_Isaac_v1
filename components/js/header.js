@@ -13,7 +13,7 @@ const largeScreen = () => {
   let sidebarExpanded = document.getElementById("sidebarExpanded").style;
   let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
 
-  sidebar.width = "275px";
+  sidebar.width = "255px";
   sidebar.height = "100vh";
   sidebar.transition = "0s";
   sidebarExpanded.display = "flex";
@@ -31,7 +31,7 @@ const mediumScreem = () => {
   let sidebarExpanded = document.getElementById("sidebarExpanded").style;
   let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
 
-  sidebar.width = "195px";
+  sidebar.width = "235px";
   sidebar.height = "100vh";
   sidebar.transition = "0s";
   sidebarExpanded.display = "flex";
@@ -98,7 +98,7 @@ function headerClick() {
     sidebar.transition = "0.5s";
   } else if (screenSize >= 851 && navDesktopValue === "Collapsed") {
     navDesktop.value = "Expanded";
-    sidebar.width = "275px";
+    sidebar.width = "255px";
     sidebarExpanded.display = "flex";
     sidebarCollapsed.display = "none";
     sidebar.transition = "0.5s";
@@ -118,14 +118,14 @@ function headerClick() {
     navDesktopValue === "Collapsed"
   ) {
     navDesktop.value = "Expanded";
-    sidebar.width = "250px";
+    sidebar.width = "235px";
     sidebarExpanded.display = "flex";
     sidebarCollapsed.display = "none";
     sidebar.transition = "0.5s";
   } else if (screenSize < 650 && navMobileValue === "Collapsed") {
     navMobile.value = "Expanded";
     sidebarExpanded.display = "flex";
-    sidebar.height = "275px";
+    sidebar.height = "280px";
     sidebar.transition = "0.5s";
   } else if (screenSize < 650 && navMobileValue === "Expanded") {
     navMobile.value = "Collapsed";
