@@ -2,7 +2,6 @@
 let anchoVentana = window.innerWidth;
 
 let sidebar = document.getElementById("sidebar").style;
-let body = document.getElementById("body").style;
 // let sidebarExpanded = document.getElementById("sidebarExpanded").style;
 // let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
 
@@ -12,15 +11,15 @@ const funcion1 = () => {
   let screemSize = document.getElementById("screemSize");
   screemSize.value = anchoVentana;
 
-  let navMobile = document.getElementById("navMobile");
-  navMobile.value = "Expanded";
+  let navDesktop = document.getElementById("navDesktop");
+  navDesktop.value = "Expanded";
 
   let sidebarExpanded = document.getElementById("sidebarExpanded").style;
   let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
 
-  body.backgroundColor = "#343a40";
   sidebar.width = "210px";
   sidebar.height = "100vh";
+  sidebar.transition = "0s";
   sidebarExpanded.display = "flex";
   sidebarCollapsed.display = "none";
 
@@ -32,15 +31,15 @@ const funcion2 = () => {
   let screemSize = document.getElementById("screemSize");
   screemSize.value = anchoVentana;
 
-  let navMobile = document.getElementById("navMobile");
-  navMobile.value = "Expanded";
+  let navDesktop = document.getElementById("navDesktop");
+  navDesktop.value = "Expanded";
 
   let sidebarExpanded = document.getElementById("sidebarExpanded").style;
   let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
 
-  body.backgroundColor = "#343a40";
   sidebar.width = "195px";
   sidebar.height = "100vh";
+  sidebar.transition = "0s";
   sidebarExpanded.display = "flex";
   sidebarCollapsed.display = "none";
 }
@@ -57,8 +56,9 @@ const funcion3 = () => {
   let sidebarExpanded = document.getElementById("sidebarExpanded").style;
   let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
 
-  body.backgroundColor = "#343a40";
   sidebarExpanded.display = "none";
+  sidebarCollapsed.display = "none";
+  sidebar.transition = "0s";
   sidebar.height = "0px";
   sidebar.width = "100%";
 }
@@ -85,48 +85,53 @@ function headerClick() {
   let navMobile = document.getElementById("navMobile");
   let navMobileValue = navMobile.value;
 
+  let navDesktop = document.getElementById("navDesktop");
+  let navDesktopValue = navDesktop.value;
+
   const sidebar = document.getElementById("sidebar").style;
   const sidebarExpanded = document.getElementById("sidebarExpanded").style;
   const sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
 
   let screemSize = screen.width;
 
+  console.log(screemSize);
+  console.log(navMobileValue);
 
-  if (screemSize > 851 && navMobileValue === "Expanded") {
-    navMobile.value = "Collapsed";
+  if (screemSize >= 851 && navDesktopValue === "Expanded") {
+    navDesktop.value = "Collapsed";
     sidebar.width = "70px";
     sidebarExpanded.display = "none";
     sidebarCollapsed.display = "flex";
     sidebar.transition = "0.5s";
   }
-  else if (screemSize > 851 && navMobileValue === "Collapsed") {
-    navMobile.value = "Expanded";
+  else if (screemSize >= 851 && navDesktopValue === "Collapsed") {
+    navDesktop.value = "Expanded";
     sidebar.width = "210px";
     sidebarExpanded.display = "flex";
     sidebarCollapsed.display = "none";
     sidebar.transition = "0.5s";
   }
-  else if (screemSize <= 850 && screemSize > 651 && navMobileValue === "Expanded") {
-    navMobile.value = "Collapsed";
+  else if (screemSize <= 850 && screemSize > 650 && navDesktopValue === "Expanded") {
+    navDesktop.value = "Collapsed";
     sidebar.width = "65px";
     sidebarExpanded.display = "none";
     sidebarCollapsed.display = "flex";
     sidebar.transition = "0.5s";
   }
-  else if (screemSize <= 850 && screemSize > 651 && navMobileValue === "Collapsed") {
-    navMobile.value = "Expanded";
+  else if (screemSize <= 850 && screemSize > 650 && navDesktopValue === "Collapsed") {
+    navDesktop.value = "Expanded";
     sidebar.width = "195px";
     sidebarExpanded.display = "flex";
     sidebarCollapsed.display = "none";
     sidebar.transition = "0.5s";
   }
-  else if (screemSize <= 650 && navMobileValue === "Collapsed") {
+  else if (screemSize < 650 && navMobileValue === "Collapsed") {
     navMobile.value = "Expanded";
     sidebarExpanded.display = "flex";
     sidebar.height = "275px";
     sidebar.transition = "0.5s";
   }
-  else if (screemSize <= 650 && navMobileValue === "Expanded") {
+  else if (screemSize < 650 && navMobileValue === "Expanded") {
     navMobile.value = "Collapsed";
     sidebarExpanded.display = "none";
     sidebar.height = "0px";

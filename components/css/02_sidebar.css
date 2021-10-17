@@ -201,7 +201,11 @@ a:focus-visible {
 
   
 .expanded {
-  /* display:none; */
+  display:none;
+}
+
+.collapsed {
+  display:none;
 }
 
   .list__item {
