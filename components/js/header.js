@@ -93,12 +93,14 @@ function headerClick() {
   if (screenSize >= 851 && navDesktopValue === "Expanded") {
     navDesktop.value = "Collapsed";
     sidebar.width = "75px";
+    sidebar.height = "100vh";
     sidebarExpanded.display = "none";
     sidebarCollapsed.display = "flex";
     sidebar.transition = "0.5s";
   } else if (screenSize >= 851 && navDesktopValue === "Collapsed") {
     navDesktop.value = "Expanded";
     sidebar.width = "255px";
+    sidebar.height = "100vh";
     sidebarExpanded.display = "flex";
     sidebarCollapsed.display = "none";
     sidebar.transition = "0.5s";
@@ -109,6 +111,7 @@ function headerClick() {
   ) {
     navDesktop.value = "Collapsed";
     sidebar.width = "70px";
+    sidebar.height = "100vh";
     sidebarExpanded.display = "none";
     sidebarCollapsed.display = "flex";
     sidebar.transition = "0.5s";
@@ -119,6 +122,7 @@ function headerClick() {
   ) {
     navDesktop.value = "Expanded";
     sidebar.width = "235px";
+    sidebar.height = "100vh";
     sidebarExpanded.display = "flex";
     sidebarCollapsed.display = "none";
     sidebar.transition = "0.5s";

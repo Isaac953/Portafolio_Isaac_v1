@@ -32,6 +32,10 @@ async function loadContact() {
     content.innerHTML = await (await fetch('./components/html/07_contact.html')).text();
 }
 
+async function loadMaintenancePage() {
+    content.innerHTML = await (await fetch('./components/html/10_maintenance_page.html')).text();
+}
+
 async function loadFooter() {
     footer.innerHTML = await (await fetch('./components/html/08_footer.html')).text();
 }
@@ -45,6 +49,8 @@ loadHeader();
 loadSidebar();
 
 // loadCoverPage();
+
+loadMaintenancePage();
 
 loadFooter();
 
