@@ -1,62 +1,41 @@
-/* Start General Styles */
+.maintenance-page__card {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
 
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  .body {
-    background-color: #e6e6e6;
-    display: flex;
-    flex-direction: row;
-    font-family: "Mulish", sans-serif;
-    margin: 0px;
-  }
-  
-  a {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  
-  a:focus-visible {
-    border-color: #0021da;
-    border-style: solid;
-    outline: none;
-  }
-  
-  .nav-button {
-    align-items: center;
-    background-color: #0f52ba;
-    border-radius: 8px;
-    color: white;
-    display: flex;
-    font-size: 28px;
-    font-weight: bold;
-    height: 45px;
-    justify-content: center;
-    text-decoration: none;
-    transition: font-size 0.5s;
-    width: 45px;
-  }
-  
-  .nav-button:hover {
-    font-size: 34px;
+.maintenance-page__card--title {
+  color: #ffe227;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.maintenance-page__card--title i {
+  color: #fb7813;
+}
+
+/* Start Media Queries Screems 850px */
+@media screen and (max-width: 850px) {
+  /* Start Component 2 - Sidebar Styles */
+
+  .maintenance-page__card--title {
+    font-size: 22px;
   }
 
-  .repair__page{
-      color: yellow;
-  }
-  
-  /* End General Styles */
-  
-  .content {
-    background-color: #515e63;
-    width: 100%;
-    height: 100vh;
-    color: white;
-    font-weight: bold;
+  /* End Component 2 - Sidebar Styles */
+}
+/* End Media Queries Screems 850px */
+
+/* Start Media Queries Screems 650px */
+@media only screen and (max-width: 650px) {
+  /* Start Component 2 - Sidebar Styles */
+
+  .maintenance-page__card--title {
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
+
+  /* End Component 2 - Sidebar Styles */
+}
+/* End Media Queries Screems 650px */
