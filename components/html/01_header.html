@@ -1,48 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Header</title>
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="../../assets/portfolio_icon.png"
-    />
-    <link rel="stylesheet" href="../css/01_header.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Fin de Inclusión de las hojas de Estilo y la fuente de la Página -->
-    <!-- Inicio de inclusión los iconos FontAwesome en la Página -->
-    <script
-      src="https://kit.fontawesome.com/7932647ae3.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Fin de inclusión los iconos FontAwesome en la Página -->
-  </head>
-  <body id="body" class="body">
-    <header id="header" class="header">
-      <section id="header__logo" class="header__logo">
-        <a
-          href="#"
-          onclick="headerClick()"
-          class="logo__hamburger-buttom"
-          ><i class="fas fa-bars"></i>
-        </a>
+<!-- Start Header component -->
 
-      <input id="navDesktop" type="hidden" readonly value="Expanded">
-      <input id="navMobile" type="hidden" readonly value="Collapsed">
+<section id="header__logo" class="header__logo">
+  <a href="#" onclick="headerClick()" class="logo__hamburger-buttom"><i class="fas fa-bars"></i>
+  </a>
 
-      <input id="screenSize" type="hidden" readonly value="">
+  <input id="navDesktop" type="hidden" readonly value="Expanded">
+  <input id="navMobile" type="hidden" readonly value="Collapsed">
 
-        <a id="logo__icon" href="#home" onclick="loadCoverPage()" class="logo__icon"
-          ><i class="fa fa-laptop" aria-hidden="true"></i>
-          <p> Isaac Arias</p></a>
-        </a>
-      </section>
-    </header>
-  </body>
-</html>
+  <input id="screenSize" type="hidden" readonly value="">
+
+  <a id="logo__icon" href="#home" onclick="loadCoverPage()" class="logo__icon"><i class="fa fa-laptop"
+      aria-hidden="true"></i>
+    <p> Isaac Arias</p>
+  </a>
+  </a>
+</section>
+
+<!-- End Header component -->
