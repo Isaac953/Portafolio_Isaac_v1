@@ -5,7 +5,7 @@
 
   width: 100%;
   height: 70px;
-  padding: 0 15px;
+  padding: 0 14px;
 
   color: white;
 
@@ -14,12 +14,12 @@
 }
 
 .logo__hamburger-buttom {
-  font-size: 20px;
+  font-size: 22px;
 
   display: flex;
 
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 
   text-decoration: none;
 
@@ -39,7 +39,7 @@
   display: flex;
 
   min-width: 210px;
-  height: 55px;
+  height: 56px;
 
   text-decoration: none;
 
@@ -56,11 +56,42 @@
 }
 /* End Component 1 - Header Styles */
 
-/* Start Media Queries Screens 850px */
-@media screen and (max-width: 850px) {
+/* Start Media Queries Screens 1280px */
+@media screen and (max-width: 1280px) {
   /* Start Component 1 - Header Styles */
   .header__logo {
-    height: 65px;
+    height: 68px;
+    padding: 0 12px;
+  }
+
+  .logo__hamburger-buttom {
+    font-size: 20px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo__icon {
+    font-size: 28px;
+
+    min-width: 196px;
+    height: 54px;
+  }
+
+  .logo__icon i {
+    font-size: 32px;
+  }
+
+  /* End Component 1 - Header Styles */
+}
+/* End Media Queries Screens 1280px */
+
+/* Start Media Queries Screens 950px */
+@media screen and (max-width: 950px) {
+  /* Start Component 1 - Header Styles */
+  .header__logo {
+    height: 66px;
+    padding: 0 10px;
   }
 
   .logo__hamburger-buttom {
@@ -71,31 +102,10 @@
   }
 
   .logo__icon {
-    font-size: 28px;
-
-    min-width: 195px;
-    height: 50px;
-  }
-
-  .logo__icon i {
-    font-size: 32px;
-  }
-  /* End Component 1 - Header Styles */
-}
-/* End Media Queries Screens 850px */
-
-/* Start Media Queries Screens 650px */
-@media only screen and (max-width: 650px) {
-  /* Start Component 1 - Header Styles */
-  .header__logo {
-    height: 60px;
-  }
-
-  .logo__icon {
     font-size: 26px;
 
-    min-width: 185px;
-    height: 45px;
+    min-width: 183px;
+    height: 52px;
   }
 
   .logo__icon i {
@@ -103,4 +113,33 @@
   }
   /* End Component 1 - Header Styles */
 }
-/* End Media Queries Screens 850px */
+/* End Media Queries Screens 950px */
+
+/* Start Media Queries Screens 700px */
+@media only screen and (max-width: 700px) {
+  /* Start Component 1 - Header Styles */
+  .header__logo {
+    height: 64px;
+    padding: 0 8px;
+  }
+
+  .logo__hamburger-buttom {
+    font-size: 16px;
+
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo__icon {
+    font-size: 24px;
+
+    min-width: 168px;
+    height: 50px;
+  }
+
+  .logo__icon i {
+    font-size: 28px;
+  }
+  /* End Component 1 - Header Styles */
+}
+/* End Media Queries Screens 700px */

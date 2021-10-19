@@ -8,9 +8,9 @@ async function loadSidebar() {
     sidebar.innerHTML = await (await fetch('./components/html/02_sidebar.html')).text();
 }
 
-// async function loadCoverPage() {
-//     content.innerHTML = await (await fetch('./components/html/02_cover_page.html')).text();
-// }
+async function loadCoverPage() {
+    content.innerHTML = await (await fetch('./components/html/03_cover_page.html')).text();
+}
 
 // async function loadAboutMe() {
 //     content.innerHTML = await (await fetch('./components/html/03_about_me.html')).text();
@@ -46,12 +46,12 @@ async function loadFooter() {
 
 loadHeader();
 
-loadSidebar();
+// loadSidebar();
 
 // loadCoverPage();
 
-loadMaintenancePage();
+// loadMaintenancePage();
 
-loadFooter();
+// loadFooter();
 
 // End Load Functions default //
