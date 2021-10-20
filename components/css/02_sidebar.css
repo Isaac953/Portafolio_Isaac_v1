@@ -172,11 +172,11 @@
 @media screen and (max-width: 650px) {
   /* Start Component 2 - Sidebar Styles */
   .sidebar__list {
-    width: 185px;
+    width: 175px;
   }
 
   .expanded {
-    display: flex;
+    display: none;
   }
 
   .collapsed {
@@ -184,30 +184,35 @@
   }
 
   .list__item {
-    height: 46px;
+    height: 40px;
   }
 
   .list__item a {
     font-size: 14px;
 
-    width: 160px;
-    height: 46px;
+    width: 150px;
+    height: 32px;
+
+    display: flex;
+    justify-content: flex-start;
   }
 
   .list__item--collapsed a {
     font-size: 14px;
 
-    width: 46px;
-    height: 46px;
+    width: 32px;
+    height: 32px;
   }
 
   .list__item i {
     width: 24px;
     height: 24px;
+    padding: 0px;
   }
 
   .list__item p {
-    min-width: 110px;
+    min-width: 120px;
+    padding-left: 3px;
   }
   /* End Component 2 - Sidebar Styles */
 }

@@ -157,14 +157,14 @@ function headerClick() {
     sidebarCollapsed.display = "flex";
     sidebar.transition = "0.5s";
   }
-  else if (screenSize < 650 && navMobileValue === "Collapsed") {
+  else if (screenSize <= 650 && navMobileValue === "Collapsed") {
     navMobile.value = "Expanded";
     sidebarExpanded.display = "flex";
     sidebarCollapsed.display = "none";
-    sidebar.height = "250px";
+    sidebar.height = "220px";
     sidebar.transition = "0.5s";
     sidebar.width = "100%";
-  } else if (screenSize < 650 && navMobileValue === "Expanded") {
+  } else if (screenSize <= 650 && navMobileValue === "Expanded") {
     navMobile.value = "Collapsed";
     sidebarExpanded.display = "none";
     sidebarCollapsed.display = "none";

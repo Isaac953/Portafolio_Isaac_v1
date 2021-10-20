@@ -76,7 +76,7 @@ a:focus-visible {
   height: 100vh;
 
   color: white;
-  background-color: #343a40;
+  background-color: #152d35;
 
   justify-content: center;
   align-items: flex-start;
@@ -92,7 +92,7 @@ a:focus-visible {
   height: 100vh;
 
   color: white;
-  background-color: #515e63;
+  background-color: #206a5d;
 
   justify-content: center;
   align-items: center;
@@ -199,7 +199,7 @@ a:focus-visible {
 
     display: flex;
     justify-content: flex-start;
-    padding-left: 15px;
+    padding: 0px;
   }
 
   .content {
