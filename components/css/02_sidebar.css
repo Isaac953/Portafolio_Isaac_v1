@@ -3,7 +3,7 @@
   width: 215px;
 
   list-style: none;
-  border-style: solid;
+  padding-top: 10px;
 }
 
 .expanded {
@@ -67,7 +67,7 @@
 .list__item p {
   display: flex;
 
-  min-width: 140px;
+  min-width: 150px;
   padding-left: 10px;
 
   text-decoration: none;
@@ -104,7 +104,7 @@
 @media screen and (max-width: 1200px) {
   /* Start Component 2 - Sidebar Styles */
   .sidebar__list {
-    width: 205px;
+    width: 190px;
   }
 
   .list__item {
@@ -114,7 +114,7 @@
   .list__item a {
     font-size: 18px;
 
-    width: 185px;
+    width: 170px;
     height: 53px;
   }
 
@@ -131,7 +131,7 @@
   }
 
   .list__item p {
-    width: 135px;
+    min-width: 130px;
   }
   /* End Component 2 - Sidebar Styles */
 }
@@ -140,9 +140,6 @@
 /* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 2 - Sidebar Styles */
-  .sidebar__list {
-    width: 195px;
-  }
 
   .expanded {
     display: none;
@@ -156,13 +153,6 @@
     height: 51px;
   }
 
-  .list__item a {
-    font-size: 16px;
-
-    width: 175px;
-    height: 51px;
-  }
-
   .list__item--collapsed a {
     font-size: 16px;
 
@@ -173,10 +163,6 @@
   .list__item i {
     width: 26px;
     height: 26px;
-  }
-
-  .list__item p {
-    width: 130px;
   }
   /* End Component 2 - Sidebar Styles */
 }
@@ -204,7 +190,7 @@
   .list__item a {
     font-size: 14px;
 
-    width: 165px;
+    width: 160px;
     height: 46px;
   }
 
@@ -221,7 +207,7 @@
   }
 
   .list__item p {
-    width: 125px;
+    min-width: 110px;
   }
   /* End Component 2 - Sidebar Styles */
 }
