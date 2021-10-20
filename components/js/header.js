@@ -1,18 +1,6 @@
-let anchoVentana = window.innerWidth;
-
-let sidebar = document.getElementById("sidebar").style;
-
 //Funcion para pantalla Grande
-const largeScreen = () => {
-  let screenSize = document.getElementById("screenSize");
-  screenSize.value = anchoVentana;
-
-  let navDesktop = document.getElementById("navDesktop");
+let largeScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop) => {
   navDesktop.value = "Expanded";
-
-  let sidebarExpanded = document.getElementById("sidebarExpanded").style;
-  let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
-
   sidebar.width = "230px";
   sidebar.height = "100vh";
   sidebar.transition = "0s";
@@ -21,16 +9,8 @@ const largeScreen = () => {
 };
 
 //Funcion para pantalla Mediana
-const mediumScreen = () => {
-  let screenSize = document.getElementById("screenSize");
-  screenSize.value = anchoVentana;
-
-  let navDesktop = document.getElementById("navDesktop");
+let mediumScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop) => {
   navDesktop.value = "Expanded";
-
-  let sidebarExpanded = document.getElementById("sidebarExpanded").style;
-  let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
-
   sidebar.width = "205px";
   sidebar.height = "100vh";
   sidebar.transition = "0s";
@@ -39,138 +19,149 @@ const mediumScreen = () => {
 };
 
 //Funcion para pantalla horizontal pequeña
-const horizontalSmallScreen = () => {
-  let screenSize = document.getElementById("screenSize");
-  screenSize.value = anchoVentana;
-
-  let navMobile = document.getElementById("navMobile");
+let horizontalSmallScreen = (
+  sidebar,
+  sidebarExpanded,
+  sidebarCollapsed,
+  navMobile
+) => {
   navMobile.value = "Collapsed";
-
-  let sidebarExpanded = document.getElementById("sidebarExpanded").style;
-  let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
-
   sidebar.width = "75px";
   sidebar.height = "100vh";
+  sidebar.transition = "0s";
   sidebarCollapsed.display = "flex";
   sidebarExpanded.display = "none";
-  sidebar.transition = "0s";
 };
 
 //Funcion para pantalla vertical pequeña
-const verticalSmallScreen = () => {
-  let screenSize = document.getElementById("screenSize");
-  screenSize.value = anchoVentana;
-
-  let navMobile = document.getElementById("navMobile");
+let verticalSmallScreen = (
+  sidebar,
+  sidebarExpanded,
+  sidebarCollapsed,
+  navMobile
+) => {
   navMobile.value = "Collapsed";
-
-  let sidebarExpanded = document.getElementById("sidebarExpanded").style;
-  let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
-
-  sidebarExpanded.display = "none";
-  sidebarCollapsed.display = "none";
-  sidebar.height = "0px";
-  sidebar.transition = "0s"
   sidebar.width = "100%";
+  sidebar.height = "0px";
+  sidebar.transition = "0s";
+  sidebarCollapsed.display = "none";
+  sidebarExpanded.display = "none";
 };
 
 //Funcion para ejecutarse al cambiar tamanio de pantalla
-window.onresize = function resize() {
-  anchoVentana = window.innerWidth;
+window.onresize = () => {
+  //Variables
+  let anchoVentana = window.innerWidth;
+  let screenSize = document.getElementById("screenSize");
+  let navDesktop = document.getElementById("navDesktop");
+  let navMobile = document.getElementById("navMobile");
+
+  let sidebar = document.getElementById("sidebar").style;
+  let sidebarExpanded = document.getElementById("sidebarExpanded").style;
+  let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
+
   screenSize.value = anchoVentana;
 
-  // console.log(screenSize.value);
-
+  //Cargar menu deacuerdo al tamanio de pantalla por medio de functions
   if (anchoVentana > 1200) {
-    largeScreen();
+    largeScreen(sidebar, sidebarExpanded, sidebarCollapsed, navDesktop);
   } else if (anchoVentana <= 1200 && anchoVentana > 850) {
-    mediumScreen();
+    mediumScreen(sidebar, sidebarExpanded, sidebarCollapsed, navDesktop);
   } else if (anchoVentana <= 850 && anchoVentana > 650) {
-    horizontalSmallScreen();
+    horizontalSmallScreen(
+      sidebar,
+      sidebarExpanded,
+      sidebarCollapsed,
+      navMobile
+    );
   } else if (anchoVentana <= 650) {
-    verticalSmallScreen();
+    verticalSmallScreen(sidebar, sidebarExpanded, sidebarCollapsed, navMobile);
   }
 };
 
-//Funcion para ejecutarse al hacer click en el boton de Hamburguesa para encoger y expandir menu
-function headerClick() {
-  let navMobile = document.getElementById("navMobile");
-  let navMobileValue = navMobile.value;
-
+//Function para expandir y colapsar sidebar por medio de botom hamburger
+let headerClick = () => {
+  let anchoVentana = window.innerWidth;
   let navDesktop = document.getElementById("navDesktop");
-  let navDesktopValue = navDesktop.value;
+  let navMobile = document.getElementById("navMobile");
 
-  const sidebarExpanded = document.getElementById("sidebarExpanded").style;
-  const sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
+  let sidebar = document.getElementById("sidebar").style;
+  let sidebarExpanded = document.getElementById("sidebarExpanded").style;
+  let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
 
-  let screenSize = window.innerWidth;
-
-  let screenSizeInput = document.getElementById("screenSize");
-  screenSizeInput.value = screenSize;
-
-  // console.log(screenSize);
-
-  if (screenSize > 1200 && navDesktopValue === "Expanded") {
-    navDesktop.value = "Collapsed";
-    sidebar.width = "75px";
-    sidebar.height = "100vh";
-    sidebarExpanded.display = "none";
-    sidebarCollapsed.display = "flex";
-    sidebar.transition = "0.5s";
-  } else if (screenSize > 1200 && navDesktopValue === "Collapsed") {
-    navDesktop.value = "Expanded";
-    sidebar.width = "230px";
-    sidebar.height = "100vh";
-    sidebarExpanded.display = "flex";
-    sidebarCollapsed.display = "none";
-    sidebar.transition = "0.5s";
+  //Casos para expandir y colapsar menu deacuerdo a tamanio de pantalla
+  switch (true) {
+    //Case largeScreen
+    case anchoVentana > 1200:
+      if (navDesktop.value === "Expanded") {
+        navDesktop.value = "Collapsed";
+        sidebar.width = "75px";
+        sidebar.height = "100vh";
+        sidebarExpanded.display = "none";
+        sidebarCollapsed.display = "flex";
+        sidebar.transition = "0.5s";
+      } else {
+        navDesktop.value = "Expanded";
+        sidebar.width = "230px";
+        sidebar.height = "100vh";
+        sidebarExpanded.display = "flex";
+        sidebarCollapsed.display = "none";
+        sidebar.transition = "0.5s";
+      }
+      break;
+    //Case mediumScreen
+    case anchoVentana <= 1200 && anchoVentana > 850:
+      if (navDesktop.value === "Expanded") {
+        navDesktop.value = "Collapsed";
+        sidebar.width = "75px";
+        sidebar.height = "100vh";
+        sidebarExpanded.display = "none";
+        sidebarCollapsed.display = "flex";
+        sidebar.transition = "0.5s";
+      } else {
+        navDesktop.value = "Expanded";
+        sidebar.width = "205px";
+        sidebar.height = "100vh";
+        sidebarExpanded.display = "flex";
+        sidebarCollapsed.display = "none";
+        sidebar.transition = "0.5s";
+      }
+      break;
+    //Case horizontalSmallScreen
+    case anchoVentana <= 850 && anchoVentana > 650:
+      if (navMobile.value === "Collapsed") {
+        navMobile.value = "Expanded";
+        sidebar.width = "185px";
+        sidebar.height = "100vh";
+        sidebarExpanded.display = "flex";
+        sidebarCollapsed.display = "none";
+        sidebar.transition = "0.5s";
+      } else {
+        navMobile.value = "Collapsed";
+        sidebar.width = "75px";
+        sidebar.height = "100vh";
+        sidebarExpanded.display = "none";
+        sidebarCollapsed.display = "flex";
+        sidebar.transition = "0.5s";
+      }
+      break;
+    //Case verticalSmallScreen
+    case anchoVentana <= 650:
+      if (navMobile.value === "Collapsed") {
+        navMobile.value = "Expanded";
+        sidebarExpanded.display = "flex";
+        sidebarCollapsed.display = "none";
+        sidebar.height = "220px";
+        sidebar.transition = "0.5s";
+        sidebar.width = "100%";
+      } else {
+        navMobile.value = "Collapsed";
+        sidebarExpanded.display = "none";
+        sidebarCollapsed.display = "none";
+        sidebar.height = "0px";
+        sidebar.transition = "0.5s";
+        sidebar.width = "100%";
+      }
+      break;
   }
-  else if (screenSize <= 1200 && screenSize > 850 && navDesktopValue === "Expanded") {
-    navDesktop.value = "Collapsed";
-    sidebar.width = "75px";
-    sidebar.height = "100vh";
-    sidebarExpanded.display = "none";
-    sidebarCollapsed.display = "flex";
-    sidebar.transition = "0.5s";
-  }
-  else if (screenSize <= 1200 && screenSize > 850 && navDesktopValue === "Collapsed") {
-    navDesktop.value = "Expanded";
-    sidebar.width = "205px";
-    sidebar.height = "100vh";
-    sidebarExpanded.display = "flex";
-    sidebarCollapsed.display = "none";
-    sidebar.transition = "0.5s";
-  }
-  else if (screenSize <= 850 && screenSize > 650 && navMobileValue === "Collapsed") {
-    navMobile.value = "Expanded";
-    sidebar.width = "185px";
-    sidebar.height = "100vh";
-    sidebarExpanded.display = "flex";
-    sidebarCollapsed.display = "none";
-    sidebar.transition = "0.5s";
-  }
-  else if (screenSize <= 850 && screenSize > 650 && navMobileValue === "Expanded") {
-    navMobile.value = "Collapsed";
-    sidebar.width = "75px";
-    sidebar.height = "100vh";
-    sidebarExpanded.display = "none";
-    sidebarCollapsed.display = "flex";
-    sidebar.transition = "0.5s";
-  }
-  else if (screenSize <= 650 && navMobileValue === "Collapsed") {
-    navMobile.value = "Expanded";
-    sidebarExpanded.display = "flex";
-    sidebarCollapsed.display = "none";
-    sidebar.height = "220px";
-    sidebar.transition = "0.5s";
-    sidebar.width = "100%";
-  } else if (screenSize <= 650 && navMobileValue === "Expanded") {
-    navMobile.value = "Collapsed";
-    sidebarExpanded.display = "none";
-    sidebarCollapsed.display = "none";
-    sidebar.height = "0px";
-    sidebar.transition = "0.5s";
-    sidebar.width = "100%";
-  }
-}
-
+};
