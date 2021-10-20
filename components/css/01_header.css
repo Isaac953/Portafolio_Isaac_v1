@@ -56,8 +56,8 @@
 }
 /* End Component 1 - Header Styles */
 
-/* Start Media Queries Screens 1280px */
-@media screen and (max-width: 1280px) {
+/* Start Media Queries Screens 1200px */
+@media screen and (max-width: 1200px) {
   /* Start Component 1 - Header Styles */
   .header__logo {
     height: 68px;
@@ -84,10 +84,10 @@
 
   /* End Component 1 - Header Styles */
 }
-/* End Media Queries Screens 1280px */
+/* End Media Queries Screens 1200px */
 
-/* Start Media Queries Screens 950px */
-@media screen and (max-width: 950px) {
+/* Start Media Queries Screens 850px */
+@media screen and (max-width: 850px) {
   /* Start Component 1 - Header Styles */
   .header__logo {
     height: 66px;
@@ -113,10 +113,10 @@
   }
   /* End Component 1 - Header Styles */
 }
-/* End Media Queries Screens 950px */
+/* End Media Queries Screens 850px */
 
-/* Start Media Queries Screens 700px */
-@media only screen and (max-width: 700px) {
+/* Start Media Queries Screens 625px */
+@media only screen and (max-width: 625px) {
   /* Start Component 1 - Header Styles */
   .header__logo {
     height: 64px;
@@ -142,4 +142,4 @@
   }
   /* End Component 1 - Header Styles */
 }
-/* End Media Queries Screens 700px */
+/* End Media Queries Screens 625px */
