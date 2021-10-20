@@ -10,7 +10,7 @@
 }
 
 .maintenance-page__card--title {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
 
   color: #ffe227;
@@ -21,7 +21,17 @@
 }
 /* End Component 10 - Maintenance page Styles */
 
-/* Start Media Queries Screems 850px */
+/* Start Media Queries Screens 1200px */
+@media screen and (max-width: 1200px) {
+  /* Start Component 10 - Maintenance page Styles */
+  .maintenance-page__card--title {
+    font-size: 24px;
+  }
+  /* End Component 10 - Maintenance page Styles */
+}
+/* End Media Queries Screens 1200px */
+
+/* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 10 - Maintenance page Styles */
   .maintenance-page__card--title {
@@ -29,14 +39,14 @@
   }
   /* End Component 10 - Maintenance page Styles */
 }
-/* End Media Queries Screems 850px */
+/* End Media Queries Screens 850px */
 
-/* Start Media Queries Screems 650px */
-@media only screen and (max-width: 650px) {
+/* Start Media Queries Screens 625px */
+@media only screen and (max-width: 625px) {
   /* Start Component 10 - Maintenance page Styles */
   .maintenance-page__card--title {
     font-size: 20px;
   }
   /* End Component 10 - Maintenance page Styles */
 }
-/* End Media Queries Screems 650px */
+/* End Media Queries Screens 625px */

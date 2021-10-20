@@ -36,7 +36,7 @@
 
   display: flex;
 
-  width: 195px;
+  width: 185px;
   height: 55px;
   padding: 10px;
 
@@ -100,29 +100,29 @@
 }
 /* End Component 2 - Sidebar Styles */
 
-/* Start Media Queries Screens 1200px */
-@media screen and (max-width: 1200px) {
+/* Start Media Queries Screems 850px */
+@media screen and (max-width: 850px) {
   /* Start Component 2 - Sidebar Styles */
   .sidebar__list {
-    width: 205px;
+    width: 175px;
   }
 
   .list__item {
-    height: 53px;
+    height: 50px;
   }
 
   .list__item a {
-    font-size: 18px;
+    font-size: 17px;
 
-    width: 185px;
-    height: 53px;
+    width: 165px;
+    height: 50px;
   }
 
   .list__item--collapsed a {
-    font-size: 18px;
+    font-size: 17px;
 
-    width: 53px;
-    height: 53px;
+    width: 50px;
+    height: 50px;
   }
 
   .list__item i {
@@ -131,17 +131,17 @@
   }
 
   .list__item p {
-    width: 135px;
+    width: 130px;
   }
   /* End Component 2 - Sidebar Styles */
 }
-/* End Media Queries Screens 1200px */
+/* End Media Queries Screems 850px */
 
-/* Start Media Queries Screens 850px */
-@media screen and (max-width: 850px) {
+/* Start Media Queries Screems 650px */
+@media only screen and (max-width: 650px) {
   /* Start Component 2 - Sidebar Styles */
   .sidebar__list {
-    width: 195px;
+    width: 175px;
   }
 
   .expanded {
@@ -149,25 +149,18 @@
   }
 
   .collapsed {
-    display: flex;
+    display: none;
   }
 
   .list__item {
-    height: 51px;
+    height: 40px;
   }
 
   .list__item a {
     font-size: 16px;
 
-    width: 175px;
-    height: 51px;
-  }
-
-  .list__item--collapsed a {
-    font-size: 16px;
-
-    width: 51px;
-    height: 51px;
+    width: 165px;
+    height: 40px;
   }
 
   .list__item i {
@@ -180,49 +173,4 @@
   }
   /* End Component 2 - Sidebar Styles */
 }
-/* End Media Queries Screens 850px */
-
-/* Start Media Queries Screens 650px */
-@media screen and (max-width: 650px) {
-  /* Start Component 2 - Sidebar Styles */
-  .sidebar__list {
-    width: 185px;
-  }
-
-  .expanded {
-    display: flex;
-  }
-
-  .collapsed {
-    display: none;
-  }
-
-  .list__item {
-    height: 46px;
-  }
-
-  .list__item a {
-    font-size: 14px;
-
-    width: 165px;
-    height: 46px;
-  }
-
-  .list__item--collapsed a {
-    font-size: 14px;
-
-    width: 46px;
-    height: 46px;
-  }
-
-  .list__item i {
-    width: 24px;
-    height: 24px;
-  }
-
-  .list__item p {
-    width: 125px;
-  }
-  /* End Component 2 - Sidebar Styles */
-}
-/* End Media Queries Screens 650px */
+/* End Media Queries Screems 650px */

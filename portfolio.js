@@ -46,12 +46,12 @@ async function loadFooter() {
 
 loadHeader();
 
-// loadSidebar();
+loadSidebar();
 
 // loadCoverPage();
 
-// loadMaintenancePage();
+loadMaintenancePage();
 
-// loadFooter();
+loadFooter();
 
 // End Load Functions default //

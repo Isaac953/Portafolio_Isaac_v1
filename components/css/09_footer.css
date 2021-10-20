@@ -1,32 +1,40 @@
 /* Start Component 9 - Footer Styles */
-
 .footer__description {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 200;
 
   text-align: center;
 
   color: white;
 }
-
 /* End Component 9 - Footer Styles */
 
-/* Start Media Queries Screems 850px */
+/* Start Media Queries Screens 1200px */
+@media screen and (max-width: 1200px) {
+  /* Start Component 9 - Footer Styles */
+  .footer__description {
+    font-size: 18px;
+  }
+  /* End Component 9 - Footer Styles */
+}
+/* End Media Queries Screens 1200px */
+
+/* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
-  /* Start Component 7 - Footer Styles */
+  /* Start Component 9 - Footer Styles */
   .footer__description {
     font-size: 16px;
   }
   /* End Component 9 - Footer Styles */
 }
-/* End Media Queries Screems 850px */
+/* End Media Queries Screens 850px */
 
-/* Start Media Queries Screems 650px */
-@media only screen and (max-width: 650px) {
+/* Start Media Queries Screens 625px */
+@media only screen and (max-width: 625px) {
   /* Start Component 9 - Footer Styles */
   .footer__description {
     font-size: 14px;
   }
   /* End Component 9 - Footer Styles */
 }
-/* End Media Queries Screems 850px */
+/* End Media Queries Screens 625px */
