@@ -115,8 +115,8 @@
 }
 /* End Media Queries Screens 850px */
 
-/* Start Media Queries Screens 625px */
-@media only screen and (max-width: 625px) {
+/* Start Media Queries Screens 650px */
+@media only screen and (max-width: 650px) {
   /* Start Component 1 - Header Styles */
   .header__logo {
     height: 64px;
@@ -142,4 +142,4 @@
   }
   /* End Component 1 - Header Styles */
 }
-/* End Media Queries Screens 625px */
+/* End Media Queries Screens 650px */

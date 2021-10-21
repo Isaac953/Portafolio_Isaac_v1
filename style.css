@@ -26,6 +26,25 @@ a:focus-visible {
   outline: none;
 }
 
+.nav-button {
+  align-items: center;
+  background-color: #0f52ba;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  height: 45px;
+  justify-content: center;
+  text-decoration: none;
+  transition: font-size 0.5s;
+  width: 45px;
+}
+
+.nav-button:hover {
+  font-size: 34px;
+}
+
 .main {
   display: flex;
   flex-direction: column;

@@ -1,59 +1,88 @@
 .cover-page__card {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  height: 285px;
-  justify-content: space-between;
-  min-width: 550px;
+  flex-direction: row;
+  height: 280px;
+  justify-content: center;
+  min-width: 930px;
   position: relative;
-  width: 90%;
-  border-style: solid;
 }
 
-.profile__fig--img {
+.cover-page__card--profile-fig {
+  filter: drop-shadow(0 0 7px #292828);
+}
+
+.profile-fig__img {
   image-rendering: pixelated;
-  height: 190px;
+  height: 215px;
   margin: 10px;
-  border-style: solid;
 }
 
-/* Start Media Queries Screems 850px */
+.cover-page__card--title {
+  min-width: 650px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title__me {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 32px;
+  height: 42px;
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.title__name {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 43px;
+  font-weight: 900;
+  height: 52px;
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.title__rank {
+  align-items: center;
+  background-color: #63b603;
+  color: white;
+  display: flex;
+  font-size: 32px;
+  font-weight: 900;
+  height: 50px;
+  justify-content: flex-end;
+  margin: 0px;
+  margin-left: 10px;
+  padding-right: 10px;
+  text-shadow: 2px 2px 4px #dddddd;
+}
+
+.cover-page__buttons {
+  min-width: 930px;
+  position: relative;
+  justify-content: flex-end;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+/* Start Media Queries Screens 1200px */
+@media screen and (max-width: 1200px) {
+}
+/* End Media Queries Screens 1200px */
+
+/* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
-  /* Start Component 2 - Cover Page Styles */
-
-  .cover-page__card {
-    height: 260px;
-    min-width: 580px;
-    width: 580px;
-  }
-
-  .cover-page__card {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 285px;
-    justify-content: space-between;
-    min-width: 580px;
-    position: relative;
-    width: 90%;
-    border-style: solid;
-  }
-
-  /* End Component 2 - Cover Page Styles */
 }
-/* End Media Queries Screems 850px */
+/* End Media Queries Screens 850px */
 
-/* Start Media Queries Screems 650px */
-@media only screen and (max-width: 650px) {
-  /* Start Component 2 - Cover Page Styles */
-
-  .content__cover-page {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    /* min-height: 82vh; */
-  }
-
-  /* End Component 2 - Cover Page Styles */
+/* Start Media Queries Screens 650px */
+@media screen and (max-width: 650px) {
 }
-/* End Media Queries Screems 650px */
+/* End Media Queries Screens 650px */

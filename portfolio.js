@@ -1,5 +1,8 @@
 // Start Functions Load Components with index.html //
 
+let mainContent = document.getElementById("mainContent").style;
+let contentLayout = document.getElementById("content").style;
+
 const loadHeader = async () => {
   header.innerHTML = await (
     await fetch("./components/html/01_header.html")
@@ -12,13 +15,80 @@ const loadSidebar = async () => {
   ).text();
 };
 
-let loadCoverPage = async (mainContent, contentLayout) => {
+let loadCoverPage = async () => {
   content.innerHTML = await (
     await fetch("./components/html/03_cover_page.html")
   ).text();
-  mainContent.height = "120vh";
+  mainContent.height = "110vh";
+  contentLayout.flexDirection = "column";
   contentLayout.backgroundAttachment = "fixed";
   contentLayout.backgroundImage = 'url("../../assets/cover_page_img.jpg")';
+  contentLayout.backgroundPosition = "center";
+  contentLayout.backgroundRepeat = "no-repeat";
+  contentLayout.backgroundSize = "cover";
+};
+
+let loadAboutMe = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/10_maintenance_page.html")
+  ).text();
+  mainContent.height = "120vh";
+  contentLayout.backgroundAttachment = "fixed";
+  contentLayout.backgroundImage = 'url("../../assets/about_me_img.jpg")';
+  contentLayout.backgroundPosition = "center";
+  contentLayout.backgroundRepeat = "no-repeat";
+  contentLayout.backgroundSize = "cover";
+};
+
+let loadServices = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/10_maintenance_page.html")
+  ).text();
+  mainContent.height = "120vh";
+  contentLayout.backgroundImage = "none";
+  contentLayout.backgroundColor = "blue";
+  // contentLayout.backgroundAttachment = "fixed";
+  // contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
+  // contentLayout.backgroundPosition = "center";
+  // contentLayout.backgroundRepeat = "no-repeat";
+  // contentLayout.backgroundSize = "cover";
+};
+
+let loadSkills = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/10_maintenance_page.html")
+  ).text();
+  mainContent.height = "120vh";
+  contentLayout.backgroundImage = "none";
+  contentLayout.backgroundColor = "red";
+  // contentLayout.backgroundAttachment = "fixed";
+  // contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
+  // contentLayout.backgroundPosition = "center";
+  // contentLayout.backgroundRepeat = "no-repeat";
+  // contentLayout.backgroundSize = "cover";
+};
+
+let loadProyects = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/10_maintenance_page.html")
+  ).text();
+  mainContent.height = "120vh";
+  contentLayout.backgroundImage = "none";
+  contentLayout.backgroundColor = "purple";
+  // contentLayout.backgroundAttachment = "fixed";
+  // contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
+  // contentLayout.backgroundPosition = "center";
+  // contentLayout.backgroundRepeat = "no-repeat";
+  // contentLayout.backgroundSize = "cover";
+};
+
+let loadContact = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/10_maintenance_page.html")
+  ).text();
+  mainContent.height = "120vh";
+  contentLayout.backgroundAttachment = "fixed";
+  contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
   contentLayout.backgroundPosition = "center";
   contentLayout.backgroundRepeat = "no-repeat";
   contentLayout.backgroundSize = "cover";
@@ -42,13 +112,13 @@ const loadFooter = async () => {
 // Start Load Functions default //
 
 let loadPage = () => {
-  let mainContent = document.getElementById("mainContent").style;
-  let contentLayout = document.getElementById("content").style;
+  //   let mainContent = document.getElementById("mainContent").style;
+  //   let contentLayout = document.getElementById("content").style;
 
   loadHeader();
   loadSidebar();
   //   loadMaintenancePage(mainContent);
-  loadCoverPage(mainContent, contentLayout);
+  loadCoverPage();
   loadFooter();
 };
 
