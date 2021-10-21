@@ -22,7 +22,7 @@ let loadCoverPage = async () => {
   mainContent.height = "110vh";
   contentLayout.flexDirection = "column";
   contentLayout.backgroundAttachment = "fixed";
-  contentLayout.backgroundImage = 'url("../../assets/cover_page_img.jpg")';
+  contentLayout.backgroundImage = 'url("./assets/cover_page_img.jpg")';
   contentLayout.backgroundPosition = "center";
   contentLayout.backgroundRepeat = "no-repeat";
   contentLayout.backgroundSize = "cover";
@@ -32,9 +32,11 @@ let loadAboutMe = async () => {
   content.innerHTML = await (
     await fetch("./components/html/10_maintenance_page.html")
   ).text();
+  let maintenanceComponent = document.getElementById("maintenanceComponent");
+  maintenanceComponent.innerHTML = " Sección sobre mí en construcción";
   mainContent.height = "120vh";
   contentLayout.backgroundAttachment = "fixed";
-  contentLayout.backgroundImage = 'url("../../assets/about_me_img.jpg")';
+  contentLayout.backgroundImage = 'url("./assets/about_me_img.jpg")';
   contentLayout.backgroundPosition = "center";
   contentLayout.backgroundRepeat = "no-repeat";
   contentLayout.backgroundSize = "cover";
@@ -44,6 +46,8 @@ let loadServices = async () => {
   content.innerHTML = await (
     await fetch("./components/html/10_maintenance_page.html")
   ).text();
+  let maintenanceComponent = document.getElementById("maintenanceComponent");
+  maintenanceComponent.innerHTML = " Sección servicios en construcción";
   mainContent.height = "120vh";
   contentLayout.backgroundImage = "none";
   contentLayout.backgroundColor = "blue";
@@ -58,6 +62,8 @@ let loadSkills = async () => {
   content.innerHTML = await (
     await fetch("./components/html/10_maintenance_page.html")
   ).text();
+  let maintenanceComponent = document.getElementById("maintenanceComponent");
+  maintenanceComponent.innerHTML = " Sección habilidades en construcción";
   mainContent.height = "120vh";
   contentLayout.backgroundImage = "none";
   contentLayout.backgroundColor = "red";
@@ -72,6 +78,8 @@ let loadProyects = async () => {
   content.innerHTML = await (
     await fetch("./components/html/10_maintenance_page.html")
   ).text();
+  let maintenanceComponent = document.getElementById("maintenanceComponent");
+  maintenanceComponent.innerHTML = " Sección proyectos en construcción";
   mainContent.height = "120vh";
   contentLayout.backgroundImage = "none";
   contentLayout.backgroundColor = "purple";
@@ -86,9 +94,11 @@ let loadContact = async () => {
   content.innerHTML = await (
     await fetch("./components/html/10_maintenance_page.html")
   ).text();
+  let maintenanceComponent = document.getElementById("maintenanceComponent");
+  maintenanceComponent.innerHTML = " Sección contactos en construcción";
   mainContent.height = "120vh";
   contentLayout.backgroundAttachment = "fixed";
-  contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
+  contentLayout.backgroundImage = 'url("./assets/contact_img.jpg")';
   contentLayout.backgroundPosition = "center";
   contentLayout.backgroundRepeat = "no-repeat";
   contentLayout.backgroundSize = "cover";

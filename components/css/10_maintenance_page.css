@@ -7,6 +7,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
+
+  height: 100px;
 }
 
 .maintenance-page__card--title {
@@ -14,6 +16,10 @@
   font-weight: bold;
 
   color: #ffe227;
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  justify-content: space-evenly;
 }
 
 .maintenance-page__card--title i {
