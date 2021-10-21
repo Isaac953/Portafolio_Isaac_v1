@@ -2,7 +2,7 @@
 let largeScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop) => {
   navDesktop.value = "Expanded";
   sidebar.width = "230px";
-  sidebar.height = "100vh";
+  sidebar.height = "inherit";
   sidebar.transition = "0s";
   sidebarExpanded.display = "flex";
   sidebarCollapsed.display = "none";
@@ -12,7 +12,7 @@ let largeScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop) => {
 let mediumScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop) => {
   navDesktop.value = "Expanded";
   sidebar.width = "205px";
-  sidebar.height = "100vh";
+  sidebar.height = "inherit";
   sidebar.transition = "0s";
   sidebarExpanded.display = "flex";
   sidebarCollapsed.display = "none";
@@ -27,7 +27,7 @@ let horizontalSmallScreen = (
 ) => {
   navMobile.value = "Collapsed";
   sidebar.width = "75px";
-  sidebar.height = "100vh";
+  sidebar.height = "inherit";
   sidebar.transition = "0s";
   sidebarCollapsed.display = "flex";
   sidebarExpanded.display = "none";
@@ -96,14 +96,14 @@ let headerClick = () => {
       if (navDesktop.value === "Expanded") {
         navDesktop.value = "Collapsed";
         sidebar.width = "75px";
-        sidebar.height = "100vh";
+        sidebar.height = "inherit";
         sidebarExpanded.display = "none";
         sidebarCollapsed.display = "flex";
         sidebar.transition = "0.5s";
       } else {
         navDesktop.value = "Expanded";
         sidebar.width = "230px";
-        sidebar.height = "100vh";
+        sidebar.height = "inherit";
         sidebarExpanded.display = "flex";
         sidebarCollapsed.display = "none";
         sidebar.transition = "0.5s";
@@ -114,14 +114,14 @@ let headerClick = () => {
       if (navDesktop.value === "Expanded") {
         navDesktop.value = "Collapsed";
         sidebar.width = "75px";
-        sidebar.height = "100vh";
+        sidebar.height = "inherit";
         sidebarExpanded.display = "none";
         sidebarCollapsed.display = "flex";
         sidebar.transition = "0.5s";
       } else {
         navDesktop.value = "Expanded";
         sidebar.width = "205px";
-        sidebar.height = "100vh";
+        sidebar.height = "inherit";
         sidebarExpanded.display = "flex";
         sidebarCollapsed.display = "none";
         sidebar.transition = "0.5s";
@@ -132,14 +132,14 @@ let headerClick = () => {
       if (navMobile.value === "Collapsed") {
         navMobile.value = "Expanded";
         sidebar.width = "185px";
-        sidebar.height = "100vh";
+        sidebar.height = "inherit";
         sidebarExpanded.display = "flex";
         sidebarCollapsed.display = "none";
         sidebar.transition = "0.5s";
       } else {
         navMobile.value = "Collapsed";
         sidebar.width = "75px";
-        sidebar.height = "100vh";
+        sidebar.height = "inherit";
         sidebarExpanded.display = "none";
         sidebarCollapsed.display = "flex";
         sidebar.transition = "0.5s";
