@@ -93,9 +93,20 @@ a:focus-visible {
 
   color: white;
   background-color: #206a5d;
+  position: relative;
 
   justify-content: center;
   align-items: center;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .footer {
