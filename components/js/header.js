@@ -46,6 +46,7 @@ let verticalSmallScreen = (
   sidebar.transition = "0s";
   sidebarCollapsed.display = "none";
   sidebarExpanded.display = "none";
+  sidebarExpanded.paddingBottom = "0px";
 };
 
 //Funcion para ejecutarse al cambiar tamanio de pantalla
@@ -150,6 +151,7 @@ let headerClick = () => {
       if (navMobile.value === "Collapsed") {
         navMobile.value = "Expanded";
         sidebarExpanded.display = "flex";
+        sidebarExpanded.paddingBottom = "7px";
         sidebarCollapsed.display = "none";
         sidebar.height = "220px";
         sidebar.transition = "0.5s";
@@ -157,6 +159,7 @@ let headerClick = () => {
       } else {
         navMobile.value = "Collapsed";
         sidebarExpanded.display = "none";
+        sidebarExpanded.paddingBottom = "0px";
         sidebarCollapsed.display = "none";
         sidebar.height = "0px";
         sidebar.transition = "0.5s";
