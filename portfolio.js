@@ -19,7 +19,7 @@ let loadCoverPage = async () => {
   content.innerHTML = await (
     await fetch("./components/html/03_cover_page.html")
   ).text();
-  mainContent.height = "115vh";
+  mainContent.height = "120vh";
   contentLayout.flexDirection = "column";
   contentLayout.backgroundAttachment = "fixed";
   contentLayout.backgroundImage = 'url("./assets/cover_page_img.jpg")';
@@ -32,7 +32,7 @@ let loadAboutMe = async () => {
   content.innerHTML = await (
     await fetch("./components/html/04_about_me.html")
   ).text();
-  mainContent.height = "115vh";
+  mainContent.height = "125vh";
   contentLayout.backgroundAttachment = "fixed";
   contentLayout.backgroundImage = 'url("./assets/about_me_img.jpg")';
   contentLayout.backgroundPosition = "center";

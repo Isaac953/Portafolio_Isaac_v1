@@ -7,37 +7,31 @@
   flex-direction: column;
 
   width: 90%;
-  height: 360px;
 
   align-items: center;
   justify-content: space-evenly;
-  /* border-style: solid; */
 }
 
 .about-me__card-title {
-  color: white;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 900;
+
   width: 95%;
-  padding: 0px 15px;
-  /* border-style: solid; */
+  padding: 0 15px 15px 15px;
+
+  color: white;
 }
 
 .about-me__card-p {
-  color: white;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
-  width: 95%;
-  padding: 5px 15px;
-  text-align: justify;
-  /* border-style: solid; */
-}
 
-.about-me__card--buttons {
-  display: flex;
-  justify-content: space-between;
-  min-width: 850px;
-  padding: 0px 15px;
+  width: 95%;
+  padding: 0 15px 15px 15px;
+
+  text-align: justify;
+
+  color: white;
 }
 
 .about-me__buttons {
@@ -46,8 +40,80 @@
   display: flex;
 
   width: 90%;
-  padding: 5px 40px;
+  padding: 7px 40px;
 
   justify-content: space-between;
-  /* border-style: solid; */
 }
+/* End Component 4 - About me Styles */
+
+/* Start Media Queries Screens 1200px */
+@media screen and (max-width: 1200px) {
+  /* Start Component 4 - About me Styles */
+
+  .about-me__card-title {
+    font-size: 28px;
+
+    padding: 0 15px 12px 15px;
+  }
+
+  .about-me__card-p {
+    font-size: 18px;
+
+    padding: 0 15px 12px 15px;
+  }
+
+  .about-me__buttons {
+    padding: 7px 38px;
+  }
+
+  /* End Component 4 - About me Styles */
+}
+/* End Media Queries Screens 1200px */
+
+/* Start Media Queries Screens 850px */
+@media screen and (max-width: 850px) {
+  /* Start Component 4 - About me Styles */
+
+  .about-me__card-title {
+    font-size: 26px;
+
+    padding: 0 15px 10px 15px;
+  }
+
+  .about-me__card-p {
+    font-size: 16px;
+
+    padding: 0 15px 10px 15px;
+  }
+
+  .about-me__buttons {
+    padding: 7px 32px;
+  }
+
+  /* End Component 4 - About me Styles */
+}
+/* End Media Queries Screens 850px */
+
+/* Start Media Queries Screens 650px */
+@media screen and (max-width: 650px) {
+  /* Start Component 4 - About me Styles */
+
+  .about-me__card-title {
+    font-size: 24px;
+
+    padding: 0 15px 8px 15px;
+  }
+
+  .about-me__card-p {
+    font-size: 14px;
+
+    padding: 0 15px 8px 15px;
+  }
+
+  .about-me__buttons {
+    padding: 7px 28px;
+  }
+
+  /* End Component 4 - About me Styles */
+}
+/* End Media Queries Screens 650px */
