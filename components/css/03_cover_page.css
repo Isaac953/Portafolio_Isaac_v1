@@ -1,11 +1,15 @@
+/* Start Component 3 - Cover Page Styles */
 .cover-page__card {
-  align-items: center;
+  position: relative;
+
   display: flex;
   flex-direction: row;
-  height: 280px;
+
+  width: 90%;
+  height: 270px;
+
+  align-items: center;
   justify-content: center;
-  min-width: 930px;
-  position: relative;
 }
 
 .cover-page__card--profile-fig {
@@ -13,76 +17,215 @@
 }
 
 .profile-fig__img {
-  image-rendering: pixelated;
-  height: 215px;
+  height: 205px;
   margin: 10px;
+
+  image-rendering: pixelated;
 }
 
 .cover-page__card--title {
-  min-width: 650px;
-  height: 180px;
   display: flex;
   flex-direction: column;
+
+  width: inherit;
+  height: 180px;
+  margin-right: 10px;
+
   justify-content: space-evenly;
 }
 
 .title__me {
-  align-items: center;
-  color: white;
-  display: flex;
   font-size: 32px;
+
+  display: flex;
+
   height: 42px;
-  margin: 0px;
+  margin: 0;
   padding-left: 10px;
+
+  color: white;
+
+  align-items: center;
 }
 
 .title__name {
-  align-items: center;
-  color: white;
-  display: flex;
   font-size: 43px;
   font-weight: 900;
+
+  display: flex;
+
   height: 52px;
-  margin: 0px;
+  margin: 0;
   padding-left: 10px;
+
+  color: white;
+
+  align-items: center;
 }
 
 .title__rank {
-  align-items: center;
-  background-color: #63b603;
-  color: white;
-  display: flex;
   font-size: 32px;
   font-weight: 900;
+
+  display: flex;
+
   height: 50px;
-  justify-content: flex-end;
-  margin: 0px;
+  margin: 0;
   margin-left: 10px;
   padding-right: 10px;
-  text-shadow: 2px 2px 4px #dddddd;
+
+  color: white;
+  background-color: #63b603;
+  text-shadow: 2px 2px 4px #ddd;
+
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .cover-page__buttons {
-  min-width: 930px;
   position: relative;
-  justify-content: flex-end;
+
   display: flex;
+
+  width: 90%;
   padding-top: 5px;
+  padding-right: 10px;
   padding-bottom: 5px;
-  padding-right: 20px;
+
+  justify-content: flex-end;
 }
+/* End Component 3 - Cover Page Styles */
 
 /* Start Media Queries Screens 1200px */
 @media screen and (max-width: 1200px) {
+  /* Start Component 3 - Cover Page Styles */
+  .cover-page__card {
+    height: 265px;
+  }
+
+  .profile-fig__img {
+    height: 195px;
+  }
+
+  .cover-page__card--title {
+    height: 175px;
+  }
+
+  .title__me {
+    font-size: 30px;
+
+    height: 40px;
+  }
+
+  .title__name {
+    font-size: 41px;
+
+    height: 50px;
+  }
+
+  .title__rank {
+    font-size: 30px;
+
+    height: 48px;
+  }
+  /* End Component 3 - Cover Page Styles */
 }
 /* End Media Queries Screens 1200px */
 
 /* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
+  /* Start Component 3 - Cover Page Styles */
+  .cover-page__card {
+    flex-direction: column-reverse;
+
+    width: 85%;
+    height: 350px;
+
+    justify-content: space-evenly;
+  }
+
+  .profile-fig__img {
+    height: 170px;
+    margin: 5px;
+  }
+
+  .cover-page__card--title {
+    width: 90%;
+    height: 150px;
+    margin-right: 0;
+  }
+
+  .title__me {
+    font-size: 24px;
+
+    height: 34px;
+    padding-left: 0;
+  }
+
+  .title__name {
+    font-size: 34px;
+
+    height: 42px;
+    padding-left: 0;
+  }
+
+  .title__rank {
+    font-size: 26px;
+
+    height: 42px;
+    margin-left: 0;
+    padding-right: 0;
+
+    justify-content: center;
+  }
+
+  .cover-page__buttons {
+    width: 85%;
+    padding-right: 27px;
+  }
+  /* End Component 3 - Cover Page Styles */
 }
 /* End Media Queries Screens 850px */
 
 /* Start Media Queries Screens 650px */
 @media screen and (max-width: 650px) {
+  /* Start Component 3 - Cover Page Styles */
+  .cover-page__card {
+    width: 90%;
+    height: 330px;
+  }
+
+  .profile-fig__img {
+    height: 155px;
+  }
+
+  .cover-page__card--title {
+    width: 90%;
+    height: 135px;
+  }
+
+  .title__me {
+    font-size: 22px;
+
+    height: 32px;
+  }
+
+  .title__name {
+    font-size: 32px;
+
+    height: 40px;
+  }
+
+  .title__rank {
+    font-size: 24px;
+
+    height: 40px;
+  }
+
+  .cover-page__buttons {
+    width: 90%;
+    padding-right: 24px;
+  }
+  /* End Component 3 - Cover Page Styles */
 }
 /* End Media Queries Screens 650px */

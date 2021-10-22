@@ -149,6 +149,16 @@ a:focus-visible {
 /* Start Media Queries Screens 1200px */
 @media screen and (max-width: 1200px) {
   /* Start General Styles */
+  .nav-button {
+    font-size: 26px;
+    height: 43px;
+    width: 43px;
+  }
+
+  .nav-button:hover {
+    font-size: 32px;
+  }
+
   .header {
     font-size: 18px;
 
@@ -177,6 +187,16 @@ a:focus-visible {
 /* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
   /* Start General Styles */
+  .nav-button {
+    font-size: 24px;
+    height: 41px;
+    width: 41px;
+  }
+
+  .nav-button:hover {
+    font-size: 30px;
+  }
+
   .header {
     font-size: 16px;
 
@@ -205,6 +225,16 @@ a:focus-visible {
 /* Start Media Queries Screens 650px */
 @media screen and (max-width: 650px) {
   /* Start General Styles */
+  .nav-button {
+    font-size: 22px;
+    height: 39px;
+    width: 39px;
+  }
+
+  .nav-button:hover {
+    font-size: 28px;
+  }
+
   .header {
     font-size: 14px;
 
