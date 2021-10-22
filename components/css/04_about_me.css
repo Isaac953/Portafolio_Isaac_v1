@@ -1,116 +1,36 @@
-/* Start General Styles */
-
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-.body {
-  background-color: #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  font-family: "Mulish", sans-serif;
-  margin: 0px;
-}
-
-a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-a:focus-visible {
-  border-color: #0021da;
-  border-style: solid;
-  outline: none;
-}
-
-.nav-button {
-  align-items: center;
-  background-color: #0f52ba;
-  border-radius: 8px;
-  color: white;
-  display: flex;
-  font-size: 28px;
-  font-weight: bold;
-  height: 45px;
-  justify-content: center;
-  text-decoration: none;
-  transition: font-size 0.5s;
-  width: 45px;
-}
-
-.nav-button:hover {
-  font-size: 34px;
-}
-
-/* End General Styles */
-
-/* Start Component 3 - About me Styles */
-
-/* @keyframes slideInFromleft {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-} */
-
-.content__about-me {
-  align-items: center;
-  background-attachment: fixed;
-  background-image: url("../../assets/about_me_img.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #334756;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: space-evenly;
-  position: relative;
-  width: 100%;
-}
-
-.content__about-me::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(0, 0, 0, 0.65);
-}
+/* Start Component 4 - About me Styles */
 
 .about-me__card {
-  align-items: center;
-  /* animation: 1.2s ease-out 0s 1 slideInFromleft; */
+  position: relative;
+
   display: flex;
   flex-direction: column;
+
+  width: 90%;
   height: 360px;
-  justify-content: space-between;
-  min-width: 850px;
-  position: relative;
-  width: 850px;
+
+  align-items: center;
+  justify-content: space-evenly;
+  /* border-style: solid; */
 }
 
 .about-me__card-title {
   color: white;
   font-size: 28px;
   font-weight: 900;
-  min-width: 850px;
+  width: 95%;
   padding: 0px 15px;
-  width: 850px;
+  /* border-style: solid; */
 }
 
 .about-me__card-p {
   color: white;
   font-size: 18px;
   line-height: 25px;
-  min-width: 850px;
+  width: 95%;
   padding: 5px 15px;
   text-align: justify;
-  width: 850px;
+  /* border-style: solid; */
 }
 
 .about-me__card--buttons {
@@ -120,95 +40,14 @@ a:focus-visible {
   padding: 0px 15px;
 }
 
-/* End Component 3 - About me Styles */
+.about-me__buttons {
+  position: relative;
 
-/* Start Media Queries Screems 850px */
-@media screen and (max-width: 850px) {
-  /* Start Component 3 - About me Styles */
+  display: flex;
 
-  /* .content__about-me {
-    height: 90vh;
-    min-height: 90vh;
-  } */
+  width: 90%;
+  padding: 5px 40px;
 
-  .about-me__card {
-    height: 370px;
-    min-width: 630px;
-    width: 630px;
-  }
-
-  .about-me__card-title {
-    font-size: 26px;
-    min-width: 630px;
-    width: 630px;
-  }
-
-  .about-me__card-p {
-    font-size: 16px;
-    line-height: 20px;
-    min-width: 630px;
-    width: 630px;
-  }
-
-  .about-me__card--buttons {
-    min-width: 630px;
-  }
-
-  .nav-button {
-    font-size: 24px;
-    height: 40px;
-    width: 40px;
-  }
-
-  .nav-button:hover {
-    font-size: 30px;
-  }
-
-  /* End Component 3 - About me Styles */
+  justify-content: space-between;
+  /* border-style: solid; */
 }
-/* End Media Queries Screems 850px */
-
-/* Start Media Queries Screems 650px */
-@media only screen and (max-width: 650px) {
-  /* Start Component 3 - About me Styles */
-
-  .content__about-me {
-    height: 120vh;
-  }
-
-  .about-me__card {
-    height: 425px;
-    min-width: 360px;
-    width: 360px;
-  }
-
-  .about-me__card-title {
-    font-size: 24px;
-    min-width: 360px;
-    width: 360px;
-  }
-
-  .about-me__card-p {
-    font-size: 14px;
-    line-height: 18px;
-    min-width: 360px;
-    width: 360px;
-  }
-
-  .about-me__card--buttons {
-    min-width: 360px;
-  }
-
-  .nav-button {
-    font-size: 22px;
-    height: 37px;
-    width: 37px;
-  }
-
-  .nav-button:hover {
-    font-size: 28px;
-  }
-
-  /* End Component 3 - About me Styles */
-}
-/* End Media Queries Screems 650px */
