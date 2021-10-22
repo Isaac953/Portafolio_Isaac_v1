@@ -94,3 +94,154 @@
   padding: 7px 40px;
 }
 /* End Component 8 - Contact Styles */
+
+/* Start Media Queries Screens 1200px */
+@media screen and (max-width: 1200px) {
+  /* Start Component 8 - Contact Styles */
+
+  .contact__card--title {
+    font-size: 28px;
+
+    padding: 0 15px 12px 15px;
+  }
+
+  .contact__card--p {
+    font-size: 18px;
+
+    padding: 0 15px 12px 15px;
+  }
+
+  .contact__card--subtitle {
+    font-size: 22px;
+    width: 50%;
+  }
+
+  .contact__social--media {
+    padding: 6px;
+    width: 30%;
+  }
+
+  .social--media__item {
+    align-items: center;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+  }
+
+  .social--media__button {
+    font-size: 26px;
+    height: 43px;
+    width: 43px;
+  }
+
+  .social--media__button:hover {
+    font-size: 32px;
+  }
+
+  .contact__buttons {
+    padding: 7px 38px;
+  }
+
+  /* End Component 8 - Contact Styles */
+}
+/* End Media Queries Screens 1200px */
+
+/* Start Media Queries Screens 850px */
+@media screen and (max-width: 850px) {
+  /* Start Component 8 - Contact Styles */
+
+  .contact__card--title {
+    font-size: 26px;
+
+    padding: 0 15px 10px 15px;
+  }
+
+  .contact__card--p {
+    font-size: 16px;
+
+    padding: 0 15px 10px 15px;
+  }
+
+  .contact__card--subtitle {
+    font-size: 20px;
+    width: 60%;
+  }
+
+  .contact__social--media {
+    padding: 5px;
+    width: 40%;
+  }
+
+  .social--media__item {
+    align-items: center;
+    display: flex;
+    height: 46px;
+    justify-content: center;
+  }
+
+  .social--media__button {
+    font-size: 24px;
+    height: 41px;
+    width: 41px;
+  }
+
+  .social--media__button:hover {
+    font-size: 30px;
+  }
+
+  .contact__buttons {
+    padding: 7px 32px;
+  }
+
+  /* End Component 8 - Contact Styles */
+}
+/* End Media Queries Screens 850px */
+
+/* Start Media Queries Screens 650px */
+@media screen and (max-width: 650px) {
+  /* Start Component 8 - Contact Styles */
+
+  .contact__card--title {
+    font-size: 24px;
+
+    padding: 0 15px 8px 15px;
+  }
+
+  .contact__card--p {
+    font-size: 14px;
+
+    padding: 0 15px 8px 15px;
+  }
+
+  .contact__card--subtitle {
+    font-size: 18px;
+  }
+
+  .contact__social--media {
+    padding: 4px;
+  }
+
+  .social--media__item {
+    align-items: center;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+  }
+
+  .social--media__button {
+    font-size: 22px;
+    height: 39px;
+    width: 39px;
+  }
+
+  .social--media__button:hover {
+    font-size: 28px;
+  }
+
+  .contact__buttons {
+    padding: 7px 28px;
+  }
+
+  /* End Component 8 - Contact Styles */
+}
+/* End Media Queries Screens 650px */
