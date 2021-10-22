@@ -90,10 +90,8 @@ let loadProyects = async () => {
 
 let loadContact = async () => {
   content.innerHTML = await (
-    await fetch("./components/html/10_maintenance_page.html")
+    await fetch("./components/html/08_contact.html")
   ).text();
-  let maintenanceComponent = document.getElementById("maintenanceComponent");
-  maintenanceComponent.innerHTML = " Sección contactos en construcción";
   mainContent.height = "120vh";
   contentLayout.backgroundAttachment = "fixed";
   contentLayout.backgroundImage = 'url("./assets/contact_img.jpg")';

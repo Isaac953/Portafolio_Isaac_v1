@@ -1,120 +1,58 @@
-/* Start General Styles */
-
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-.body {
-  background-color: #e6e6e6;
-  display: flex;
-  flex-direction: row;
-  font-family: "Mulish", sans-serif;
-  margin: 0px;
-}
-
-a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-a:focus-visible {
-  border-color: #0021da;
-  border-style: solid;
-  outline: none;
-}
-
-.nav-button {
-  align-items: center;
-  background-color: #0f52ba;
-  border-radius: 8px;
-  color: white;
-  display: flex;
-  font-size: 28px;
-  font-weight: bold;
-  height: 45px;
-  justify-content: center;
-  text-decoration: none;
-  transition: font-size 0.5s;
-  width: 45px;
-}
-
-.nav-button:hover {
-  font-size: 34px;
-}
-
-/* End General Styles */
-
-.content__contact {
-  align-items: center;
-  background-attachment: fixed;
-  background-image: url("../../assets/contact_img.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: space-evenly;
-  position: relative;
-  width: 100%;
-}
-
-.content__contact::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(0, 0, 0, 0.65);
-}
-
+/* Start Component 8 - Contact Styles */
 .contact__card {
-  align-items: center;
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  height: 285px;
-  justify-content: space-between;
-  min-width: 850px;
-  position: relative;
-  width: 850px;
+
+  width: 90%;
+
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .contact__card--title {
-  color: white;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 900;
-  min-width: 850px;
-  padding: 0px 15px;
-  width: 850px;
+
+  width: 95%;
+  margin-top: 10px;
+  padding: 0 15px 15px 15px;
+
+  color: white;
 }
 
 .contact__card--p {
-  color: white;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
-  min-width: 850px;
-  padding: 8px 15px;
+
+  width: 95%;
+  padding: 0 15px 15px 15px;
+
   text-align: justify;
-  width: 850px;
+
+  color: white;
 }
 
 .contact__card--subtitle {
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
-  padding: 0px 15px;
+  margin-top: 10px;
+  padding: 0 15px 15px 15px;
   text-align: center;
+
+  width: 35%;
 }
 
 .contact__social--media {
   align-items: center;
   display: flex;
-  height: 55px;
   justify-content: space-evenly;
   list-style: none;
-  width: 350px;
+  width: 20%;
+
+  padding: 7px;
 }
 
 .social--media__item {
@@ -122,7 +60,6 @@ a:focus-visible {
   display: flex;
   height: 50px;
   justify-content: center;
-  width: 50px;
 }
 
 .social--media__button {
@@ -145,143 +82,15 @@ a:focus-visible {
   font-size: 34px;
 }
 
-.contact__card--buttons {
+.contact__buttons {
+  position: relative;
+
   display: flex;
-  justify-content: center;
-  min-width: 850px;
-  padding: 0px 15px;
+
+  width: 90%;
+
+  justify-content: space-between;
+
+  padding: 7px 40px;
 }
-
-/* End Component 6 - Contact Styles */
-
-/* Start Media Queries Screems 850px */
-@media screen and (max-width: 850px) {
-  /* Start Component 6 - Contact Styles */
-
-  .content__contact {
-    height: 120vh;
-  }
-
-  .contact__card {
-    height: 250px;
-    min-width: 630px;
-    width: 630px;
-  }
-
-  .contact__card--title {
-    font-size: 26px;
-    min-width: 630px;
-    width: 630px;
-  }
-
-  .contact__card--p {
-    font-size: 16px;
-    line-height: 20px;
-    min-width: 630px;
-    width: 630px;
-  }
-
-  .contact__card--subtitle {
-    font-size: 18px;
-  }
-
-  .contact__social--media {
-    height: 50px;
-    width: 310px;
-  }
-
-  .social--media__item {
-    height: 45px;
-    width: 45px;
-  }
-
-  .social--media__button {
-    font-size: 23px;
-    height: 40px;
-    width: 40px;
-  }
-
-  .social--media__button:hover {
-    font-size: 28px;
-  }
-
-  .contact__card--buttons {
-    min-width: 630px;
-  }
-
-  .nav-button {
-    font-size: 24px;
-    height: 40px;
-    width: 40px;
-  }
-
-  .nav-button:hover {
-    font-size: 30px;
-  }
-  /* End Component 6 - Contact Styles */
-}
-/* End Media Queries Screems 850px */
-
-/* Start Media Queries Screems 650px */
-@media only screen and (max-width: 650px) {
-  /* Start Component 6 - Contact Styles */
-
-  .contact__card {
-    height: 270px;
-    min-width: 360px;
-    width: 360px;
-  }
-
-  .contact__card--title {
-    font-size: 24px;
-    min-width: 360px;
-    width: 360px;
-  }
-
-  .contact__card--p {
-    font-size: 14px;
-    line-height: 18px;
-    min-width: 360px;
-    width: 360px;
-  }
-
-  .contact__card--subtitle {
-    font-size: 16px;
-  }
-
-  .contact__social--media {
-    height: 45px;
-    width: 255px;
-  }
-
-  .social--media__item {
-    height: 40px;
-    width: 40px;
-  }
-
-  .social--media__button {
-    font-size: 20px;
-    height: 37px;
-    width: 37px;
-  }
-
-  .social--media__button:hover {
-    font-size: 25px;
-  }
-
-  .contact__card--buttons {
-    min-width: 360px;
-  }
-
-  .nav-button {
-    font-size: 22px;
-    height: 37px;
-    width: 37px;
-  }
-
-  .nav-button:hover {
-    font-size: 28px;
-  }
-  /* End Component 6 - Contact Styles */
-}
-/* End Media Queries Screems 850px */
+/* End Component 8 - Contact Styles */
