@@ -7,6 +7,7 @@ const loadHeader = async () => {
   header.innerHTML = await (
     await fetch("./components/html/01_header.html")
   ).text();
+  loadInput();
 };
 
 const loadSidebar = async () => {
@@ -112,6 +113,12 @@ const loadFooter = async () => {
     await fetch("./components/html/09_footer.html")
   ).text();
 };
+
+const loadInput = () => {
+  let anchoVentanaH = window.innerWidth;
+  let screenSizeH = document.getElementById("screenSize"); 
+  screenSizeH.value = anchoVentanaH;
+}
 
 // End Functions Load Components with index.html //
 
