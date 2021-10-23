@@ -219,6 +219,7 @@
 
   .contact__social--media {
     padding: 4px;
+    width: 50%;
   }
 
   .social--media__item {
