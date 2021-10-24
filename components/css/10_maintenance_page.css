@@ -2,7 +2,7 @@
 .maintenance-page__card {
   display: flex;
 
-  width: 500px;
+  width: 550px;
 
   align-items: center;
   justify-content: center;
@@ -19,11 +19,12 @@
   display: flex;
   flex-direction: row;
   width: inherit;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .maintenance-page__card--title i {
   color: #fb7813;
+  padding-right: 8px;
 }
 /* End Component 10 - Maintenance page Styles */
 
