@@ -20,7 +20,7 @@ let loadCoverPage = async () => {
   content.innerHTML = await (
     await fetch("./components/html/03_cover_page.html")
   ).text();
-  mainContent.height = "120vh";
+  mainContent.height = "110vh";
   contentLayout.flexDirection = "column";
   contentLayout.backgroundAttachment = "fixed";
   contentLayout.backgroundImage = 'url("./assets/cover_page_img.jpg")';
@@ -33,7 +33,7 @@ let loadAboutMe = async () => {
   content.innerHTML = await (
     await fetch("./components/html/04_about_me.html")
   ).text();
-  mainContent.height = "125vh";
+  mainContent.height = "110vh";
   contentLayout.backgroundAttachment = "fixed";
   contentLayout.backgroundImage = 'url("./assets/about_me_img.jpg")';
   contentLayout.backgroundPosition = "center";
@@ -47,7 +47,7 @@ let loadServices = async () => {
   ).text();
   let maintenanceComponent = document.getElementById("maintenanceComponent");
   maintenanceComponent.innerHTML = " Sección servicios en construcción";
-  mainContent.height = "120vh";
+  mainContent.height = "100vh";
   contentLayout.backgroundImage = "none";
   contentLayout.backgroundColor = "blue";
   // contentLayout.backgroundAttachment = "fixed";
@@ -63,7 +63,7 @@ let loadSkills = async () => {
   ).text();
   let maintenanceComponent = document.getElementById("maintenanceComponent");
   maintenanceComponent.innerHTML = " Sección habilidades en construcción";
-  mainContent.height = "120vh";
+  mainContent.height = "100vh";
   contentLayout.backgroundImage = "none";
   contentLayout.backgroundColor = "red";
   // contentLayout.backgroundAttachment = "fixed";
@@ -79,7 +79,7 @@ let loadProyects = async () => {
   ).text();
   let maintenanceComponent = document.getElementById("maintenanceComponent");
   maintenanceComponent.innerHTML = " Sección proyectos en construcción";
-  mainContent.height = "120vh";
+  mainContent.height = "100vh";
   contentLayout.backgroundImage = "none";
   contentLayout.backgroundColor = "purple";
   // contentLayout.backgroundAttachment = "fixed";
@@ -93,7 +93,7 @@ let loadContact = async () => {
   content.innerHTML = await (
     await fetch("./components/html/08_contact.html")
   ).text();
-  mainContent.height = "120vh";
+  mainContent.height = "110vh";
   contentLayout.backgroundAttachment = "fixed";
   contentLayout.backgroundImage = 'url("./assets/contact_img.jpg")';
   contentLayout.backgroundPosition = "center";
@@ -116,7 +116,7 @@ const loadFooter = async () => {
 
 const loadInput = () => {
   let anchoVentanaH = window.innerWidth;
-  let screenSizeH = document.getElementById("screenSize"); 
+  let screenSizeH = document.getElementById("screenSize");
   screenSizeH.value = anchoVentanaH;
 }
 

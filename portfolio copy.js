@@ -1,57 +1,150 @@
 // Start Functions Load Components with index.html //
 
-async function loadHeader() {
-    header.innerHTML = await (await fetch('./components/html/01_header.html')).text();
-}
+let mainContent = document.getElementById("mainContent").style;
+let contentLayout = document.getElementById("content").style;
 
-async function loadSidebar() {
-    sidebar.innerHTML = await (await fetch('./components/html/02_sidebar.html')).text();
-}
+const loadHeader = async () => {
+  header.innerHTML = await (
+    await fetch("./components/html/01_header.html")
+  ).text();
+  loadInput();
+};
 
-async function loadCoverPage() {
-    content.innerHTML = await (await fetch('./components/html/02_cover_page.html')).text();
-}
+const loadSidebar = async () => {
+  sidebar.innerHTML = await (
+    await fetch("./components/html/02_sidebar.html")
+  ).text();
+};
 
-async function loadAboutMe() {
-    content.innerHTML = await (await fetch('./components/html/03_about_me.html')).text();
-}
+let loadCoverPage = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/03_cover_page.html")
+  ).text();
+  mainContent.height = "110vh";
+  contentLayout.flexDirection = "column";
+  contentLayout.backgroundAttachment = "fixed";
+  contentLayout.backgroundImage = 'url("./assets/cover_page_img.jpg")';
+  contentLayout.backgroundPosition = "center";
+  contentLayout.backgroundRepeat = "no-repeat";
+  contentLayout.backgroundSize = "cover";
+};
 
-async function loadServices() {
-    content.innerHTML = await (await fetch('./components/html/04_services.html')).text();
-}
+let loadAboutMe = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/04_about_me.html")
+  ).text();
+  mainContent.height = "110vh";
+  contentLayout.backgroundAttachment = "fixed";
+  contentLayout.backgroundImage = 'url("./assets/about_me_img.jpg")';
+  contentLayout.backgroundPosition = "center";
+  contentLayout.backgroundRepeat = "no-repeat";
+  contentLayout.backgroundSize = "cover";
+};
 
-async function loadSkills() {
-    content.innerHTML = await (await fetch('./components/html/05_skills.html')).text();
-}
+let loadServices = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/10_maintenance_page.html")
+  ).text();
+  let maintenanceComponent = document.getElementById("maintenanceComponent");
+  maintenanceComponent.innerHTML = " Sección servicios en construcción";
+  mainContent.height = "100vh";
+  contentLayout.backgroundImage = "none";
+  contentLayout.backgroundColor = "blue";
+  // contentLayout.backgroundAttachment = "fixed";
+  // contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
+  // contentLayout.backgroundPosition = "center";
+  // contentLayout.backgroundRepeat = "no-repeat";
+  // contentLayout.backgroundSize = "cover";
+};
 
-async function loadProyects() {
-    content.innerHTML = await (await fetch('./components/html/06_proyects.html')).text();
-}
+let loadSkills = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/10_maintenance_page.html")
+  ).text();
+  let maintenanceComponent = document.getElementById("maintenanceComponent");
+  maintenanceComponent.innerHTML = " Sección habilidades en construcción";
+  mainContent.height = "100vh";
+  contentLayout.backgroundImage = "none";
+  contentLayout.backgroundColor = "red";
+  // contentLayout.backgroundAttachment = "fixed";
+  // contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
+  // contentLayout.backgroundPosition = "center";
+  // contentLayout.backgroundRepeat = "no-repeat";
+  // contentLayout.backgroundSize = "cover";
+};
 
-async function loadContact() {
-    content.innerHTML = await (await fetch('./components/html/07_contact.html')).text();
-}
+let loadProyects = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/10_maintenance_page.html")
+  ).text();
+  let maintenanceComponent = document.getElementById("maintenanceComponent");
+  maintenanceComponent.innerHTML = " Sección proyectos en construcción";
+  mainContent.height = "100vh";
+  contentLayout.backgroundImage = "none";
+  contentLayout.backgroundColor = "purple";
+  // contentLayout.backgroundAttachment = "fixed";
+  // contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
+  // contentLayout.backgroundPosition = "center";
+  // contentLayout.backgroundRepeat = "no-repeat";
+  // contentLayout.backgroundSize = "cover";
+};
 
-async function loadMaintenancePage() {
-    content.innerHTML = await (await fetch('./components/html/10_maintenance_page.html')).text();
-}
+let loadContact = async () => {
+  content.innerHTML = await (
+    await fetch("./components/html/08_contact.html")
+  ).text();
+  mainContent.height = "110vh";
+  contentLayout.backgroundAttachment = "fixed";
+  contentLayout.backgroundImage = 'url("./assets/contact_img.jpg")';
+  contentLayout.backgroundPosition = "center";
+  contentLayout.backgroundRepeat = "no-repeat";
+  contentLayout.backgroundSize = "cover";
+};
 
-async function loadFooter() {
-    footer.innerHTML = await (await fetch('./components/html/08_footer.html')).text();
+let loadMaintenancePage = async (mainContent, content) => {
+  content.innerHTML = await (
+    await fetch("./components/html/10_maintenance_page.html")
+  ).text();
+  mainContent.height = "120vh";
+};
+
+const loadFooter = async () => {
+  footer.innerHTML = await (
+    await fetch("./components/html/09_footer.html")
+  ).text();
+};
+
+const loadInput = () => {
+  let anchoVentanaH = window.innerWidth;
+  let screenSizeH = document.getElementById("screenSize");
+  screenSizeH.value = anchoVentanaH;
 }
 
 // End Functions Load Components with index.html //
 
 // Start Load Functions default //
 
-loadHeader();
+let loadPage = () => {
+  //   let mainContent = document.getElementById("mainContent").style;
+  //   let contentLayout = document.getElementById("content").style;
 
-loadSidebar();
+  loadHeader();
+  loadSidebar();
+  //   loadMaintenancePage(mainContent);
+  loadCoverPage();
+  loadFooter();
+};
+
+// loadHeader();
+
+// loadSidebar();
 
 // loadCoverPage();
 
-loadMaintenancePage();
+// loadMaintenancePage();
 
-loadFooter();
+// loadFooter();
 
 // End Load Functions default //
+
+loadPage();
