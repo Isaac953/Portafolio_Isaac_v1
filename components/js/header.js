@@ -1,21 +1,43 @@
 //Funcion para pantalla Grande
-let largeScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop) => {
+let largeScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop, componentName, mainContent) => {
   navDesktop.value = "Expanded";
   sidebar.width = "230px";
   sidebar.height = "inherit";
   sidebar.transition = "0s";
   sidebarExpanded.display = "flex";
   sidebarCollapsed.display = "none";
+  switch (true) {
+    case componentName.value === "Cover page":
+      mainContent.height = "100vh";
+      break;
+    case componentName.value === "About me":
+      mainContent.height = "100vh";
+      break;
+    case componentName.value === "Contact":
+      mainContent.height = "100vh";
+      break;
+  }
 };
 
 //Funcion para pantalla Mediana
-let mediumScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop) => {
+let mediumScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop, componentName, mainContent) => {
   navDesktop.value = "Expanded";
   sidebar.width = "205px";
   sidebar.height = "inherit";
   sidebar.transition = "0s";
   sidebarExpanded.display = "flex";
   sidebarCollapsed.display = "none";
+  switch (true) {
+    case componentName.value === "Cover page":
+      mainContent.height = "110vh";
+      break;
+    case componentName.value === "About me":
+      mainContent.height = "110vh";
+      break;
+    case componentName.value === "Contact":
+      mainContent.height = "110vh";
+      break;
+  }
 };
 
 //Funcion para pantalla horizontal pequeña
@@ -23,7 +45,7 @@ let horizontalSmallScreen = (
   sidebar,
   sidebarExpanded,
   sidebarCollapsed,
-  navMobile
+  navMobile, componentName, mainContent
 ) => {
   navMobile.value = "Collapsed";
   sidebar.width = "75px";
@@ -31,6 +53,18 @@ let horizontalSmallScreen = (
   sidebar.transition = "0s";
   sidebarCollapsed.display = "flex";
   sidebarExpanded.display = "none";
+
+  switch (true) {
+    case componentName.value === "Cover page":
+      mainContent.height = "130vh";
+      break;
+    case componentName.value === "About me":
+      mainContent.height = "140vh";
+      break;
+    case componentName.value === "Contact":
+      mainContent.height = "130vh";
+      break;
+  }
 };
 
 //Funcion para pantalla vertical pequeña
@@ -38,7 +72,7 @@ let verticalSmallScreen = (
   sidebar,
   sidebarExpanded,
   sidebarCollapsed,
-  navMobile
+  navMobile, componentName, mainContent
 ) => {
   navMobile.value = "Collapsed";
   sidebar.width = "100%";
@@ -47,6 +81,18 @@ let verticalSmallScreen = (
   sidebarCollapsed.display = "none";
   sidebarExpanded.display = "none";
   sidebarExpanded.paddingBottom = "0px";
+
+  switch (true) {
+    case componentName.value === "Cover page":
+      mainContent.height = "100vh";
+      break;
+    case componentName.value === "About me":
+      mainContent.height = "100vh";
+      break;
+    case componentName.value === "Contact":
+      mainContent.height = "100vh";
+      break;
+  }
 };
 
 //Funcion para ejecutarse al cambiar tamanio de pantalla
@@ -60,23 +106,25 @@ window.onresize = () => {
   let sidebar = document.getElementById("sidebar").style;
   let sidebarExpanded = document.getElementById("sidebarExpanded").style;
   let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
+  let componentName = document.getElementById("componentName");
+  let mainContent = document.getElementById("mainContent").style;
 
   screenSize.value = anchoVentana;
 
   //Cargar menu deacuerdo al tamanio de pantalla por medio de functions
   if (anchoVentana > 1200) {
-    largeScreen(sidebar, sidebarExpanded, sidebarCollapsed, navDesktop);
+    largeScreen(sidebar, sidebarExpanded, sidebarCollapsed, navDesktop, componentName, mainContent);
   } else if (anchoVentana <= 1200 && anchoVentana > 850) {
-    mediumScreen(sidebar, sidebarExpanded, sidebarCollapsed, navDesktop);
+    mediumScreen(sidebar, sidebarExpanded, sidebarCollapsed, navDesktop, componentName, mainContent);
   } else if (anchoVentana <= 850 && anchoVentana > 650) {
     horizontalSmallScreen(
       sidebar,
       sidebarExpanded,
       sidebarCollapsed,
-      navMobile
+      navMobile, componentName, mainContent
     );
   } else if (anchoVentana <= 650) {
-    verticalSmallScreen(sidebar, sidebarExpanded, sidebarCollapsed, navMobile);
+    verticalSmallScreen(sidebar, sidebarExpanded, sidebarCollapsed, navMobile, componentName, mainContent);
   }
 };
 

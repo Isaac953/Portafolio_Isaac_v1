@@ -92,6 +92,8 @@ const loadInput = () => {
 const backgroundContent = () => {
   let mainContent = document.getElementById("mainContent").style;
   let contentLayout = document.getElementById("content").style;
+  let screenSize = document.getElementById("screenSize");
+  let screenSizeInt = (screenSize.value);
 
   contentLayout.flexDirection = "column";
   contentLayout.backgroundAttachment = "fixed";
@@ -100,12 +102,33 @@ const backgroundContent = () => {
   contentLayout.backgroundSize = "cover";
 
   switch (true) {
-    //Case largeScreen
     case componentName.value === "Cover page":
       contentLayout.backgroundImage = 'url("./assets/cover_page_img.jpg")';
+      if (screenSizeInt > 1200) {
+        mainContent.height = "100vh";
+      } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
+        mainContent.height = "110vh";
+
+      } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
+        mainContent.height = "130vh";
+      }
+      else if (screenSizeInt <= 650) {
+        mainContent.height = "100vh";
+      }
       break;
     case componentName.value === "About me":
       contentLayout.backgroundImage = 'url("./assets/about_me_img.jpg")';
+      if (screenSizeInt > 1200) {
+        mainContent.height = "100vh";
+      } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
+        mainContent.height = "110vh";
+
+      } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
+        mainContent.height = "140vh";
+      }
+      else if (screenSizeInt <= 650) {
+        mainContent.height = "100vh";
+      }
       break;
     case componentName.value === "Services":
       contentLayout.backgroundImage = 'none';
@@ -121,9 +144,20 @@ const backgroundContent = () => {
       break;
     case componentName.value === "Contact":
       contentLayout.backgroundImage = 'url("./assets/contact_img.jpg")';
+
+      if (screenSizeInt > 1200) {
+        mainContent.height = "100vh";
+      } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
+        mainContent.height = "110vh";
+
+      } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
+        mainContent.height = "125vh";
+      }
+      else if (screenSizeInt <= 650) {
+        mainContent.height = "100vh";
+      }
       break;
   }
-
 }
 
 // End Functions Load Components with index.html //
