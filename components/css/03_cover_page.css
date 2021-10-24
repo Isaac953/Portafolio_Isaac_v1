@@ -1,9 +1,4 @@
 /* Start Component 3 - Cover Page Styles */
-
-.mainContent__cover-page {
-  height: 100vh;
-}
-
 .cover-page__card {
   position: relative;
 
@@ -104,10 +99,6 @@
 /* Start Media Queries Screens 1200px */
 @media screen and (max-width: 1200px) {
   /* Start Component 3 - Cover Page Styles */
-  .mainContent__cover-page {
-    height: 110vh;
-  }
-
   .cover-page__card {
     height: 265px;
   }
@@ -144,10 +135,6 @@
 /* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 3 - Cover Page Styles */
-  .mainContent__cover-page {
-    height: 120vh;
-  }
-
   .cover-page__card {
     flex-direction: column-reverse;
 
@@ -203,10 +190,6 @@
 /* Start Media Queries Screens 650px */
 @media screen and (max-width: 650px) {
   /* Start Component 3 - Cover Page Styles */
-  .mainContent__cover-page {
-    height: 100vh;
-  }
-
   .cover-page__card {
     width: 90%;
     height: 330px;

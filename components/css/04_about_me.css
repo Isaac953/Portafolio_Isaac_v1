@@ -1,9 +1,4 @@
 /* Start Component 4 - About me Styles */
-
-.mainContent__about-me {
-  height: 100vh;
-}
-
 .about-me__card {
   position: relative;
 
@@ -53,11 +48,6 @@
 /* Start Media Queries Screens 1200px */
 @media screen and (max-width: 1200px) {
   /* Start Component 4 - About me Styles */
-
-  .mainContent__about-me {
-    height: 110vh;
-  }
-
   .about-me__card-title {
     font-size: 28px;
 
@@ -81,10 +71,6 @@
 /* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 4 - About me Styles */
-  .mainContent__about-me {
-    height: 130vh;
-  }
-
   .about-me__card-title {
     font-size: 26px;
 
@@ -108,11 +94,6 @@
 /* Start Media Queries Screens 650px */
 @media screen and (max-width: 650px) {
   /* Start Component 4 - About me Styles */
-
-  .mainContent__about-me {
-    height: 100vh;
-  }
-
   .about-me__card-title {
     font-size: 24px;
 

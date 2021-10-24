@@ -1,8 +1,4 @@
 // Start Functions Load Components with index.html //
-
-let mainContent = document.getElementById("mainContent").style;
-let contentLayout = document.getElementById("content").style;
-
 const loadHeader = async () => {
   header.innerHTML = await (
     await fetch("./components/html/01_header.html")
@@ -20,89 +16,64 @@ let loadCoverPage = async () => {
   content.innerHTML = await (
     await fetch("./components/html/03_cover_page.html")
   ).text();
-  contentLayout.flexDirection = "column";
-  contentLayout.backgroundAttachment = "fixed";
-  contentLayout.backgroundImage = 'url("./assets/cover_page_img.jpg")';
-  contentLayout.backgroundPosition = "center";
-  contentLayout.backgroundRepeat = "no-repeat";
-  contentLayout.backgroundSize = "cover";
+
+  let componentName = document.getElementById("componentName");
+  componentName.value = "Cover page";
+  backgroundContent();
+
 };
 
 let loadAboutMe = async () => {
   content.innerHTML = await (
     await fetch("./components/html/04_about_me.html")
   ).text();
-  contentLayout.backgroundAttachment = "fixed";
-  contentLayout.backgroundImage = 'url("./assets/about_me_img.jpg")';
-  contentLayout.backgroundPosition = "center";
-  contentLayout.backgroundRepeat = "no-repeat";
-  contentLayout.backgroundSize = "cover";
+  let componentName = document.getElementById("componentName");
+  componentName.value = "About me";
+  backgroundContent();
+
+
 };
 
 let loadServices = async () => {
   content.innerHTML = await (
     await fetch("./components/html/10_maintenance_page.html")
   ).text();
+  let componentName = document.getElementById("componentName");
+  componentName.value = "Services";
   let maintenanceComponent = document.getElementById("maintenanceComponent");
   maintenanceComponent.innerHTML = " Sección servicios en construcción";
-  mainContent.height = "100vh";
-  contentLayout.backgroundImage = "none";
-  contentLayout.backgroundColor = "blue";
-  // contentLayout.backgroundAttachment = "fixed";
-  // contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
-  // contentLayout.backgroundPosition = "center";
-  // contentLayout.backgroundRepeat = "no-repeat";
-  // contentLayout.backgroundSize = "cover";
+  backgroundContent();
 };
 
 let loadSkills = async () => {
   content.innerHTML = await (
     await fetch("./components/html/10_maintenance_page.html")
   ).text();
+  let componentName = document.getElementById("componentName");
+  componentName.value = "Skills";
   let maintenanceComponent = document.getElementById("maintenanceComponent");
   maintenanceComponent.innerHTML = " Sección habilidades en construcción";
-  mainContent.height = "100vh";
-  contentLayout.backgroundImage = "none";
-  contentLayout.backgroundColor = "red";
-  // contentLayout.backgroundAttachment = "fixed";
-  // contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
-  // contentLayout.backgroundPosition = "center";
-  // contentLayout.backgroundRepeat = "no-repeat";
-  // contentLayout.backgroundSize = "cover";
+  backgroundContent();
 };
 
 let loadProyects = async () => {
   content.innerHTML = await (
     await fetch("./components/html/10_maintenance_page.html")
   ).text();
+  let componentName = document.getElementById("componentName");
+  componentName.value = "Proyects";
   let maintenanceComponent = document.getElementById("maintenanceComponent");
   maintenanceComponent.innerHTML = " Sección proyectos en construcción";
-  mainContent.height = "100vh";
-  contentLayout.backgroundImage = "none";
-  contentLayout.backgroundColor = "purple";
-  // contentLayout.backgroundAttachment = "fixed";
-  // contentLayout.backgroundImage = 'url("../../assets/contact_img.jpg")';
-  // contentLayout.backgroundPosition = "center";
-  // contentLayout.backgroundRepeat = "no-repeat";
-  // contentLayout.backgroundSize = "cover";
+  backgroundContent();
 };
 
 let loadContact = async () => {
   content.innerHTML = await (
     await fetch("./components/html/08_contact.html")
   ).text();
-  contentLayout.backgroundAttachment = "fixed";
-  contentLayout.backgroundImage = 'url("./assets/contact_img.jpg")';
-  contentLayout.backgroundPosition = "center";
-  contentLayout.backgroundRepeat = "no-repeat";
-  contentLayout.backgroundSize = "cover";
-};
-
-let loadMaintenancePage = async (mainContent, content) => {
-  content.innerHTML = await (
-    await fetch("./components/html/10_maintenance_page.html")
-  ).text();
-  mainContent.height = "120vh";
+  let componentName = document.getElementById("componentName");
+  componentName.value = "Contact";
+  backgroundContent();
 };
 
 const loadFooter = async () => {
@@ -111,11 +82,49 @@ const loadFooter = async () => {
   ).text();
 };
 
+//Funciones adicionales de carga para componentes
 const loadInput = () => {
   let anchoVentanaH = window.innerWidth;
   let screenSizeH = document.getElementById("screenSize");
   screenSizeH.value = anchoVentanaH;
 };
+
+const backgroundContent = () => {
+  let mainContent = document.getElementById("mainContent").style;
+  let contentLayout = document.getElementById("content").style;
+
+  contentLayout.flexDirection = "column";
+  contentLayout.backgroundAttachment = "fixed";
+  contentLayout.backgroundPosition = "center";
+  contentLayout.backgroundRepeat = "no-repeat";
+  contentLayout.backgroundSize = "cover";
+
+  switch (true) {
+    //Case largeScreen
+    case componentName.value === "Cover page":
+      contentLayout.backgroundImage = 'url("./assets/cover_page_img.jpg")';
+      break;
+    case componentName.value === "About me":
+      contentLayout.backgroundImage = 'url("./assets/about_me_img.jpg")';
+      break;
+    case componentName.value === "Services":
+      contentLayout.backgroundImage = 'none';
+      contentLayout.backgroundColor = "blue";
+      break;
+    case componentName.value === "Skills":
+      contentLayout.backgroundImage = 'none';
+      contentLayout.backgroundColor = "red";
+      break;
+    case componentName.value === "Proyects":
+      contentLayout.backgroundImage = 'none';
+      contentLayout.backgroundColor = "purple";
+      break;
+    case componentName.value === "Contact":
+      contentLayout.backgroundImage = 'url("./assets/contact_img.jpg")';
+      break;
+  }
+
+}
 
 // End Functions Load Components with index.html //
 
@@ -131,16 +140,6 @@ let loadPage = () => {
   loadCoverPage();
   loadFooter();
 };
-
-// loadHeader();
-
-// loadSidebar();
-
-// loadCoverPage();
-
-// loadMaintenancePage();
-
-// loadFooter();
 
 // End Load Functions default //
 
