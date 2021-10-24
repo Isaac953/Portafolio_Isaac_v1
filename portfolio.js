@@ -20,33 +20,18 @@ let loadCoverPage = async () => {
   content.innerHTML = await (
     await fetch("./components/html/03_cover_page.html")
   ).text();
-  mainContent.height = "110vh";
   contentLayout.flexDirection = "column";
   contentLayout.backgroundAttachment = "fixed";
   contentLayout.backgroundImage = 'url("./assets/cover_page_img.jpg")';
   contentLayout.backgroundPosition = "center";
   contentLayout.backgroundRepeat = "no-repeat";
   contentLayout.backgroundSize = "cover";
-
-
-  let screenSize = document.getElementById("screenSize");
-  let screenSizeInt = parseInt(screenSize.value);
-  if (screenSizeInt > 1200) {
-    mainContent.height = "100vh";
-  } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
-    mainContent.height = "100vh";
-  } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-    mainContent.height = "125vh";
-  } else if (screenSizeInt <= 650) {
-    mainContent.height = "100vh";
-  }
 };
 
 let loadAboutMe = async () => {
   content.innerHTML = await (
     await fetch("./components/html/04_about_me.html")
   ).text();
-  mainContent.height = "110vh";
   contentLayout.backgroundAttachment = "fixed";
   contentLayout.backgroundImage = 'url("./assets/about_me_img.jpg")';
   contentLayout.backgroundPosition = "center";
@@ -106,7 +91,6 @@ let loadContact = async () => {
   content.innerHTML = await (
     await fetch("./components/html/08_contact.html")
   ).text();
-  mainContent.height = "110vh";
   contentLayout.backgroundAttachment = "fixed";
   contentLayout.backgroundImage = 'url("./assets/contact_img.jpg")';
   contentLayout.backgroundPosition = "center";
@@ -131,7 +115,7 @@ const loadInput = () => {
   let anchoVentanaH = window.innerWidth;
   let screenSizeH = document.getElementById("screenSize");
   screenSizeH.value = anchoVentanaH;
-}
+};
 
 // End Functions Load Components with index.html //
 

@@ -1,4 +1,8 @@
 /* Start Component 8 - Contact Styles */
+.mainContent__contact {
+  height: 100vh;
+}
+
 .contact__card {
   position: relative;
 
@@ -98,6 +102,9 @@
 /* Start Media Queries Screens 1200px */
 @media screen and (max-width: 1200px) {
   /* Start Component 8 - Contact Styles */
+  .mainContent__contact {
+    height: 105vh;
+  }
 
   .contact__card--title {
     font-size: 28px;
@@ -147,6 +154,9 @@
 /* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 8 - Contact Styles */
+  .mainContent__contact {
+    height: 115vh;
+  }
 
   .contact__card--title {
     font-size: 26px;
@@ -196,6 +206,9 @@
 /* Start Media Queries Screens 650px */
 @media screen and (max-width: 650px) {
   /* Start Component 8 - Contact Styles */
+  .mainContent__contact {
+    height: 100vh;
+  }
 
   .contact__card--title {
     font-size: 24px;
