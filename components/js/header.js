@@ -1,5 +1,12 @@
-//Funcion para pantalla Grande
-let largeScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop, componentName, mainContent) => {
+//Start High screen function//
+let largeScreen = (
+  sidebar,
+  sidebarExpanded,
+  sidebarCollapsed,
+  navDesktop,
+  componentName,
+  mainContent
+) => {
   navDesktop.value = "Expanded";
   sidebar.width = "230px";
   sidebar.height = "inherit";
@@ -18,9 +25,17 @@ let largeScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop, compo
       break;
   }
 };
+//End High screen function//
 
-//Funcion para pantalla Mediana
-let mediumScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop, componentName, mainContent) => {
+//Start Medium screen function//
+let mediumScreen = (
+  sidebar,
+  sidebarExpanded,
+  sidebarCollapsed,
+  navDesktop,
+  componentName,
+  mainContent
+) => {
   navDesktop.value = "Expanded";
   sidebar.width = "205px";
   sidebar.height = "inherit";
@@ -39,13 +54,16 @@ let mediumScreen = (sidebar, sidebarExpanded, sidebarCollapsed, navDesktop, comp
       break;
   }
 };
+//End Medium screen function//
 
-//Funcion para pantalla horizontal pequeña
+//Start Horizontal small screen function//
 let horizontalSmallScreen = (
   sidebar,
   sidebarExpanded,
   sidebarCollapsed,
-  navMobile, componentName, mainContent
+  navMobile,
+  componentName,
+  mainContent
 ) => {
   navMobile.value = "Collapsed";
   sidebar.width = "75px";
@@ -66,13 +84,16 @@ let horizontalSmallScreen = (
       break;
   }
 };
+//End Horizontal small screen function//
 
-//Funcion para pantalla vertical pequeña
+//Start vertical small screen function//
 let verticalSmallScreen = (
   sidebar,
   sidebarExpanded,
   sidebarCollapsed,
-  navMobile, componentName, mainContent
+  navMobile,
+  componentName,
+  mainContent
 ) => {
   navMobile.value = "Collapsed";
   sidebar.width = "100%";
@@ -94,11 +115,12 @@ let verticalSmallScreen = (
       break;
   }
 };
+//End Horizontal small screen function//
 
-//Funcion para ejecutarse al cambiar tamanio de pantalla
+//Start window onresize function//
 window.onresize = () => {
-  //Variables
   let anchoVentana = window.innerWidth;
+
   let screenSize = document.getElementById("screenSize");
   let navDesktop = document.getElementById("navDesktop");
   let navMobile = document.getElementById("navMobile");
@@ -113,22 +135,46 @@ window.onresize = () => {
 
   //Cargar menu deacuerdo al tamanio de pantalla por medio de functions
   if (anchoVentana > 1200) {
-    largeScreen(sidebar, sidebarExpanded, sidebarCollapsed, navDesktop, componentName, mainContent);
+    largeScreen(
+      sidebar,
+      sidebarExpanded,
+      sidebarCollapsed,
+      navDesktop,
+      componentName,
+      mainContent
+    );
   } else if (anchoVentana <= 1200 && anchoVentana > 850) {
-    mediumScreen(sidebar, sidebarExpanded, sidebarCollapsed, navDesktop, componentName, mainContent);
+    mediumScreen(
+      sidebar,
+      sidebarExpanded,
+      sidebarCollapsed,
+      navDesktop,
+      componentName,
+      mainContent
+    );
   } else if (anchoVentana <= 850 && anchoVentana > 650) {
     horizontalSmallScreen(
       sidebar,
       sidebarExpanded,
       sidebarCollapsed,
-      navMobile, componentName, mainContent
+      navMobile,
+      componentName,
+      mainContent
     );
   } else if (anchoVentana <= 650) {
-    verticalSmallScreen(sidebar, sidebarExpanded, sidebarCollapsed, navMobile, componentName, mainContent);
+    verticalSmallScreen(
+      sidebar,
+      sidebarExpanded,
+      sidebarCollapsed,
+      navMobile,
+      componentName,
+      mainContent
+    );
   }
 };
+//End window onresize function//
 
-//Function para expandir y colapsar sidebar por medio de botom hamburger
+//Start header click with sidebar size//
 let headerClick = () => {
   let anchoVentana = window.innerWidth;
   let navDesktop = document.getElementById("navDesktop");
@@ -216,3 +262,4 @@ let headerClick = () => {
       break;
   }
 };
+//End header click with sidebar size//

@@ -1,4 +1,4 @@
-// Start Functions Load Components with index.html //
+//Start Functions Load Components with index.html//
 const loadHeader = async () => {
   header.innerHTML = await (
     await fetch("./components/html/01_header.html")
@@ -20,7 +20,6 @@ let loadCoverPage = async () => {
   let componentName = document.getElementById("componentName");
   componentName.value = "Cover page";
   backgroundContent();
-
 };
 
 let loadAboutMe = async () => {
@@ -30,8 +29,6 @@ let loadAboutMe = async () => {
   let componentName = document.getElementById("componentName");
   componentName.value = "About me";
   backgroundContent();
-
-
 };
 
 let loadServices = async () => {
@@ -81,19 +78,28 @@ const loadFooter = async () => {
     await fetch("./components/html/09_footer.html")
   ).text();
 };
+//End Functions Load Components with index.html//
 
-//Funciones adicionales de carga para componentes
+//Start Additional Container Size Functions//
+
+//Start function load input default with header//
 const loadInput = () => {
   let anchoVentanaH = window.innerWidth;
   let screenSizeH = document.getElementById("screenSize");
-  screenSizeH.value = anchoVentanaH;
-};
+  let componentName = document.getElementById("componentName");
 
+  screenSizeH.value = anchoVentanaH;
+  componentName.value = "Cover page";
+};
+//End function load input default with header//
+
+//Start function load background content properties and size//
 const backgroundContent = () => {
   let mainContent = document.getElementById("mainContent").style;
   let contentLayout = document.getElementById("content").style;
   let screenSize = document.getElementById("screenSize");
-  let screenSizeInt = (screenSize.value);
+  let componentName = document.getElementById("componentName");
+  let screenSizeInt = screenSize.value;
 
   contentLayout.flexDirection = "column";
   contentLayout.backgroundAttachment = "fixed";
@@ -108,11 +114,9 @@ const backgroundContent = () => {
         mainContent.height = "100vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "110vh";
-
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
         mainContent.height = "130vh";
-      }
-      else if (screenSizeInt <= 650) {
+      } else if (screenSizeInt <= 650) {
         mainContent.height = "100vh";
       }
       break;
@@ -122,24 +126,22 @@ const backgroundContent = () => {
         mainContent.height = "100vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "110vh";
-
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
         mainContent.height = "140vh";
-      }
-      else if (screenSizeInt <= 650) {
+      } else if (screenSizeInt <= 650) {
         mainContent.height = "100vh";
       }
       break;
     case componentName.value === "Services":
-      contentLayout.backgroundImage = 'none';
+      contentLayout.backgroundImage = "none";
       contentLayout.backgroundColor = "blue";
       break;
     case componentName.value === "Skills":
-      contentLayout.backgroundImage = 'none';
+      contentLayout.backgroundImage = "none";
       contentLayout.backgroundColor = "red";
       break;
     case componentName.value === "Proyects":
-      contentLayout.backgroundImage = 'none';
+      contentLayout.backgroundImage = "none";
       contentLayout.backgroundColor = "purple";
       break;
     case componentName.value === "Contact":
@@ -149,32 +151,24 @@ const backgroundContent = () => {
         mainContent.height = "100vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "110vh";
-
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
         mainContent.height = "125vh";
-      }
-      else if (screenSizeInt <= 650) {
+      } else if (screenSizeInt <= 650) {
         mainContent.height = "100vh";
       }
       break;
   }
-}
+  //End function load background content properties and size//
+};
+// End Additional Container Size Functions//
 
-// End Functions Load Components with index.html //
-
-// Start Load Functions default //
-
+//Start Load Functions default//
 let loadPage = () => {
-  //   let mainContent = document.getElementById("mainContent").style;
-  //   let contentLayout = document.getElementById("content").style;
-
   loadHeader();
   loadSidebar();
-  //   loadMaintenancePage(mainContent);
   loadCoverPage();
   loadFooter();
 };
 
-// End Load Functions default //
-
 loadPage();
+//End Load Functions default//
