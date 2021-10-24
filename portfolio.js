@@ -27,6 +27,19 @@ let loadCoverPage = async () => {
   contentLayout.backgroundPosition = "center";
   contentLayout.backgroundRepeat = "no-repeat";
   contentLayout.backgroundSize = "cover";
+
+
+  let screenSize = document.getElementById("screenSize");
+  let screenSizeInt = parseInt(screenSize.value);
+  if (screenSizeInt > 1200) {
+    mainContent.height = "100vh";
+  } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
+    mainContent.height = "100vh";
+  } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
+    mainContent.height = "125vh";
+  } else if (screenSizeInt <= 650) {
+    mainContent.height = "100vh";
+  }
 };
 
 let loadAboutMe = async () => {
