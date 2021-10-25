@@ -166,7 +166,11 @@ const backgroundContent = () => {
 let loadPage = async () => {
   await loadHeader();
   await loadSidebar();
-  await loadCoverPage();
+
+  setTimeout(() => {
+    loadCoverPage();
+  }, 50);
+
   await loadFooter();
 };
 
