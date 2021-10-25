@@ -163,11 +163,11 @@ const backgroundContent = () => {
 // End Additional Container Size Functions//
 
 //Start Load Functions default//
-let loadPage = () => {
-  loadHeader();
-  loadSidebar();
-  loadCoverPage();
-  loadFooter();
+let loadPage = async () => {
+  await loadHeader();
+  await loadSidebar();
+  await loadCoverPage();
+  await loadFooter();
 };
 
 loadPage();
