@@ -30,6 +30,7 @@
   height: 500px;
   border-style: solid;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .skills__list--item {
@@ -40,6 +41,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+  border-color: red;
 }
 
 .list__icon {
