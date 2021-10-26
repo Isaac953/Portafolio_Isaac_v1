@@ -44,12 +44,12 @@ let loadServices = async () => {
 
 let loadSkills = async () => {
   content.innerHTML = await (
-    await fetch("./components/html/10_maintenance_page.html")
+    await fetch("./components/html/06_skills.html")
   ).text();
   let componentName = document.getElementById("componentName");
   componentName.value = "Skills";
-  let maintenanceComponent = document.getElementById("maintenanceComponent");
-  maintenanceComponent.innerHTML = " Sección habilidades en construcción";
+  // let maintenanceComponent = document.getElementById("maintenanceComponent");
+  // maintenanceComponent.innerHTML = " Sección habilidades en construcción";
   backgroundContent();
 };
 
