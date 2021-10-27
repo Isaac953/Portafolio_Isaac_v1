@@ -46,11 +46,34 @@
 }
 
 .list__icon {
-  color: white;
   font-size: 55px;
+}
+
+.color-html5 {
+  color: #e44d26;
+}
+
+.color-css3 {
+  color: #016cb9;
+}
+
+.color-js {
+  color: #f7df1e;
+}
+
+.color-bootstrap {
+  color: #7952b3;
+}
+
+.color-php {
+  color: #8892bf;
+}
+
+.color-python {
+  color: #ffd43b;
 }
 
 .list__title {
   color: white;
-  font-size: 30px;
+  font-size: 24px;
 }
