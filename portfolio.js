@@ -33,12 +33,12 @@ let loadAboutMe = async () => {
 
 let loadServices = async () => {
   content.innerHTML = await (
-    await fetch("./components/html/10_maintenance_page.html")
+    await fetch("./components/html/05_services.html")
   ).text();
   let componentName = document.getElementById("componentName");
   componentName.value = "Services";
-  let maintenanceComponent = document.getElementById("maintenanceComponent");
-  maintenanceComponent.innerHTML = " Sección servicios en construcción";
+  // let maintenanceComponent = document.getElementById("maintenanceComponent");
+  // maintenanceComponent.innerHTML = " Sección servicios en construcción";
   backgroundContent();
 };
 
