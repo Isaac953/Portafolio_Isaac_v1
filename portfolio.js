@@ -138,6 +138,7 @@ const backgroundContent = () => {
       break;
     case componentName.value === "Skills":
       contentLayout.backgroundImage = 'url("./assets/skills_img.jpg")';
+      contentLayout.backgroundPosition = "top";
       break;
     case componentName.value === "Proyects":
       contentLayout.backgroundImage = "none";
