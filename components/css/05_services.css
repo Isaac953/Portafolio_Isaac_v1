@@ -3,7 +3,7 @@
   position: relative;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 
   width: 90%;
@@ -27,9 +27,10 @@
   display: flex;
   flex-direction: row;
   width: 90%;
-  height: 270px;
+  /* height: 270px; */
   justify-content: flex-start;
   align-items: center;
+  border-style: solid;
 }
 
 .dev__subtitle {
@@ -78,10 +79,10 @@
   flex-direction: column;
   border-radius: 12px;
   width: 100%;
-  margin-right: 15px;
+  margin: 15px;
+  margin-left: 0px;
   padding: 10px;
   position: relative;
-  margin-top: 10px;
 }
 
 .dev__list::before {

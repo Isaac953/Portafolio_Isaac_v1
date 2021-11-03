@@ -26,6 +26,10 @@ a:focus-visible {
   outline: none;
 }
 
+.inputHidden {
+  display: flex;
+}
+
 .nav-button {
   align-items: center;
   background-color: #0f52ba;
