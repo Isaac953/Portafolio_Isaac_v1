@@ -133,8 +133,17 @@ const backgroundContent = () => {
       }
       break;
     case componentName.value === "Services":
-      contentLayout.backgroundImage = "none";
-      contentLayout.backgroundColor = "blue";
+      contentLayout.backgroundImage = 'url("./assets/services_img.jpg")';
+      contentLayout.backgroundPosition = "center";
+      if (screenSizeInt > 1200) {
+        mainContent.height = "105vh";
+      } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
+        mainContent.height = "110vh";
+      } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
+        mainContent.height = "140vh";
+      } else if (screenSizeInt <= 650) {
+        mainContent.height = "100vh";
+      }
       break;
     case componentName.value === "Skills":
       contentLayout.backgroundImage = "none";
