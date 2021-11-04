@@ -236,6 +236,10 @@
     font-size: 20px;
   }
 
+  .services__card--dev {
+    flex-direction: column;
+  }
+
   .dev__subtitle {
     min-width: 130px;
     height: 130px;

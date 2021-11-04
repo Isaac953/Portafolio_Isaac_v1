@@ -134,19 +134,22 @@ const backgroundContent = () => {
       }
       break;
     case componentName.value === "Services":
-      contentLayout.padding = "20px 0px";
       contentLayout.backgroundImage = 'url("./assets/services_img.jpg")';
       if (screenSizeInt > 1200) {
         mainContent.height = "110vh";
+        contentLayout.padding = "20px 0px";
         contentLayout.justifyContent = "flex-start";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "125vh";
+        contentLayout.padding = "20px 0px";
         contentLayout.justifyContent = "flex-start";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "125vh";
+        contentLayout.padding = "20px 0px";
+        mainContent.height = "130vh";
         contentLayout.justifyContent = "center";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "130vh";
+        contentLayout.padding = "0px 0px";
+        mainContent.height = "155vh";
         contentLayout.justifyContent = "center";
       }
       break;
