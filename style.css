@@ -31,18 +31,23 @@ a:focus-visible {
 }
 
 .nav-button {
-  align-items: center;
-  background-color: #0f52ba;
-  border-radius: 8px;
-  color: white;
-  display: flex;
   font-size: 28px;
   font-weight: bold;
-  height: 45px;
-  justify-content: center;
-  text-decoration: none;
-  transition: font-size 0.5s;
+
+  display: flex;
+
   width: 45px;
+  height: 45px;
+
+  transition: font-size 0.5s;
+  text-decoration: none;
+
+  color: white;
+  border-radius: 8px;
+  background-color: #0f52ba;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-button:hover {
@@ -109,6 +114,8 @@ a:focus-visible {
   font-size: 20px;
   font-weight: bold;
 
+  position: relative;
+
   display: flex;
 
   width: 100%;
@@ -116,19 +123,20 @@ a:focus-visible {
 
   color: white;
   background-color: #206a5d;
-  position: relative;
 
   justify-content: center;
   align-items: center;
 }
 
 .content::before {
-  content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
   background-color: rgba(0, 0, 0, 0.65);
 }
 
@@ -155,8 +163,9 @@ a:focus-visible {
   /* Start General Styles */
   .nav-button {
     font-size: 26px;
-    height: 43px;
+
     width: 43px;
+    height: 43px;
   }
 
   .nav-button:hover {
@@ -193,8 +202,9 @@ a:focus-visible {
   /* Start General Styles */
   .nav-button {
     font-size: 24px;
-    height: 41px;
+
     width: 41px;
+    height: 41px;
   }
 
   .nav-button:hover {
@@ -231,8 +241,9 @@ a:focus-visible {
   /* Start General Styles */
   .nav-button {
     font-size: 22px;
-    height: 39px;
+
     width: 39px;
+    height: 39px;
   }
 
   .nav-button:hover {
@@ -252,18 +263,19 @@ a:focus-visible {
     width: 100%;
 
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .sidebar {
     font-size: 14px;
 
-    width: 100%;
-    height: 0px;
-
     display: flex;
+
+    width: 100%;
+    height: 0;
+    padding: 0;
+
     justify-content: flex-start;
-    padding: 0px;
   }
 
   .content {

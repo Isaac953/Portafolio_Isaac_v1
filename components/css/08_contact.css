@@ -16,14 +16,15 @@
   font-weight: 900;
 
   width: 95%;
-  margin-top: 10px;
+  margin-bottom: 5px;
   padding: 0 15px 15px 15px;
 
   color: white;
 }
 
 .contact__card--p {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: lighter;
   line-height: 25px;
 
   width: 95%;
@@ -35,47 +36,59 @@
 }
 
 .contact__card--subtitle {
-  color: white;
   font-size: 24px;
   font-weight: 700;
-  margin-top: 10px;
-  padding: 0 15px 15px 15px;
-  text-align: center;
 
   width: 95%;
+  margin-top: 10px;
+  padding: 0 15px 15px 15px;
+
+  text-align: center;
+
+  color: white;
 }
 
 .contact__social--media {
-  align-items: center;
   display: flex;
-  justify-content: center;
-  list-style: none;
+
   width: 95%;
   padding: 7px;
+
+  list-style: none;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .social--media__item {
-  align-items: center;
   display: flex;
+
   height: 50px;
-  justify-content: center;
   padding: 0 10px;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .social--media__button {
-  align-items: center;
-  background-color: #fc5404;
-  border-radius: 8px;
-  color: white;
-  display: flex;
   font-size: 28px;
   font-weight: bold;
+
+  display: flex;
+
+  width: 45px;
   height: 45px;
-  justify-content: center;
+
+  transition: font-size 1s;
   text-align: center;
   text-decoration: none;
-  transition: font-size 1s;
-  width: 45px;
+
+  color: white;
+  border-radius: 8px;
+  background-color: #fc5404;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .social--media__button:hover {
@@ -88,10 +101,9 @@
   display: flex;
 
   width: 90%;
+  padding: 7px 40px;
 
   justify-content: space-between;
-
-  padding: 7px 40px;
 }
 /* End Component 8 - Contact Styles */
 
@@ -105,8 +117,9 @@
   }
 
   .contact__card--p {
-    font-size: 18px;
+    font-size: 16px;
 
+    margin-bottom: 10px;
     padding: 0 15px 12px 15px;
   }
 
@@ -119,16 +132,19 @@
   }
 
   .social--media__item {
-    align-items: center;
     display: flex;
+
     height: 48px;
+
+    align-items: center;
     justify-content: center;
   }
 
   .social--media__button {
     font-size: 26px;
-    height: 43px;
+
     width: 43px;
+    height: 43px;
   }
 
   .social--media__button:hover {
@@ -153,7 +169,7 @@
   }
 
   .contact__card--p {
-    font-size: 16px;
+    font-size: 14px;
 
     padding: 0 15px 10px 15px;
   }
@@ -167,16 +183,19 @@
   }
 
   .social--media__item {
-    align-items: center;
     display: flex;
+
     height: 46px;
+
+    align-items: center;
     justify-content: center;
   }
 
   .social--media__button {
     font-size: 24px;
-    height: 41px;
+
     width: 41px;
+    height: 41px;
   }
 
   .social--media__button:hover {
@@ -201,7 +220,7 @@
   }
 
   .contact__card--p {
-    font-size: 14px;
+    font-size: 12px;
 
     padding: 0 15px 8px 15px;
   }
@@ -215,16 +234,19 @@
   }
 
   .social--media__item {
-    align-items: center;
     display: flex;
+
     height: 44px;
+
+    align-items: center;
     justify-content: center;
   }
 
   .social--media__button {
     font-size: 22px;
-    height: 39px;
+
     width: 39px;
+    height: 39px;
   }
 
   .social--media__button:hover {

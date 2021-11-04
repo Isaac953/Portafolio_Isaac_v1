@@ -37,8 +37,6 @@ let loadServices = async () => {
   ).text();
   let componentName = document.getElementById("componentName");
   componentName.value = "Services";
-  // let maintenanceComponent = document.getElementById("maintenanceComponent");
-  // maintenanceComponent.innerHTML = " Sección servicios en construcción";
   backgroundContent();
 };
 
@@ -107,7 +105,6 @@ const backgroundContent = () => {
   contentLayout.backgroundRepeat = "no-repeat";
   contentLayout.backgroundSize = "cover";
 
-
   switch (true) {
     case componentName.value === "Cover page":
       contentLayout.backgroundImage = 'url("./assets/cover_page_img.jpg")';
@@ -136,21 +133,13 @@ const backgroundContent = () => {
     case componentName.value === "Services":
       contentLayout.backgroundImage = 'url("./assets/services_img.jpg")';
       if (screenSizeInt > 1200) {
-        mainContent.height = "110vh";
-        contentLayout.padding = "20px 0px";
-        contentLayout.justifyContent = "flex-start";
+        mainContent.height = "120vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
-        mainContent.height = "125vh";
-        contentLayout.padding = "20px 0px";
-        contentLayout.justifyContent = "flex-start";
-      } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        contentLayout.padding = "20px 0px";
         mainContent.height = "130vh";
-        contentLayout.justifyContent = "center";
+      } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
+        mainContent.height = "145vh";
       } else if (screenSizeInt <= 650) {
-        contentLayout.padding = "0px 0px";
-        mainContent.height = "155vh";
-        contentLayout.justifyContent = "center";
+        mainContent.height = "160vh";
       }
       break;
     case componentName.value === "Skills":

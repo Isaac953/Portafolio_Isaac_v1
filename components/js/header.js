@@ -22,9 +22,7 @@ let largeScreen = (
       mainContent.height = "100vh";
       break;
     case componentName.value === "Services":
-      mainContent.height = "110vh";
-      contentLayout.padding = "20px 0px";
-      contentLayout.justifyContent = "flex-start";
+      mainContent.height = "120vh";
       break;
     case componentName.value === "Contact":
       mainContent.height = "100vh";
@@ -57,9 +55,7 @@ let mediumScreen = (
       mainContent.height = "110vh";
       break;
     case componentName.value === "Services":
-      mainContent.height = "125vh";
-      contentLayout.padding = "20px 0px";
-      contentLayout.justifyContent = "flex-start";
+      mainContent.height = "130vh";
       break;
     case componentName.value === "Contact":
       mainContent.height = "110vh";
@@ -93,9 +89,7 @@ let horizontalSmallScreen = (
       mainContent.height = "140vh";
       break;
     case componentName.value === "Services":
-      mainContent.height = "130vh";
-      contentLayout.padding = "20px 0px";
-      contentLayout.justifyContent = "center";
+      mainContent.height = "145vh";
       break;
     case componentName.value === "Contact":
       mainContent.height = "130vh";
@@ -130,9 +124,7 @@ let verticalSmallScreen = (
       mainContent.height = "100vh";
       break;
     case componentName.value === "Services":
-      mainContent.height = "155vh";
-      contentLayout.padding = "0px 0px";
-      contentLayout.justifyContent = "center";
+      mainContent.height = "160vh";
       break;
     case componentName.value === "Contact":
       mainContent.height = "100vh";

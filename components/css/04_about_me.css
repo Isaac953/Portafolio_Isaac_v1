@@ -16,17 +16,20 @@
   font-weight: 900;
 
   width: 95%;
+  margin-bottom: 5px;
   padding: 0 15px 15px 15px;
 
   color: white;
 }
 
 .about-me__card-p {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: lighter;
   line-height: 25px;
 
   width: 95%;
-  padding: 0 15px 15px 15px;
+  margin-bottom: 10px;
+  padding: 2px 15px;
 
   text-align: justify;
 
@@ -55,9 +58,7 @@
   }
 
   .about-me__card-p {
-    font-size: 18px;
-
-    padding: 0 15px 12px 15px;
+    font-size: 16px;
   }
 
   .about-me__buttons {
@@ -78,9 +79,7 @@
   }
 
   .about-me__card-p {
-    font-size: 16px;
-
-    padding: 0 15px 10px 15px;
+    font-size: 14px;
   }
 
   .about-me__buttons {
@@ -101,9 +100,7 @@
   }
 
   .about-me__card-p {
-    font-size: 14px;
-
-    padding: 0 15px 8px 15px;
+    font-size: 12px;
   }
 
   .about-me__buttons {

@@ -17,6 +17,7 @@
   font-weight: 900;
 
   width: 95%;
+  margin-bottom: 5px;
   padding: 0 15px 15px 15px;
 
   color: white;
@@ -119,7 +120,7 @@
 
   position: relative;
 
-  text-align: justify;
+  padding: 2px 0;
 
   color: white;
 }
@@ -247,7 +248,7 @@
   }
 
   .dev__list {
-    margin: 9px 0px;
+    margin: 9px 0;
   }
 
   .dev__list--item {
