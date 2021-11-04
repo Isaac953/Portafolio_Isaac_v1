@@ -5,7 +5,8 @@ let largeScreen = (
   sidebarCollapsed,
   navDesktop,
   componentName,
-  mainContent
+  mainContent,
+  contentLayout
 ) => {
   navDesktop.value = "Expanded";
   sidebar.width = "230px";
@@ -19,6 +20,10 @@ let largeScreen = (
       break;
     case componentName.value === "About me":
       mainContent.height = "100vh";
+      break;
+    case componentName.value === "Services":
+      mainContent.height = "110vh";
+      contentLayout.justifyContent = "flex-start";
       break;
     case componentName.value === "Contact":
       mainContent.height = "100vh";
@@ -34,7 +39,8 @@ let mediumScreen = (
   sidebarCollapsed,
   navDesktop,
   componentName,
-  mainContent
+  mainContent,
+  contentLayout
 ) => {
   navDesktop.value = "Expanded";
   sidebar.width = "205px";
@@ -48,6 +54,10 @@ let mediumScreen = (
       break;
     case componentName.value === "About me":
       mainContent.height = "110vh";
+      break;
+    case componentName.value === "Services":
+      mainContent.height = "125vh";
+      contentLayout.justifyContent = "flex-start";
       break;
     case componentName.value === "Contact":
       mainContent.height = "110vh";
@@ -63,7 +73,8 @@ let horizontalSmallScreen = (
   sidebarCollapsed,
   navMobile,
   componentName,
-  mainContent
+  mainContent,
+  contentLayout
 ) => {
   navMobile.value = "Collapsed";
   sidebar.width = "75px";
@@ -79,6 +90,10 @@ let horizontalSmallScreen = (
     case componentName.value === "About me":
       mainContent.height = "140vh";
       break;
+    case componentName.value === "Services":
+      mainContent.height = "125vh";
+      contentLayout.justifyContent = "center";
+      break;
     case componentName.value === "Contact":
       mainContent.height = "130vh";
       break;
@@ -93,7 +108,8 @@ let verticalSmallScreen = (
   sidebarCollapsed,
   navMobile,
   componentName,
-  mainContent
+  mainContent,
+  contentLayout
 ) => {
   navMobile.value = "Collapsed";
   sidebar.width = "100%";
@@ -109,6 +125,10 @@ let verticalSmallScreen = (
       break;
     case componentName.value === "About me":
       mainContent.height = "100vh";
+      break;
+    case componentName.value === "Services":
+      mainContent.height = "130vh";
+      contentLayout.justifyContent = "center";
       break;
     case componentName.value === "Contact":
       mainContent.height = "100vh";
@@ -130,6 +150,7 @@ window.onresize = () => {
   let sidebarCollapsed = document.getElementById("sidebarCollapsed").style;
   let componentName = document.getElementById("componentName");
   let mainContent = document.getElementById("mainContent").style;
+  let contentLayout = document.getElementById("content").style;
 
   screenSize.value = anchoVentana;
 
@@ -141,7 +162,8 @@ window.onresize = () => {
       sidebarCollapsed,
       navDesktop,
       componentName,
-      mainContent
+      mainContent,
+      contentLayout
     );
   } else if (anchoVentana <= 1200 && anchoVentana > 850) {
     mediumScreen(
@@ -150,7 +172,8 @@ window.onresize = () => {
       sidebarCollapsed,
       navDesktop,
       componentName,
-      mainContent
+      mainContent,
+      contentLayout
     );
   } else if (anchoVentana <= 850 && anchoVentana > 650) {
     horizontalSmallScreen(
@@ -159,7 +182,8 @@ window.onresize = () => {
       sidebarCollapsed,
       navMobile,
       componentName,
-      mainContent
+      mainContent,
+      contentLayout
     );
   } else if (anchoVentana <= 650) {
     verticalSmallScreen(
@@ -168,7 +192,8 @@ window.onresize = () => {
       sidebarCollapsed,
       navMobile,
       componentName,
-      mainContent
+      mainContent,
+      contentLayout
     );
   }
 };

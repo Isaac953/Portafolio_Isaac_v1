@@ -1,16 +1,15 @@
-/* Start Component 4 - About me Styles */
+/* Start Component 5 - Services Styles */
 .services__card {
   position: relative;
 
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 
   width: 90%;
 
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  /* height: 700px; */
 }
 
 .services__card--title {
@@ -26,80 +25,236 @@
 .services__card--dev {
   display: flex;
   flex-direction: row;
-  width: 90%;
-  /* height: 270px; */
+
+  width: 95%;
+
   justify-content: flex-start;
   align-items: center;
-  border-style: solid;
 }
 
 .dev__subtitle {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   min-width: 160px;
   height: 160px;
-  border-radius: 12px;
   margin: 15px;
-  position: relative;
+
+  border-radius: 12px;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .dev__subtitle::before {
-  content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  border-radius: 12px;
-  background-color: #eeeeee;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
   opacity: 0.7;
+  border-radius: 12px;
+  background-color: #eee;
 }
 
 .subtitle__icon {
   font-size: 50px;
-  color: #2f86a6;
+
   position: relative;
+
+  color: #2f86a6;
 }
 
 .subtitle__name {
-  font-size: 28px;
-  color: black;
-  position: relative;
+  font-size: 26px;
   font-weight: 900;
+
+  position: relative;
+
+  color: black;
 }
 
 .dev__list {
-  list-style-type: disc;
-  list-style-position: inside;
-  padding-left: 7px;
+  position: relative;
+
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  border-radius: 12px;
+
   width: 100%;
   margin: 15px;
-  margin-left: 0px;
+  margin-left: 0;
   padding: 10px;
-  position: relative;
+  padding-left: 7px;
+
+  list-style-position: inside;
+  list-style-type: disc;
+
+  border-radius: 12px;
+
+  justify-content: center;
 }
 
 .dev__list::before {
-  content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  opacity: 0.7;
   border-radius: 12px;
   background-color: #145374;
-  opacity: 0.7;
 }
 
 .dev__list--item {
-  color: white;
-  font-size: 20px;
-  position: relative;
+  font-size: 18px;
   font-weight: lighter;
+
+  position: relative;
+
+  text-align: justify;
+
+  color: white;
 }
+
+.services__buttons {
+  position: relative;
+
+  display: flex;
+
+  width: 90%;
+  padding: 7px 40px;
+
+  justify-content: space-between;
+}
+/* End Component 5 - Services Styles */
+
+/* Start Media Queries Screens 1200px */
+@media screen and (max-width: 1200px) {
+  /* End Component 5 - Services Styles */
+
+  .services__card--title {
+    font-size: 28px;
+
+    padding: 0 15px 12px 15px;
+  }
+
+  .subtitle__icon {
+    font-size: 48px;
+  }
+
+  .subtitle__name {
+    font-size: 24px;
+  }
+
+  .dev__subtitle {
+    min-width: 150px;
+    height: 150px;
+    margin: 13px;
+  }
+
+  .dev__list {
+    margin: 13px;
+    margin-left: 0;
+  }
+
+  .dev__list--item {
+    font-size: 16px;
+  }
+
+  .services__buttons {
+    padding: 7px 38px;
+  }
+
+  /* End Component 5 - Services Styles */
+}
+/* End Media Queries Screens 1200px */
+
+/* Start Media Queries Screens 850px */
+@media screen and (max-width: 850px) {
+  /* End Component 5 - Services Styles */
+
+  .services__card--title {
+    font-size: 26px;
+
+    padding: 0 15px 10px 15px;
+  }
+
+  .subtitle__icon {
+    font-size: 46px;
+  }
+
+  .subtitle__name {
+    font-size: 22px;
+  }
+
+  .dev__subtitle {
+    min-width: 140px;
+    height: 140px;
+    margin: 11px;
+  }
+
+  .dev__list {
+    margin: 11px;
+    margin-left: 0;
+  }
+
+  .dev__list--item {
+    font-size: 14px;
+  }
+
+  .services__buttons {
+    padding: 7px 32px;
+  }
+
+  /* End Component 5 - Services Styles */
+}
+/* End Media Queries Screens 850px */
+
+/* Start Media Queries Screens 650px */
+@media screen and (max-width: 650px) {
+  /* End Component 5 - Services Styles */
+
+  .services__card--title {
+    font-size: 24px;
+
+    padding: 0 15px 8px 15px;
+  }
+
+  .subtitle__icon {
+    font-size: 44px;
+  }
+
+  .subtitle__name {
+    font-size: 20px;
+  }
+
+  .dev__subtitle {
+    min-width: 130px;
+    height: 130px;
+    margin: 9px;
+  }
+
+  .dev__list {
+    margin: 9px;
+    margin-left: 0;
+  }
+
+  .dev__list--item {
+    font-size: 12px;
+  }
+
+  .services__buttons {
+    padding: 7px 28px;
+  }
+
+  /* End Component 5 - Services Styles */
+}
+/* End Media Queries Screens 650px */

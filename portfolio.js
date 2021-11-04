@@ -107,6 +107,7 @@ const backgroundContent = () => {
   contentLayout.backgroundRepeat = "no-repeat";
   contentLayout.backgroundSize = "cover";
 
+
   switch (true) {
     case componentName.value === "Cover page":
       contentLayout.backgroundImage = 'url("./assets/cover_page_img.jpg")';
@@ -133,16 +134,20 @@ const backgroundContent = () => {
       }
       break;
     case componentName.value === "Services":
+      contentLayout.padding = "20px 0px";
       contentLayout.backgroundImage = 'url("./assets/services_img.jpg")';
-      contentLayout.backgroundPosition = "center";
       if (screenSizeInt > 1200) {
-        mainContent.height = "105vh";
-      } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "110vh";
+        contentLayout.justifyContent = "flex-start";
+      } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
+        mainContent.height = "125vh";
+        contentLayout.justifyContent = "flex-start";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "140vh";
+        mainContent.height = "125vh";
+        contentLayout.justifyContent = "center";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "100vh";
+        mainContent.height = "130vh";
+        contentLayout.justifyContent = "center";
       }
       break;
     case componentName.value === "Skills":
