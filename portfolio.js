@@ -46,8 +46,6 @@ let loadSkills = async () => {
   ).text();
   let componentName = document.getElementById("componentName");
   componentName.value = "Skills";
-  // let maintenanceComponent = document.getElementById("maintenanceComponent");
-  // maintenanceComponent.innerHTML = " Sección habilidades en construcción";
   backgroundContent();
 };
 
@@ -137,22 +135,22 @@ const backgroundContent = () => {
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "130vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "170vh";
+        mainContent.height = "150vh";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "145vh";
+        mainContent.height = "135vh";
       }
       break;
     case componentName.value === "Skills":
       contentLayout.backgroundImage = 'url("./assets/skills_img.jpg")';
       contentLayout.backgroundPosition = "top";
       if (screenSizeInt > 1200) {
-        mainContent.height = "130vh";
+        mainContent.height = "165vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
-        mainContent.height = "130vh";
+        mainContent.height = "230vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "170vh";
+        mainContent.height = "175vh";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "145vh";
+        mainContent.height = "225vh";
       }
       break;
     case componentName.value === "Proyects":

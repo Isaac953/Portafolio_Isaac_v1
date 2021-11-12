@@ -27,7 +27,13 @@ a:focus-visible {
 }
 
 .inputHidden {
-  display: none;
+  display: flex;
+  width: 85px;
+  height: 20px;
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+  text-align: center;
 }
 
 .nav-button {
