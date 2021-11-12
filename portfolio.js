@@ -42,12 +42,12 @@ let loadServices = async () => {
 
 let loadSkills = async () => {
   content.innerHTML = await (
-    await fetch("./components/html/10_maintenance_page.html")
+    await fetch("./components/html/06_skills.html")
   ).text();
   let componentName = document.getElementById("componentName");
   componentName.value = "Skills";
-  let maintenanceComponent = document.getElementById("maintenanceComponent");
-  maintenanceComponent.innerHTML = " Sección habilidades en construcción";
+  // let maintenanceComponent = document.getElementById("maintenanceComponent");
+  // maintenanceComponent.innerHTML = " Sección habilidades en construcción";
   backgroundContent();
 };
 
@@ -143,8 +143,8 @@ const backgroundContent = () => {
       }
       break;
     case componentName.value === "Skills":
-      contentLayout.backgroundImage = "none";
-      contentLayout.backgroundColor = "red";
+      contentLayout.backgroundImage = 'url("./assets/skills_img.jpg")';
+      contentLayout.backgroundPosition = "top";
       break;
     case componentName.value === "Proyects":
       contentLayout.backgroundImage = "none";
