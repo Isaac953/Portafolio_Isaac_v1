@@ -114,7 +114,7 @@ const backgroundContent = () => {
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "110vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "130vh";
+        mainContent.height = "140vh";
       } else if (screenSizeInt <= 650) {
         mainContent.height = "100vh";
       }
@@ -126,9 +126,9 @@ const backgroundContent = () => {
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "110vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "140vh";
+        mainContent.height = "145vh";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "100vh";
+        mainContent.height = "105vh";
       }
       break;
     case componentName.value === "Services":
@@ -138,9 +138,9 @@ const backgroundContent = () => {
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "130vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "150vh";
+        mainContent.height = "185vh";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "135vh";
+        mainContent.height = "160vh";
       }
       break;
     case componentName.value === "Skills":
