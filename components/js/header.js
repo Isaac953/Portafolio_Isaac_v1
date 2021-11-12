@@ -148,8 +148,10 @@ let verticalSmallScreen = (
 //Start window onresize function//
 window.onresize = () => {
   let anchoVentana = window.innerWidth;
+  let altoVentana = window.innerHeight;
 
   let screenSize = document.getElementById("screenSize");
+  let screenSizeHeight = document.getElementById("screenHeight");
   let navDesktop = document.getElementById("navDesktop");
   let navMobile = document.getElementById("navMobile");
 
@@ -161,6 +163,7 @@ window.onresize = () => {
   let contentLayout = document.getElementById("content").style;
 
   screenSize.value = anchoVentana;
+  screenSizeHeight.value = altoVentana;
 
   //Cargar menu deacuerdo al tamanio de pantalla por medio de functions
   if (anchoVentana > 1200) {

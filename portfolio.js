@@ -81,10 +81,13 @@ const loadFooter = async () => {
 //Start function load input default with header//
 const loadInput = () => {
   let anchoVentanaH = window.innerWidth;
+  let altoVentanaH = window.innerHeight;
   let screenSizeH = document.getElementById("screenSize");
+  let screenSizeHeightH = document.getElementById("screenHeight");
   let componentName = document.getElementById("componentName");
 
   screenSizeH.value = anchoVentanaH;
+  screenSizeHeightH.value = altoVentanaH;
   componentName.value = "Cover page";
 };
 //End function load input default with header//
