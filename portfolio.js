@@ -145,6 +145,15 @@ const backgroundContent = () => {
     case componentName.value === "Skills":
       contentLayout.backgroundImage = 'url("./assets/skills_img.jpg")';
       contentLayout.backgroundPosition = "top";
+      if (screenSizeInt > 1200) {
+        mainContent.height = "130vh";
+      } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
+        mainContent.height = "130vh";
+      } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
+        mainContent.height = "170vh";
+      } else if (screenSizeInt <= 650) {
+        mainContent.height = "145vh";
+      }
       break;
     case componentName.value === "Proyects":
       contentLayout.backgroundImage = "none";

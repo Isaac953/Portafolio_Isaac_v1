@@ -5,12 +5,11 @@
   display: flex;
   flex-direction: column;
 
-  width: 90%;
+  width: 95%;
 
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-
-  border-style: solid;
 }
 
 .skills__card--title {
@@ -21,19 +20,102 @@
   padding: 0 15px 15px 15px;
 
   color: white;
+  border-style: solid;
 }
 
-.skills__card--list {
+.skills__card--devsk {
   display: flex;
   flex-direction: row;
+
   width: 95%;
+
+  justify-content: flex-start;
+  align-items: center;
   border-style: solid;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
-.skills__list--item {
-  border-style: solid;
+.devsk__subtitlesk {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 160px;
+  height: 160px;
+  margin: 15px;
+
+  border-radius: 12px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.devsk__subtitlesk::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  opacity: 0.7;
+  border-radius: 12px;
+  background-color: #eee;
+}
+
+.img__skill--icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.subtitlesk__name {
+  font-size: 26px;
+  font-weight: 900;
+
+  position: relative;
+
+  color: black;
+}
+
+.devsk__listsk {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+
+  width: 95%;
+  margin: 15px;
+  margin-left: 0;
+  padding: 10px;
+  padding-left: 7px;
+
+  list-style-position: inside;
+  list-style-type: disc;
+
+  border-radius: 12px;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.devsk__listsk::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  opacity: 0.7;
+  border-radius: 12px;
+  background-color: #145374;
+}
+
+.skills__listsk--item {
+  /* border-style: solid; */
   width: 130px;
   height: 130px;
   display: flex;
@@ -41,21 +123,23 @@
   justify-content: center;
   align-items: center;
   margin: 10px;
-  border-color: red;
+  /* border-color: red; */
+  position: relative;
 }
 
-.list__icon {
+.listsk__icon {
   font-size: 55px;
   width: 85px;
   height: 85px;
-  background-color: #d3e4cd;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  position: relative;
 }
 
-.img__icon {
+.imgsk__icon {
   width: 55px;
   height: 55px;
 }
@@ -92,7 +176,20 @@
   color: #3c873a;
 }
 
-.list__title {
+.listsk__title {
   color: white;
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.skills__buttons {
+  position: relative;
+
+  display: flex;
+
+  width: 95%;
+  padding: 7px 18px;
+
+  justify-content: space-between;
+  border-style: solid;
 }
