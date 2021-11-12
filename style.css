@@ -28,12 +28,15 @@ a:focus-visible {
 
 .inputHidden {
   display: flex;
+
   width: 85px;
   height: 20px;
-  border-radius: 5px;
-  border-style: none;
-  outline: none;
+
   text-align: center;
+
+  border-style: none;
+  border-radius: 5px;
+  outline: none;
 }
 
 .nav-button {

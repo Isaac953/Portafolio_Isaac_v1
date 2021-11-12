@@ -140,20 +140,20 @@ const backgroundContent = () => {
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
         mainContent.height = "185vh";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "160vh";
+        mainContent.height = "155vh";
       }
       break;
     case componentName.value === "Skills":
       contentLayout.backgroundImage = 'url("./assets/skills_img.jpg")';
       contentLayout.backgroundPosition = "top";
       if (screenSizeInt > 1200) {
-        mainContent.height = "165vh";
+        mainContent.height = "125vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
-        mainContent.height = "230vh";
+        mainContent.height = "145vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "175vh";
+        mainContent.height = "255vh";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "225vh";
+        mainContent.height = "185vh";
       }
       break;
     case componentName.value === "Proyects":
