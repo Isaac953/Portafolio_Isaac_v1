@@ -23,7 +23,7 @@
   border-style: solid;
 }
 
-.skills__card--devsk {
+.skills__card--stack {
   display: flex;
   flex-direction: row;
 
@@ -34,7 +34,7 @@
   border-style: solid;
 }
 
-.devsk__subtitlesk {
+.stack__subtitle-sk {
   position: relative;
 
   display: flex;
@@ -50,7 +50,7 @@
   align-items: center;
 }
 
-.devsk__subtitlesk::before {
+.stack__subtitle-sk::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -64,13 +64,17 @@
   background-color: #eee;
 }
 
-.img__skill--icon {
+.subtitle-sk__icon {
+  font-size: 48px;
+}
+
+.subtitle-sk__icon--img {
   width: 50px;
   height: 50px;
   position: relative;
 }
 
-.subtitlesk__name {
+.subtitle-sk__name {
   font-size: 26px;
   font-weight: 900;
 
@@ -79,7 +83,7 @@
   color: black;
 }
 
-.devsk__listsk {
+.stack__list-sk {
   position: relative;
 
   display: flex;
@@ -97,10 +101,10 @@
   border-radius: 12px;
   flex-wrap: wrap;
 
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.devsk__listsk::before {
+.stack__list-sk::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -114,8 +118,8 @@
   background-color: #145374;
 }
 
-.skills__listsk--item {
-  /* border-style: solid; */
+.list-sk__item {
+  border-style: solid;
   width: 130px;
   height: 130px;
   display: flex;
@@ -123,11 +127,11 @@
   justify-content: center;
   align-items: center;
   margin: 10px;
-  /* border-color: red; */
+  border-color: red;
   position: relative;
 }
 
-.listsk__icon {
+.list-sk__item--icon {
   font-size: 55px;
   width: 85px;
   height: 85px;
@@ -139,7 +143,7 @@
   position: relative;
 }
 
-.imgsk__icon {
+.icon__img-sk {
   width: 55px;
   height: 55px;
 }
@@ -176,7 +180,7 @@
   color: #3c873a;
 }
 
-.listsk__title {
+.list-sk__item--title {
   color: white;
   font-size: 18px;
   font-weight: lighter;
