@@ -1,15 +1,4 @@
 /* Start Component 8 - Contact Styles */
-.contact {
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
-  height: 100vh;
-
-  align-items: center;
-  justify-content: center;
-}
-
 .contact__card {
   position: relative;
 
@@ -121,10 +110,6 @@
 /* Start Media Queries Screens 1200px */
 @media screen and (max-width: 1200px) {
   /* Start Component 8 - Contact Styles */
-  .contact {
-    height: 110vh;
-  }
-
   .contact__card--title {
     font-size: 28px;
 
@@ -177,10 +162,6 @@
 /* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 8 - Contact Styles */
-  .contact {
-    height: 125vh;
-  }
-
   .contact__card--title {
     font-size: 26px;
 
@@ -232,10 +213,6 @@
 /* Start Media Queries Screens 650px */
 @media screen and (max-width: 650px) {
   /* Start Component 8 - Contact Styles */
-  .contact {
-    height: 100vh;
-  }
-
   .contact__card--title {
     font-size: 24px;
 
