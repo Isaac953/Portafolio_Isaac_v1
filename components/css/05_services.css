@@ -1,4 +1,15 @@
 /* Start Component 5 - Services Styles */
+.services {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 120vh;
+
+  align-items: center;
+  justify-content: center;
+}
+
 .services__card {
   position: relative;
 
@@ -139,7 +150,10 @@
 
 /* Start Media Queries Screens 1200px */
 @media screen and (max-width: 1200px) {
-  /* End Component 5 - Services Styles */
+  /* Start Component 5 - Services Styles */
+  .services {
+    height: 130vh;
+  }
 
   .services__card--title {
     font-size: 28px;
@@ -180,7 +194,10 @@
 
 /* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
-  /* End Component 5 - Services Styles */
+  /* Start Component 5 - Services Styles */
+  .services {
+    height: 185vh;
+  }
 
   .services__card--title {
     font-size: 26px;
@@ -221,7 +238,10 @@
 
 /* Start Media Queries Screens 650px */
 @media screen and (max-width: 650px) {
-  /* End Component 5 - Services Styles */
+  /* Start Component 5 - Services Styles */
+  .services {
+    height: 155vh;
+  }
 
   .services__card--title {
     font-size: 24px;

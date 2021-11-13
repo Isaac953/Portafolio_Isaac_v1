@@ -1,4 +1,15 @@
 /* Start Component 3 - Cover Page Styles */
+.cover-page {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+}
+
 .cover-page__card {
   position: relative;
 
@@ -99,6 +110,10 @@
 /* Start Media Queries Screens 1200px */
 @media screen and (max-width: 1200px) {
   /* Start Component 3 - Cover Page Styles */
+  .cover-page {
+    height: 110vh;
+  }
+
   .cover-page__card {
     height: 265px;
   }
@@ -135,6 +150,10 @@
 /* Start Media Queries Screens 850px */
 @media screen and (max-width: 850px) {
   /* Start Component 3 - Cover Page Styles */
+  .cover-page {
+    height: 140vh;
+  }
+
   .cover-page__card {
     flex-direction: column-reverse;
 
@@ -190,6 +209,10 @@
 /* Start Media Queries Screens 650px */
 @media screen and (max-width: 650px) {
   /* Start Component 3 - Cover Page Styles */
+
+  .cover-page {
+    height: 100vh;
+  }
   .cover-page__card {
     width: 90%;
     height: 330px;
