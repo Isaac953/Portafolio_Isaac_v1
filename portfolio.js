@@ -92,6 +92,34 @@ const loadInput = () => {
 };
 //End function load input default with header//
 
+const loadUrl = () => {
+  let params = location.href;
+  let charurl = params.search('index.html')
+  let componentid = params.slice(charurl);
+
+  if (componentid === "index.html") {
+    loadCoverPage();
+  }
+  else if (componentid === "index.html#home") {
+    loadCoverPage();
+  }
+  else if (componentid === "index.html#about-me") {
+    loadAboutMe();
+  }
+  else if (componentid === "index.html#services") {
+    loadServices();
+  }
+  else if (componentid === "index.html#skills") {
+    loadSkills();
+  }
+  else if (componentid === "index.html#proyects") {
+    loadProyects();
+  }
+  else if (componentid === "index.html#contact") {
+    loadContact();
+  }
+}
+
 //Start function load background content properties and size//
 const backgroundContent = () => {
   let mainContent = document.getElementById("mainContent").style;
@@ -182,9 +210,11 @@ const backgroundContent = () => {
 let loadPage = async () => {
   await loadHeader();
   await loadSidebar();
-  await loadCoverPage();
+  // await loadCoverPage();
+  await loadUrl();
   await loadFooter();
 };
 
 loadPage();
+
 //End Load Functions default//
