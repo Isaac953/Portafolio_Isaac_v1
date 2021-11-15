@@ -94,33 +94,31 @@ const loadInput = () => {
 
 const loadUrl = () => {
   let params = location.href;
-  let charurl = params.search('#')
+  let charurl = params.search("#")
   let componentid = params.slice(charurl);
 
-  // console.log(params);
-  // console.log(charurl);
-  // console.log(componentid);
-
-  if (componentid !== "#") {
-    loadCoverPage();
-  }
-  else if (componentid === "#home") {
-    loadCoverPage();
-  }
-  else if (componentid === "#about-me") {
-    loadAboutMe();
-  }
-  else if (componentid === "#services") {
-    loadServices();
-  }
-  else if (componentid === "#skills") {
-    loadSkills();
-  }
-  else if (componentid === "#proyects") {
-    loadProyects();
-  }
-  else if (componentid === "#contact") {
-    loadContact();
+  switch (true) {
+    case componentid === "#home":
+      loadCoverPage();
+      break;
+    case componentid === "#about-me":
+      loadAboutMe();
+      break;
+    case componentid === "#services":
+      loadServices();
+      break;
+    case componentid === "#skills":
+      loadSkills();
+      break;
+    case componentid === "#proyects":
+      loadProyects();
+      break;
+    case componentid === "#contact":
+      loadContact();
+      break;
+    default:
+      loadCoverPage();
+      break;
   }
 }
 
