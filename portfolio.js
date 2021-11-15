@@ -94,28 +94,32 @@ const loadInput = () => {
 
 const loadUrl = () => {
   let params = location.href;
-  let charurl = params.search('index.html')
+  let charurl = params.search('#')
   let componentid = params.slice(charurl);
 
-  if (componentid === "index.html") {
+  // console.log(params);
+  // console.log(charurl);
+  // console.log(componentid);
+
+  if (componentid !== "#") {
     loadCoverPage();
   }
-  else if (componentid === "index.html#home") {
+  else if (componentid === "#home") {
     loadCoverPage();
   }
-  else if (componentid === "index.html#about-me") {
+  else if (componentid === "#about-me") {
     loadAboutMe();
   }
-  else if (componentid === "index.html#services") {
+  else if (componentid === "#services") {
     loadServices();
   }
-  else if (componentid === "index.html#skills") {
+  else if (componentid === "#skills") {
     loadSkills();
   }
-  else if (componentid === "index.html#proyects") {
+  else if (componentid === "#proyects") {
     loadProyects();
   }
-  else if (componentid === "index.html#contact") {
+  else if (componentid === "#contact") {
     loadContact();
   }
 }
