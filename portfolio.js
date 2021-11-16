@@ -185,8 +185,8 @@ const backgroundContent = () => {
       }
       break;
     case componentName.value === "Proyects":
-      contentLayout.backgroundImage = "none";
-      contentLayout.backgroundColor = "purple";
+      contentLayout.backgroundImage = 'url("./assets/proyects_img.jpg")';
+      contentLayout.backgroundPosition = "center";
       break;
     case componentName.value === "Contact":
       contentLayout.backgroundImage = 'url("./assets/contact_img.jpg")';
