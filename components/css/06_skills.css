@@ -198,7 +198,7 @@
   display: flex;
 
   width: 95%;
-  padding: 7px 18px;
+  padding: 7px 40px;
 
   justify-content: space-between;
 }
@@ -260,7 +260,7 @@
   }
 
   .skills__buttons {
-    padding: 7px 16px;
+    padding: 7px 38px;
   }
 
   /* End Component 6 - Skills Styles */
@@ -329,7 +329,7 @@
   }
 
   .skills__buttons {
-    padding: 7px 14px;
+    padding: 7px 32px;
   }
 
   /* End Component 6 - Skills Styles */
@@ -395,7 +395,7 @@
   }
 
   .skills__buttons {
-    padding: 7px 12px;
+    padding: 7px 28px;
   }
 
   /* End Component 6 - Skills Styles */
