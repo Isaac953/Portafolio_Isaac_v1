@@ -3,7 +3,7 @@
   position: relative;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   width: 95%;
 
@@ -28,7 +28,7 @@
   flex-direction: column;
 
   width: 400px;
-  height: 505px;
+  height: 530px;
 
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,8 @@
   border-style: solid;
   border-radius: 8px;
   background-color: blue;
+
+  margin-bottom: 20px;
 }
 
 .work__details {
@@ -49,6 +51,7 @@
 .work__details--img {
   width: 385px;
   height: 180px;
+  padding: 8px;
 }
 
 .work__details--caption {

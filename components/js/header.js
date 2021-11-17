@@ -27,6 +27,9 @@ let largeScreen = (
     case componentName.value === "Skills":
       mainContent.height = "125vh";
       break;
+    case componentName.value === "Proyects":
+      mainContent.height = "250vh";
+      break;
     case componentName.value === "Contact":
       mainContent.height = "100vh";
       break;
