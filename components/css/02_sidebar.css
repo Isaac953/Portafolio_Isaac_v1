@@ -49,6 +49,8 @@
 }
 
 .list__item a:hover {
+  transition: 0.5s;
+
   color: white;
   border-radius: 5px;
   background-color: #0061a8;
