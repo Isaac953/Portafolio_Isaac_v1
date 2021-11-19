@@ -159,7 +159,7 @@
 
   flex-wrap: wrap;
   /* border-style: solid; */
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .list__proyect-s {

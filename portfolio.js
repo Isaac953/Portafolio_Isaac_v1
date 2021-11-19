@@ -175,7 +175,7 @@ const backgroundContent = () => {
       contentLayout.backgroundImage = 'url("./assets/skills_img.jpg")';
       contentLayout.backgroundPosition = "top";
       if (screenSizeInt > 1200) {
-        mainContent.height = "125vh";
+        mainContent.height = "135vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "145vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
@@ -188,7 +188,7 @@ const backgroundContent = () => {
       contentLayout.backgroundImage = 'url("./assets/proyects_img.jpg")';
       contentLayout.backgroundPosition = "center";
       if (screenSizeInt > 1200) {
-        mainContent.height = "130vh";
+        mainContent.height = "250vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "110vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
