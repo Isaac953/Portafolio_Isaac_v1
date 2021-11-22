@@ -57,3 +57,14 @@
 #cardInvLaravel-3 {
   background-color: purple;
 }
+
+.carouseldots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouseldots img {
+  width: 15px;
+  margin: 5px;
+}
