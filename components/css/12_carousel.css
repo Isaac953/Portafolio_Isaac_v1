@@ -1,0 +1,59 @@
+/* Start General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: "Mulish", sans-serif;
+
+  margin: 0;
+
+  background-color: #e6e6e6;
+}
+
+.carousel {
+  /* border-style: solid; */
+  color: blue;
+  height: 200px;
+  overflow: hidden;
+}
+
+.carousel__item {
+  /* border-style: solid; */
+  color: black;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__item--card {
+  background-color: chocolate;
+  height: 100%;
+}
+
+.carousel__item--arrows {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.carousel__item--arrows img {
+  width: 40px;
+}
+
+#cardInvLaravel-1 {
+  background-color: cyan;
+}
+#cardInvLaravel-2 {
+  background-color: green;
+}
+#cardInvLaravel-3 {
+  background-color: purple;
+}

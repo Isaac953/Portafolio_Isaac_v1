@@ -6,122 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carousel</title>
+    <link rel="stylesheet" href="../css/12_carousel.css">
 </head>
 
-<style>
-    /* Start General Styles */
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    .body {
-        font-family: "Mulish", sans-serif;
-
-        margin: 0;
-
-        background-color: #e6e6e6;
-    }
-
-    .container {
-        display: flex;
-        background-color: green;
-        border-style: solid;
-        flex-direction: column;
-        width: 250px;
-        height: 310px;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden;
-    }
-
-    .title {
-        font-size: 24px;
-        font-weight: 900;
-    }
-
-    .carousel {
-        width: 180px;
-        overflow-x: hidden;
-    }
-
-    .list {
-        list-style: none;
-        border-style: solid;
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-    }
-
-    .list-item {
-        min-width: 180px;
-        min-height: 180px;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        border-style: solid;
-    }
-
-    .default {
-        display: flex;
-        background-color: red;
-    }
-</style>
-
 <body class="body">
-    <div id="container1" class="container">
-        <h1 class="title">Carousel</h1>
-        <input id="inputs" type="text" value="1" readonly>
-        <div class="carousel">
-            <ul class="list">
-                <li class="list-item default">Slide 1</li>
-                <li class="list-item">Slide 2</li>
-                <li class="list-item">Slide 3</li>
-                <li class="list-item">Slide 4</li>
-                <li class="list-item">Slide 5</li>
-            </ul>
+    <div class="carousel">
+        <div id="carouselInvLaravel-1" class="carousel__item">
+            <div id="cardInvLaravel-1" class="carousel__item--card">
+                A
+                <!-- <img src="../../assets/invent_laravel.jpg">
+            <img src="../../assets/platzi_video_pt.jpg">
+            <img src="../../assets/pagina_matematicas.jpg">
+            <img src="../../assets/city_img.jpg"> -->
+            </div>
+            <div class="carousel__item--arrows">
+                <a href="#carouselInvLaravel-3"><img src="../../assets/left.png" alt="back"></a>
+                <a href="#carouselInvLaravel-2"><img src="../../assets/next.png" alt="next"></a>
+            </div>
         </div>
-        <button onclick="adelante()">Adelante</button>
-        <button onclick="atras()">Atras</button>
+        <div id="carouselInvLaravel-2" class="carousel__item">
+            <div id="cardInvLaravel-2" class="carousel__item--card">
+                B
+                <!-- <img src="../../assets/invent_laravel.jpg">
+            <img src="../../assets/platzi_video_pt.jpg">
+            <img src="../../assets/pagina_matematicas.jpg">
+            <img src="../../assets/city_img.jpg"> -->
+            </div>
+            <div class="carousel__item--arrows">
+                <a href="#carouselInvLaravel-1"><img src="../../assets/left.png" alt="back"></a>
+                <a href="#carouselInvLaravel-3"><img src="../../assets/next.png" alt="next"></a>
+            </div>
+        </div>
+        <div id="carouselInvLaravel-3" class="carousel__item">
+            <div id="cardInvLaravel-3" class="carousel__item--card">
+                C
+                <!-- <img src="../../assets/invent_laravel.jpg">
+            <img src="../../assets/platzi_video_pt.jpg">
+            <img src="../../assets/pagina_matematicas.jpg">
+            <img src="../../assets/city_img.jpg"> -->
+            </div>
+            <div class="carousel__item--arrows">
+                <a href="#carouselInvLaravel-2"><img src="../../assets/left.png" alt="back"></a>
+                <a href="#carouselInvLaravel-1"><img src="../../assets/next.png" alt="next"></a>
+            </div>
+        </div>
+
     </div>
+
+
 </body>
 
 <script>
-    // let li = document.getElementsByClassName("list-item");
 
-
-    // let i = 0;
-    let adelante = () => {
-        let inputs = document.getElementById('inputs');
-        let inputvalue = parseInt(inputs.value);
-        // console.log(inputvalue);
-        let ul = document.getElementById("list");
-        let li = document.getElementsByClassName("list-item");
-        let lip = parseInt(li.length);
-        for (i = 0; i < lip; i++) {
-            li[i].style.backgroundColor = "red";
-            li[i].style.display = "none";
-        }
-
-
-        // // console.log(lip);
-        if (inputvalue <= lip - 1) {
-            inputvalue++
-            inputs.value = inputvalue;
-            li.item(inputvalue - 1).style.display = "flex";
-            // console.log(li.item(inputvalue - 1));
-        } else {
-            inputs.value = 1;
-            li.item(0).style.display = "flex";
-            // console.log(li.item(0));
-        }
-
-    }
 
 </script>
 
