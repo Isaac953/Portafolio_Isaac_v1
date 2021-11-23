@@ -190,9 +190,9 @@ const backgroundContent = () => {
       if (screenSizeInt > 1200) {
         mainContent.height = "150vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
-        mainContent.height = "110vh";
+        mainContent.height = "140vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "125vh";
+        mainContent.height = "265vh";
       } else if (screenSizeInt <= 650) {
         mainContent.height = "100vh";
       }

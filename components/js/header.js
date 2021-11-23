@@ -67,7 +67,7 @@ let mediumScreen = (
       mainContent.height = "145vh";
       break;
     case componentName.value === "Proyects":
-      mainContent.height = "180vh";
+      mainContent.height = "140vh";
       break;
     case componentName.value === "Contact":
       mainContent.height = "110vh";
@@ -105,6 +105,9 @@ let horizontalSmallScreen = (
       break;
     case componentName.value === "Skills":
       mainContent.height = "245vh";
+      break;
+    case componentName.value === "Proyects":
+      mainContent.height = "265vh";
       break;
     case componentName.value === "Contact":
       mainContent.height = "130vh";

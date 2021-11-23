@@ -6,8 +6,7 @@
   flex-direction: row;
 
   width: 95%;
-
-  border-style: solid;
+  /* border-style: solid; */
 
   flex-wrap: wrap;
   align-items: center;
@@ -69,47 +68,64 @@
 }
 
 .work__details--carousel {
-  color: blue;
-  height: 290px;
   overflow: hidden;
+
+  height: 300px;
+
   list-style: none;
+
+  color: blue;
+  /* border-style: solid; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 }
 
 .carousel__item {
-  color: black;
-  height: 100%;
   position: relative;
+
+  height: 100%;
+
+  color: black;
 }
 
 .carousel__item--card {
-  background-color: chocolate;
   height: 100%;
 }
 
 .carousel__item--card img {
-  object-fit: cover;
   width: 630px;
   height: 290px;
+  padding: 10px;
+
+  border-radius: 15px;
+
+  object-fit: cover;
 }
 
 .carousel__item--arrows {
   position: absolute;
   top: 0;
-  height: 100%;
-  width: 100%;
 
   display: flex;
+
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
 }
 
 .carousel__item--arrows a {
+  font-size: 30px;
+
   text-decoration: none;
-  font-size: 35px;
+
   color: #ffcc1d;
 }
-
+/* 
 #cardInvLaravel-1 {
   background-color: cyan;
 }
@@ -118,30 +134,26 @@
 }
 #cardInvLaravel-3 {
   background-color: purple;
-}
+} */
 
 .work__details--dots {
   display: flex;
+
+  list-style: none;
+
   justify-content: center;
   align-items: center;
-  list-style: none;
 }
 
 .work__details--dots a {
-  text-decoration: none;
-  font-size: 15px;
-  color: #009dae;
+  font-size: 12px;
+
   margin: 5px;
+
+  text-decoration: none;
+
+  color: #009dae;
 }
-
-/* .work__details--img {
-  width: 630px;
-  height: 300px;
-  margin: 8px 0px;
-  padding: 8px;
-
-  border-radius: 20px;
-} */
 
 .work__details--subtitle {
   font-size: 22px;
@@ -171,13 +183,13 @@
 }
 
 .work__demo {
-  /* height: 140px; */
-  width: 630px;
   position: relative;
 
   display: flex;
   flex-direction: column;
+  /* height: 140px; */
 
+  width: 630px;
   padding: 8px;
 
   align-items: center;
@@ -213,9 +225,9 @@
 .work__demo--list {
   display: flex;
   flex-direction: row;
-
   /* width: 630px; */
   /* padding: 8px; */
+
   padding: 7px;
 
   list-style: none;
@@ -231,9 +243,9 @@
   flex-direction: column;
 
   width: 80px;
+  margin: 5px;
 
   border-radius: 5px;
-  margin: 5px;
 
   align-items: center;
   justify-content: flex-start;
@@ -289,3 +301,177 @@
   justify-content: space-between;
 }
 /* End Component 7 - Proyects Styles */
+
+/* Start Media Queries Screens 1200px */
+@media screen and (max-width: 1200px) {
+  /* Start Component 7 - Proyects Styles */
+
+  .proyects__card--title {
+    font-size: 28px;
+
+    padding: 0 15px 12px 15px;
+  }
+
+  .proyects__card--work {
+    width: 600px;
+  }
+
+  .work__details--carousel {
+    height: 245px;
+  }
+
+  .carousel__item--card img {
+    width: 580px;
+    height: 235px;
+  }
+
+  .carousel__item--arrows a {
+    font-size: 28px;
+  }
+
+  .work__details--subtitle {
+    font-size: 20px;
+  }
+
+  .work__description {
+    font-size: 15px;
+  }
+
+  .work__demo {
+    width: 600px;
+  }
+
+  .work__demo--button {
+    font-size: 15px;
+
+    width: 100px;
+    height: 32px;
+  }
+
+  .list__proyect-s--name {
+    font-size: 15px;
+  }
+
+  .proyects__buttons {
+    padding: 7px 38px;
+  }
+
+  /* End Component 7 - Proyects Styles */
+}
+/* End Media Queries Screens 1200px */
+
+/* Start Media Queries Screens 850px */
+@media screen and (max-width: 850px) {
+  /* Start Component 7 - Proyects Styles */
+
+  .proyects__card--title {
+    font-size: 26px;
+
+    padding: 0 15px 10px 15px;
+  }
+
+  .proyects__card--work {
+    width: 580px;
+  }
+
+  .work__details--carousel {
+    height: 230px;
+  }
+
+  .carousel__item--card img {
+    width: 560px;
+    height: 220px;
+  }
+
+  .carousel__item--arrows a {
+    font-size: 26px;
+  }
+
+  .work__details--subtitle {
+    font-size: 18px;
+  }
+
+  .work__description {
+    font-size: 13px;
+  }
+
+  .work__demo {
+    width: 580px;
+  }
+
+  .work__demo--button {
+    font-size: 13px;
+
+    width: 90px;
+    height: 30px;
+  }
+
+  .list__proyect-s--name {
+    font-size: 13px;
+  }
+
+  .proyects__buttons {
+    padding: 7px 32px;
+  }
+
+  /* End Component 7 - Proyects Styles */
+}
+/* End Media Queries Screens 850px */
+
+/* Start Media Queries Screens 650px */
+@media screen and (max-width: 650px) {
+  /* Start Component 7 - Proyects Styles */
+
+  .proyects__card--title {
+    font-size: 24px;
+
+    padding: 0 15px 8px 15px;
+  }
+
+  .work__details--carousel {
+    height: 170px;
+  }
+
+  .work__details--subtitle {
+    font-size: 16px;
+  }
+
+  .proyects__card--work {
+    width: 335px;
+  }
+
+  .carousel__item--card img {
+    width: 320px;
+    height: 160px;
+  }
+
+  .carousel__item--arrows a {
+    font-size: 24px;
+  }
+
+  .work__description {
+    font-size: 11px;
+  }
+
+  .work__demo {
+    width: 335px;
+  }
+
+  .work__demo--button {
+    font-size: 11px;
+
+    width: 85px;
+    height: 28px;
+  }
+
+  .list__proyect-s--name {
+    font-size: 11px;
+  }
+
+  .proyects__buttons {
+    padding: 7px 28px;
+  }
+
+  /* End Component 7 - Proyects Styles */
+}
+/* End Media Queries Screens 650px */
