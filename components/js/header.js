@@ -147,6 +147,9 @@ let verticalSmallScreen = (
     case componentName.value === "Skills":
       mainContent.height = "185vh";
       break;
+    case componentName.value === "Proyects":
+      mainContent.height = "120vh";
+      break;
     case componentName.value === "Contact":
       mainContent.height = "100vh";
       break;
