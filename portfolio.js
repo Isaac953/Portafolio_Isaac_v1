@@ -188,7 +188,7 @@ const backgroundContent = () => {
       contentLayout.backgroundImage = 'url("./assets/proyects_img.jpg")';
       contentLayout.backgroundPosition = "center";
       if (screenSizeInt > 1200) {
-        mainContent.height = "360vh";
+        mainContent.height = "150vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
         mainContent.height = "110vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {

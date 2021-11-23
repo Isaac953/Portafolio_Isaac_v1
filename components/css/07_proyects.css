@@ -65,20 +65,83 @@
 
   align-items: center;
   justify-content: center;
+  /* border-style: solid; */
 }
 
-.work__details--img {
+.work__details--carousel {
+  color: blue;
+  height: 290px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.carousel__item {
+  color: black;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__item--card {
+  background-color: chocolate;
+  height: 100%;
+}
+
+.carousel__item--card img {
+  object-fit: cover;
+  width: 630px;
+  height: 290px;
+}
+
+.carousel__item--arrows {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.carousel__item--arrows a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #ffcc1d;
+}
+
+#cardInvLaravel-1 {
+  background-color: cyan;
+}
+#cardInvLaravel-2 {
+  background-color: green;
+}
+#cardInvLaravel-3 {
+  background-color: purple;
+}
+
+.work__details--dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.work__details--dots a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #009dae;
+  margin: 5px;
+}
+
+/* .work__details--img {
   width: 630px;
   height: 300px;
   margin: 8px 0px;
   padding: 8px;
 
   border-radius: 20px;
-}
-
-.work__details--caption {
-  font-size: 17px;
-}
+} */
 
 .work__details--subtitle {
   font-size: 22px;
