@@ -11,40 +11,40 @@
 </head>
 
 <body class="body">
-    <ul class="work__details--carousel">
-        <li id="carouselInvLaravel-1" class="carousel__item">
-            <figure id="cardInvLaravel-1" class="carousel__item--cover">
-                <img src="../../assets/invent_laravel.jpg">
-            </figure>
-            <div class="carousel__item--arrows">
-                <a href="#carouselInvLaravel-3"><i class="fas fa-chevron-left"></i></a>
-                <a href="#carouselInvLaravel-2"><i class="fas fa-chevron-right"></i></a>
-            </div>
-        </li>
-        <li id="carouselInvLaravel-2" class="carousel__item">
-            <figure id="cardInvLaravel-2" class="carousel__item--cover">
-                <img src="../../assets/invent_laravel_2.jpg">
-            </figure>
-            <div class="carousel__item--arrows">
-                <a href="#carouselInvLaravel-1"><i class="fas fa-chevron-left"></i></a>
-                <a href="#carouselInvLaravel-3"><i class="fas fa-chevron-right"></i></a>
-            </div>
-        </li>
-        <li id="carouselInvLaravel-3" class="carousel__item">
-            <figure id="cardInvLaravel-3" class="carousel__item--cover">
-                <img src="../../assets/invent_laravel_3.jpg">
-            </figure>
-            <div class="carousel__item--arrows">
-                <a href="#carouselInvLaravel-2"><i class="fas fa-chevron-left"></i></a>
-                <a href="#carouselInvLaravel-1"><i class="fas fa-chevron-right"></i></a>
-            </div>
-        </li>
-    </ul>
+    <div class="carousel__container">
+        <ul class="work__details--carousel">
+            <li id="carouselInvLaravel-1" class="carousel__item">
+                <figure id="cardInvLaravel-1" class="carousel__item--cover">
+                    <img src="../../assets/invent_laravel.jpg">
+                </figure>
+            </li>
+            <li id="carouselInvLaravel-2" class="carousel__item">
+                <figure id="cardInvLaravel-2" class="carousel__item--cover">
+                    <img src="../../assets/invent_laravel_2.jpg">
+                </figure>
+            </li>
+            <li id="carouselInvLaravel-3" class="carousel__item">
+                <figure id="cardInvLaravel-3" class="carousel__item--cover">
+                    <img src="../../assets/invent_laravel_3.jpg">
+                </figure>
+            </li>
+        </ul>
+        <div class="carousel__item--arrows">
+            <a id="back" href="#" onclick="back()"><i class="fas fa-chevron-left"></i></a>
+            <a id="next" href="#" onclick="next()"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </div>
+
     <div class="carouseldots">
-        <a href="#carouselInvLaravel-1"><i class="fas fa-circle"></i></a>
+        <input id="inputd" type="text" value="1">
+        <a href="#carouselInvLaravel-1"><i class="fas fa-circle active"></i></a>
         <a href="#carouselInvLaravel-2"><i class="fas fa-circle"></i></a>
         <a href="#carouselInvLaravel-3"><i class="fas fa-circle"></i></a>
     </div>
+
 </body>
+
+<script src="../js/carousel.js">
+</script>
 
 </html>

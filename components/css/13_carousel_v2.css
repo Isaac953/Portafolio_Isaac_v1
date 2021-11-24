@@ -49,8 +49,9 @@
 }
 
 .carousel__item--arrows {
+  /* position: absolute;
+  top: 0; */
   position: absolute;
-  top: 0;
   height: 100%;
   width: 100%;
 
@@ -70,6 +71,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .carouseldots a {
@@ -77,4 +79,15 @@
   font-size: 15px;
   color: #009dae;
   margin: 5px;
+}
+
+.active {
+  color: red;
+}
+
+.carousel__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
