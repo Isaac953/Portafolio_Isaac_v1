@@ -10,13 +10,13 @@ body {
 }
 img {
   vertical-align: middle;
-  width: 600px;
-  height: 290px;
+  width: 670px;
+  height: 300px;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 600px;
+  max-width: 670px;
   position: relative;
   margin: auto;
 }
