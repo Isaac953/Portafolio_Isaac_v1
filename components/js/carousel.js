@@ -1,74 +1,28 @@
-let next = async () => {
+let plusSlides = (n) => {
+    showSlides(slideIndex += n);
+}
 
-    let inputd = document.getElementById("inputd");
-    let circles = document.getElementsByClassName("fas fa-circle");
-    let circleslenght = circles.length;
-    let inputint = parseInt(inputd.value);
+let currentSlide = (n) => {
+    showSlides(slideIndex = n);
+}
 
-    let carouselitem = document.getElementsByClassName("carousel__item");
-
-    if (inputint < circleslenght) {
-        inputd.value = inputint + 1;
-        for (let i = 0; i < circleslenght; i++) {
-            circles[i].classList.remove("active");
-            carouselitem[i].classList.remove("default");
-            carouselitem[i].classList.remove("activeitem");
-
-        }
-        circles[inputint].classList.add("active");
-        // carouselitem[inputint].classList.add("activeitem");
-
-        await setTimeout(() => {
-            console.log(inputint);
-            carouselitem[inputint].classList.add("activeitem");
-        }, 2000);
-
-
-
-    } else {
-        inputd.value = 1;
-        circles[circleslenght - 1].classList.remove("active");
-        carouselitem[circleslenght - 1].classList.remove("activeitem");
-        circles[0].classList.add("active");
-        carouselitem[0].classList.add("activeitem");
-
-        setTimeout(() => {
-            console.log(inputint);
-        }, 2000);
+let showSlides = (n) => {
+    let i;
+    let slides = document.getElementsByClassName("slideshow__slide");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) {
+        slideIndex = slides.length
     }
-}
-
-// let back = () => {
-//     let inputd = document.getElementById("inputd");
-//     let circles = document.getElementsByClassName("fas fa-circle");
-//     let circleslenght = circles.length - 1;
-//     let inputint = parseInt(inputd.value);
-
-//     if (inputint >= circleslenght) {
-//         inputd.value = inputint - 1;
-
-
-//         document.getElementsByClassName("fas fa-circle")[inputint - 1].classList.add("active");
-
-//     }
-//     else {
-//         inputd.value = 3;
-//         document.getElementsByClassName("fas fa-circle")[circleslenght - 1].classList.remove("active");
-//         document.getElementsByClassName("fas fa-circle")[-1].classList.add("active")
-//         // document.getElementsByClassName("fas fa-circle")[circleslenght - 1].classList.remove("active");
-//         // document.getElementsByClassName("fas fa-circle")[2].classList.add("active");
-//     }
-// }
-
-let cleardots = (circleslenght) => {
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active__slide");
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    slides[slideIndex - 1].classList.add("active__slide");
+    dots[slideIndex - 1].classList.add("active");
 
 }
-
-var els = document.querySelectorAll(".circle");
-
-
-els.forEach(item => {
-    item.addEventListener('click', event => {
-        next();
-    })
-})
+let slideIndex = 1;
+showSlides(slideIndex);

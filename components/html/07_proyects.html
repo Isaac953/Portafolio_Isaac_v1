@@ -2,48 +2,38 @@
   <h1 class="proyects__card--title">Proyectos</h1>
 
   <div class="proyects__card--work">
-    <div class="work__details">
-      <ul class="work__details--carousel">
-        <li id="carouselInvLaravel-1" class="carousel__item">
-          <figure id="cardInvLaravel-1" class="carousel__item--card">
-            <img src="./assets/invent_laravel.jpg">
-          </figure>
-          <div class="carousel__item--arrows">
-            <a href="#carouselInvLaravel-3"><i class="fas fa-chevron-left"></i></a>
-            <a href="#carouselInvLaravel-2"><i class="fas fa-chevron-right"></i></a>
-          </div>
-        </li>
-        <li id="carouselInvLaravel-2" class="carousel__item">
-          <figure id="cardInvLaravel-2" class="carousel__item--card">
-            <img src="./assets/invent_laravel_2.jpg">
-          </figure>
-          <div class="carousel__item--arrows">
-            <a href="#carouselInvLaravel-1"><i class="fas fa-chevron-left"></i></a>
-            <a href="#carouselInvLaravel-3"><i class="fas fa-chevron-right"></i></a>
-          </div>
-        </li>
-        <li>
-        <li id="carouselInvLaravel-3" class="carousel__item">
-          <figure id="cardInvLaravel-3" class="carousel__item--card">
-            <img src="./assets/invent_laravel_3.jpg">
-          </figure>
-          <div class="carousel__item--arrows">
-            <a href="#carouselInvLaravel-2"><i class="fas fa-chevron-left"></i></a>
-            <a href="#carouselInvLaravel-1"><i class="fas fa-chevron-right"></i></a>
-          </div>
-        </li>
-        </li>
-      </ul>
-      <ul class="work__details--dots">
-        <li><a href="#carouselInvLaravel-1"><i class="fas fa-circle"></i></a></li>
-        <li><a href="#carouselInvLaravel-2"><i class="fas fa-circle"></i></a></li>
-        <li><a href="#carouselInvLaravel-3"><i class="fas fa-circle"></i></a></li>
-      </ul>
+    <div class="work__carousel">
+      <div class="work__carousel--slideshow">
+        <div class="slideshow__slide fade active__slide">
+          <div class="slideshow__slide--number">1 / 3</div>
+          <img class="slideshow__slide--img" src="./assets/invent_laravel.jpg">
+          <div class="slideshow__slide--caption">Caption Text</div>
+        </div>
+        <div class="slideshow__slide fade">
+          <div class="slideshow__slide--number">2 / 3</div>
+          <img class="slideshow__slide--img" src="./assets/platzi_video_pt.jpg">
+          <div class="slideshow__slide--caption">Caption Text</div>
+        </div>
+        <div class="slideshow__slide fade">
+          <div class="slideshow__slide--number">3 / 3</div>
+          <img class="slideshow__slide--img" src="./assets/pagina_matematicas.jpg">
+          <div class="slideshow__slide--caption">Caption Text</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
 
-      <h1 class="work__details--subtitle">
+      <div class="work__carousel--dots" style="text-align:center">
+        <div class="dot" onclick="currentSlide(1)"></div>
+        <div class="dot" onclick="currentSlide(2)"></div>
+        <div class="dot" onclick="currentSlide(3)"></div>
+      </div>
+
+      <h1 class="work__carousel--subtitle">
         Inventario Laravel - 2019
       </h1>
     </div>
+
 
 
     <p class="work__description">
