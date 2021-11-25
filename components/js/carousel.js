@@ -64,3 +64,11 @@ let cleardots = (circleslenght) => {
 
 }
 
+var els = document.querySelectorAll(".circle");
+
+
+els.forEach(item => {
+    item.addEventListener('click', event => {
+        next();
+    })
+})
