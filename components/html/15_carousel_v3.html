@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider carousel</title>
+    <link rel="stylesheet" href="../css/15_carousel_v3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7932647ae3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+    <div class="carousel__container">
+        <div class="carousel__container--slideshow">
+            <div class="slideshow__slide fade">
+                <div class="slideshow__slide--number">1 / 3</div>
+                <img class="slideshow__slide--img" src="../../assets/invent_laravel.jpg">
+                <div class="slideshow__slide--caption">Caption Text</div>
+            </div>
+            <div class="slideshow__slide fade">
+                <div class="slideshow__slide--number">2 / 3</div>
+                <img class="slideshow__slide--img" src="../../assets/platzi_video_pt.jpg">
+                <div class="slideshow__slide--caption">Caption Text</div>
+            </div>
+            <div class="slideshow__slide fade">
+                <div class="slideshow__slide--number">3 / 3</div>
+                <img class="slideshow__slide--img" src="../../assets/pagina_matematicas.jpg">
+                <div class="slideshow__slide--caption">Caption Text</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+
+
+    let plusSlides = (n) => {
+        showSlides(slideIndex += n);
+    }
+
+    let currentSlide = (n) => {
+        showSlides(slideIndex = n);
+    }
+
+    let showSlides = (n) => {
+        let i;
+        let slides = document.getElementsByClassName("slideshow__slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    let slideIndex = 1;
+    showSlides(slideIndex);
+</script>
+
+
+</html>
