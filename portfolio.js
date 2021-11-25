@@ -55,7 +55,9 @@ let loadProyects = async () => {
   ).text();
   let componentName = document.getElementById("componentName");
   componentName.value = "Proyects";
+
   backgroundContent();
+
 };
 
 let loadContact = async () => {
