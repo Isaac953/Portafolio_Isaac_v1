@@ -23,6 +23,7 @@ let showSlides = (n) => {
         }
         for (i = 0; i < dots.length; i++) {
             dots[i].classList.remove("active");
+            dots[i].classList.remove("active-dot");
         }
         slides[slideIndex - 1].classList.add("active__slide");
         dots[slideIndex - 1].classList.add("active");

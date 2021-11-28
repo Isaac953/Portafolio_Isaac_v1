@@ -67,7 +67,7 @@
 }
 
 .work__carousel {
-  border-style: solid;
+  /* border-style: solid; */
 
   display: flex;
   justify-content: center;
@@ -81,7 +81,7 @@
 .work__carousel--slideshow {
   position: relative;
   margin: auto;
-  border-style: solid;
+  /* border-style: solid; */
 }
 
 .slideshow__slide {
@@ -101,20 +101,22 @@
 }
 
 .slideshow__slide--img {
-  width: 570px;
-  height: 260px;
+  width: 600px;
+  height: 270px;
   object-fit: cover;
   border-radius: 7px;
 }
 
 .slideshow__slide--caption {
-  color: #064420;
-  font-size: 15px;
+  color: white;
+  font-size: 17px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
+  background-color: #0f2c67;
+  opacity: 0.6;
 }
 
 /* Next & previous buttons */
@@ -149,13 +151,17 @@
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 17px;
+  width: 17px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+.active-dot {
+  background-color: #ff9300;
 }
 
 .active,
@@ -355,20 +361,21 @@
     width: 600px;
   }
 
-  .work__details--carousel {
-    height: 245px;
+  .slideshow__slide--img {
+    width: 550px;
+    height: 250px;
   }
 
-  .carousel__item--card img {
-    width: 580px;
-    height: 235px;
+  .slideshow__slide--caption {
+    font-size: 15px;
   }
 
-  .carousel__item--arrows a {
-    font-size: 28px;
+  .dot {
+    height: 15px;
+    width: 15px;
   }
 
-  .work__details--subtitle {
+  .work__carousel--subtitle {
     font-size: 20px;
   }
 
@@ -413,20 +420,21 @@
     width: 580px;
   }
 
-  .work__details--carousel {
-    height: 230px;
+  .slideshow__slide--img {
+    width: 530px;
+    height: 240px;
   }
 
-  .carousel__item--card img {
-    width: 560px;
-    height: 220px;
+  .slideshow__slide--caption {
+    font-size: 13px;
   }
 
-  .carousel__item--arrows a {
-    font-size: 26px;
+  .dot {
+    height: 13px;
+    width: 13px;
   }
 
-  .work__details--subtitle {
+  .work__carousel--subtitle {
     font-size: 18px;
   }
 
@@ -467,11 +475,16 @@
     padding: 0 15px 8px 15px;
   }
 
-  .work__details--carousel {
-    height: 170px;
+  .slideshow__slide--img {
+    width: 300px;
+    height: 135px;
   }
 
-  .work__details--subtitle {
+  .slideshow__slide--caption {
+    font-size: 11px;
+  }
+
+  .work__carousel--subtitle {
     font-size: 16px;
   }
 
@@ -479,13 +492,9 @@
     width: 335px;
   }
 
-  .carousel__item--card img {
-    width: 320px;
-    height: 160px;
-  }
-
-  .carousel__item--arrows a {
-    font-size: 24px;
+  .dot {
+    height: 11px;
+    width: 11px;
   }
 
   .work__description {
@@ -511,15 +520,12 @@
     padding: 7px 28px;
   }
 
-  /* End Component 7 - Proyects Styles */
-}
-/* End Media Queries Screens 650px */
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
   .prev,
   .next,
   .text {
     font-size: 11px;
   }
+
+  /* End Component 7 - Proyects Styles */
 }
+/* End Media Queries Screens 650px */
