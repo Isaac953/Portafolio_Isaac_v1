@@ -93,8 +93,8 @@
 }
 
 .slideshow__slide--number {
-  color: #fc5404;
-  font-size: 12px;
+  color: #fa1616;
+  font-size: 17px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -112,11 +112,10 @@
   font-size: 17px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 10px;
   width: 100%;
   text-align: center;
-  background-color: #0f2c67;
-  opacity: 0.6;
+  background-color: rgba(16, 143, 182, 0.8);
 }
 
 /* Next & previous buttons */
@@ -127,10 +126,10 @@
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
-  color: white;
+  margin-top: -35px;
+  color: #ffcc1d;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -154,27 +153,27 @@
   height: 17px;
   width: 17px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #9d9d9d;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active-dot {
-  background-color: #ff9300;
+  background-color: #009dae;
 }
 
 .active,
 .dot:hover {
-  background-color: #ff9300;
+  background-color: #009dae;
 }
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes fade {
@@ -375,6 +374,12 @@
     width: 15px;
   }
 
+  .prev,
+  .next {
+    margin-top: -33px;
+    font-size: 28px;
+  }
+
   .work__carousel--subtitle {
     font-size: 20px;
   }
@@ -432,6 +437,12 @@
   .dot {
     height: 13px;
     width: 13px;
+  }
+
+  .prev,
+  .next {
+    margin-top: -31px;
+    font-size: 26px;
   }
 
   .work__carousel--subtitle {
@@ -495,6 +506,12 @@
   .dot {
     height: 11px;
     width: 11px;
+  }
+
+  .prev,
+  .next {
+    margin-top: -29px;
+    font-size: 24px;
   }
 
   .work__description {
