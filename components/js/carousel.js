@@ -1,4 +1,6 @@
-let plusSlides = (n) => {
+let plusSlides = (n, carousel) => {
+    let inputCarousel = document.getElementById("inputCarousel");
+    inputCarousel.value = carousel;
     showSlides((slideIndex += n));
 };
 
@@ -7,10 +9,23 @@ let currentSlide = (n) => {
 };
 
 let showSlides = (n) => {
+
     try {
         let i;
         let slides = document.getElementsByClassName("slideshow__slide");
         let dots = document.getElementsByClassName("dot");
+        // switch (true) {
+        //     case inputCarousel.value === "carousel 1":
+        //         console.log(inputCarousel.value);
+        //         console.log(slides.length - 3);
+        //         console.log(slides);
+        //         break;
+
+        //     case inputCarousel.value === "carousel 2":
+        //         console.log(inputCarousel.value);
+        //         break
+        // }
+
 
         if (n > slides.length) {
             slideIndex = 1;

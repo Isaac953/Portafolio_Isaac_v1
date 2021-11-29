@@ -96,7 +96,7 @@
   background-color: rgba(17, 101, 48, 0.8);
   color: #ffffff;
   font-size: 17px;
-  padding: 8px 12px;
+  padding: 5px 8px;
   position: absolute;
   top: 0;
   border-radius: 5px;
@@ -128,7 +128,8 @@
   top: 50%;
   width: 30px;
   height: 50px;
-  padding: 16px;
+  padding: 5px 8px;
+  /* padding: 16px; */
   margin-top: -35px;
   color: #ffffff;
   font-weight: bold;
@@ -366,6 +367,10 @@
     width: 600px;
   }
 
+  .slideshow__slide--number {
+    font-size: 15px;
+  }
+
   .slideshow__slide--img {
     width: 550px;
     height: 250px;
@@ -433,6 +438,10 @@
     width: 580px;
   }
 
+  .slideshow__slide--number {
+    font-size: 13px;
+  }
+
   .slideshow__slide--img {
     width: 530px;
     height: 240px;
@@ -496,6 +505,10 @@
     padding: 0 15px 8px 15px;
   }
 
+  .slideshow__slide--number {
+    font-size: 11px;
+  }
+
   .slideshow__slide--img {
     width: 300px;
     height: 135px;
@@ -523,7 +536,7 @@
     margin-top: -29px;
     font-size: 24px;
     width: 24px;
-    height: 44px;
+    height: 30px;
   }
 
   .work__description {

@@ -28,7 +28,7 @@ let largeScreen = (
       mainContent.height = "135vh";
       break;
     case componentName.value === "Proyects":
-      mainContent.height = "150vh";
+      mainContent.height = "300vh";
       break;
     case componentName.value === "Contact":
       mainContent.height = "100vh";
@@ -67,7 +67,7 @@ let mediumScreen = (
       mainContent.height = "145vh";
       break;
     case componentName.value === "Proyects":
-      mainContent.height = "140vh";
+      mainContent.height = "280vh";
       break;
     case componentName.value === "Contact":
       mainContent.height = "110vh";
@@ -107,7 +107,7 @@ let horizontalSmallScreen = (
       mainContent.height = "245vh";
       break;
     case componentName.value === "Proyects":
-      mainContent.height = "265vh";
+      mainContent.height = "530vh";
       break;
     case componentName.value === "Contact":
       mainContent.height = "130vh";
@@ -148,7 +148,7 @@ let verticalSmallScreen = (
       mainContent.height = "185vh";
       break;
     case componentName.value === "Proyects":
-      mainContent.height = "120vh";
+      mainContent.height = "240vh";
       break;
     case componentName.value === "Contact":
       mainContent.height = "100vh";

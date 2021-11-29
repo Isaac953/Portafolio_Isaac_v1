@@ -190,13 +190,13 @@ const backgroundContent = () => {
       contentLayout.backgroundImage = 'url("./assets/proyects_img.jpg")';
       contentLayout.backgroundPosition = "center";
       if (screenSizeInt > 1200) {
-        mainContent.height = "150vh";
+        mainContent.height = "300vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
-        mainContent.height = "140vh";
+        mainContent.height = "280vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "265vh";
+        mainContent.height = "530vh";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "120vh";
+        mainContent.height = "240vh";
       }
 
       break;
