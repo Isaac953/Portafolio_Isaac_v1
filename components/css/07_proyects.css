@@ -93,11 +93,13 @@
 }
 
 .slideshow__slide--number {
-  color: #fa1616;
+  background-color: rgba(17, 101, 48, 0.8);
+  color: #ffffff;
   font-size: 17px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  border-radius: 5px;
 }
 
 .slideshow__slide--img {
@@ -124,27 +126,31 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  width: 30px;
+  height: 50px;
   padding: 16px;
   margin-top: -35px;
-  color: #ffcc1d;
+  color: #ffffff;
   font-weight: bold;
   font-size: 30px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 83, 3, 0.8);
+  border-radius: 5px;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 157, 174, 0.8);
 }
 
 /* The dots/bullets/indicators */
@@ -378,6 +384,8 @@
   .next {
     margin-top: -33px;
     font-size: 28px;
+    width: 28px;
+    height: 48px;
   }
 
   .work__carousel--subtitle {
@@ -443,6 +451,8 @@
   .next {
     margin-top: -31px;
     font-size: 26px;
+    width: 26px;
+    height: 46px;
   }
 
   .work__carousel--subtitle {
@@ -512,6 +522,8 @@
   .next {
     margin-top: -29px;
     font-size: 24px;
+    width: 24px;
+    height: 44px;
   }
 
   .work__description {
