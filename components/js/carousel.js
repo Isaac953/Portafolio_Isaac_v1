@@ -49,7 +49,7 @@ let showSlides = (n) => {
             case inputCarousel.value === "carousel 2":
                 slides = document.getElementById("workCarousel-2").getElementsByClassName("slideshow__slide");
                 dots = document.getElementById("workCarousel-2").getElementsByClassName("dot");
-                arrow = document.getElementById("workCarousel-1").getElementsByClassName("arrow");
+                arrow = document.getElementById("workCarousel-2").getElementsByClassName("arrow");
 
                 if (n > slides.length) {
                     slideIndex = 1;
@@ -66,7 +66,28 @@ let showSlides = (n) => {
                 }
                 slides[slideIndex - 1].classList.add("active__slide");
                 dots[slideIndex - 1].classList.add("active");
-                break
+                break;
+            case inputCarousel.value === "carousel 3":
+                slides = document.getElementById("workCarousel-3").getElementsByClassName("slideshow__slide");
+                dots = document.getElementById("workCarousel-3").getElementsByClassName("dot");
+                arrow = document.getElementById("workCarousel-3").getElementsByClassName("arrow");
+
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].classList.remove("active__slide");
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove("active");
+                    dots[i].classList.remove("active-dot");
+                }
+                slides[slideIndex - 1].classList.add("active__slide");
+                dots[slideIndex - 1].classList.add("active");
+                break;
         }
 
 

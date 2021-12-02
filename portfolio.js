@@ -189,14 +189,15 @@ const backgroundContent = () => {
     case componentName.value === "Proyects":
       contentLayout.backgroundImage = 'url("./assets/proyects_img.jpg")';
       contentLayout.backgroundPosition = "center";
+      contentLayout.justifyContent = "center";
       if (screenSizeInt > 1200) {
-        mainContent.height = "300vh";
+        mainContent.height = "370vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
-        mainContent.height = "280vh";
+        mainContent.height = "350vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "530vh";
+        mainContent.height = "610vh";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "240vh";
+        mainContent.height = "300vh";
       }
 
       break;
