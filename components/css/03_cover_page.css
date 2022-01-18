@@ -21,6 +21,7 @@
   margin: 10px;
 
   image-rendering: pixelated;
+  border-radius: 15px;
 }
 
 .cover-page__card--title {

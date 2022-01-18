@@ -191,13 +191,13 @@ const backgroundContent = () => {
       contentLayout.backgroundPosition = "center";
       contentLayout.justifyContent = "center";
       if (screenSizeInt > 1200) {
-        mainContent.height = "370vh";
+        mainContent.height = "470vh";
       } else if (screenSizeInt <= 1200 && screenSizeInt > 850) {
-        mainContent.height = "350vh";
+        mainContent.height = "450vh";
       } else if (screenSizeInt <= 850 && screenSizeInt > 650) {
-        mainContent.height = "610vh";
+        mainContent.height = "710vh";
       } else if (screenSizeInt <= 650) {
-        mainContent.height = "300vh";
+        mainContent.height = "400vh";
       }
 
       break;
